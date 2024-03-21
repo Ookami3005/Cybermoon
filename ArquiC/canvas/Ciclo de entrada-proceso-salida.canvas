@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"e12402d1528505b8","type":"text","text":"Memoria principal","x":-100,"y":-80,"width":250,"height":60,"color":"5"},
+		{"id":"ce5f8129fdd1df8f","type":"text","text":"Unidad central de proceso","x":-100,"y":-240,"width":250,"height":60,"color":"5"},
+		{"id":"4222debaee880407","type":"text","text":"Memoria secundaria","x":-100,"y":80,"width":250,"height":60,"color":"5"},
+		{"id":"f2072c5eaab2f01b","type":"text","text":"Dispositivo de entrada","x":-380,"y":-95,"width":160,"height":90,"color":"1"},
+		{"id":"fed5dca3b4ddb4ec","type":"text","text":"Dispositivo de salida","x":260,"y":-95,"width":160,"height":90,"color":"1"}
+	],
+	"edges":[
+		{"id":"f736ce8c15d02e25","fromNode":"f2072c5eaab2f01b","fromSide":"right","toNode":"e12402d1528505b8","toSide":"left"},
+		{"id":"81da354c0c6bf12c","fromNode":"e12402d1528505b8","fromSide":"right","toNode":"fed5dca3b4ddb4ec","toSide":"left"},
+		{"id":"08aa6fef013bcf10","fromNode":"e12402d1528505b8","fromSide":"top","toNode":"ce5f8129fdd1df8f","toSide":"bottom"},
+		{"id":"c7ea4c31d23c524d","fromNode":"ce5f8129fdd1df8f","fromSide":"bottom","toNode":"e12402d1528505b8","toSide":"top"},
+		{"id":"7d2a6cbe03081c60","fromNode":"e12402d1528505b8","fromSide":"bottom","toNode":"4222debaee880407","toSide":"top"},
+		{"id":"1cacfdc9b5141583","fromNode":"4222debaee880407","fromSide":"top","toNode":"e12402d1528505b8","toSide":"bottom"}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"7374bc79f3b620bd","type":"text","text":"Instrucciones","x":-660,"y":-160,"width":250,"height":60,"color":"5"},
+		{"id":"174672b4c8968145","type":"text","text":"|==F==etch|==D==ecode|e==x==ecute|==w==rite|\n--","x":-320,"y":-160,"width":440,"height":60,"color":"3"}
+	],
+	"edges":[
+		{"id":"67fe0c42eb98cfb2","fromNode":"7374bc79f3b620bd","fromSide":"right","toNode":"174672b4c8968145","toSide":"left"}
+	]
+}
