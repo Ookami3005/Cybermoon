@@ -4,18 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "2212b7216a035ba6",
+        "id": "17ec3585c8700350",
         "type": "tabs",
         "children": [
           {
-            "id": "52a3e834f52095b9",
+            "id": "80a5997bbe96a52a",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "markdown",
+              "state": {
+                "file": "IoT/Internet of Things (IoT).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e0d13ed1d121bfa",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,13 +153,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "52a3e834f52095b9",
+  "active": "9e0d13ed1d121bfa",
   "lastOpenFiles": [
+    "IoT/Internet of Things (IoT).md",
+    "IoT/apuntes/Codigos de señales digitales y analógicas.md",
+    "IoT/apuntes/Conectividad.md",
+    "Índice de materias.md",
+    "ArquiC/Arquitectura de Computadoras.md",
+    "IoT/apuntes/Dispositivos del Internet de las Cosas.md",
+    "IoT/apuntes/Introducción al Internet de las Cosas.md",
+    "IoT/imagenes/diferentesModulos.png",
+    "IoT/imagenes/ESP32 Dev Kit.png",
+    "IoT/imagenes/embeddedS.png",
+    "IoT/imagenes/SoC.png",
+    "IoT/imagenes/actuadores.png",
+    "IoT/imagenes/sensores.png",
+    "IoT/imagenes/capa1ArqIoT.png",
+    "IoT/imagenes/PWM.png",
+    "IoT/imagenes/DAC.png",
+    "IoT/imagenes/ADC.png",
+    "IoT/imagenes",
+    "IoT/apuntes",
     "Tarea Danna.md",
     "Cauce segmentado de ejecución (Pipeline).md",
     "Tuberia.canvas",
-    "Índice de materias.md",
-    "ArquiC/Arquitectura de Computadoras.md",
     "ArquiC/apuntes/¿Qué es una computadora?.md",
     "ArquiC/apuntes/Lógica y Secuenciación.md",
     "ArquiC/canvas/Ciclo de entrada-proceso-salida.canvas",
@@ -154,15 +184,12 @@
     "LogicaC/apuntes/Inducción y Recursión.md",
     "LogicaC/Logica Computacional.md",
     "LogicaC/apuntes/Cálculo de proposiciones.md",
-    "IoT/Internet of Things (IoT).md",
     "ArquiC/canvas",
     "LogicaC/Presentación - Logica.md",
     "2024-03-17.md",
     "ArquiC/apuntes",
-    "imagenes/firelinkshrine.png",
     "IoT",
     "imagenes",
-    "imagenes/hogueraDS.png",
     "ArquiC",
     "LogicaC/apuntes/induccionyrecursion",
     "LogicaC/apuntes",

@@ -2,5 +2,7 @@
   "spellcheck": false,
   "showLineNumber": true,
   "vimMode": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "showIndentGuide": true
 }
