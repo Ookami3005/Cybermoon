@@ -1,10 +1,10 @@
- [[Índice de materias|<- Índice de materias]]
+ [[Indice de materias|<- Índice de materias]]
 
 ![[hogueraDS.png]]
 
-[[Presentación - Arquitectura|Presentación]]
+[[Presentacion - Arquitectura|Presentación]]
 
 Notas:
 
-1. [[¿Qué es una computadora?]]
-2. [[Lógica y Secuenciación]]
+1. [[Que es una computadora]]
+2. [[Logica y Secuenciacion]]

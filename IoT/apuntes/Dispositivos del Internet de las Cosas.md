@@ -126,4 +126,4 @@ Es un sistema de computación diseñado para realizar funciones específicas, y 
 ![[diferentesModulos.png]]
 
 # Enlaces
-[[Introducción al Internet de las Cosas|<- Atras]] | [[Codigos de señales digitales y analógicas|Siguiente ->]]
+[[Introduccion al Internet de las Cosas|<- Atras]] | [[Codigos de señales digitales y analogicas|Siguiente ->]]

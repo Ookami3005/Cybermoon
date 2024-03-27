@@ -156,4 +156,4 @@ Los dos últimos niveles más altos en el estudio de sistemas de cómputo, ==len
 | **Máquina**                                 |
 | **Elementos lógicos**                       |
 
-[[Lógica y Secuenciación|Siguiente ->]]
+[[Logica y Secuenciacion|Siguiente ->]]

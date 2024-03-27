@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "17ec3585c8700350",
+        "id": "8c1632fe5635aa42",
         "type": "tabs",
         "children": [
           {
-            "id": "80a5997bbe96a52a",
+            "id": "84bcdbc7c11ba33e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IoT/Internet of Things (IoT).md",
+                "file": "Indice de materias.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9e0d13ed1d121bfa",
+            "id": "fa344c39772d6fe8",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c036f26b9fd597e",
@@ -153,15 +152,23 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9e0d13ed1d121bfa",
+  "active": "fa344c39772d6fe8",
   "lastOpenFiles": [
+    "Indice de materias.md",
+    "README.md",
+    "Indice.md",
+    "LogicaC/apuntes/Induccion y Recursion.md",
+    "LogicaC/apuntes/Calculo de proposiciones.md",
+    "IoT/apuntes/Introduccion al Internet de las Cosas.md",
+    "IoT/apuntes/Codigos de señales digitales y analogicas.md",
+    "LogicaC/Presentacion - Logica.md",
+    "ArquiC/Presentacion - Arquitectura.md",
+    "ArquiC/apuntes/Logica y Secuenciacion.md",
+    "ArquiC/apuntes/Que es una computadora.md",
     "IoT/Internet of Things (IoT).md",
-    "IoT/apuntes/Codigos de señales digitales y analógicas.md",
     "IoT/apuntes/Conectividad.md",
-    "Índice de materias.md",
     "ArquiC/Arquitectura de Computadoras.md",
     "IoT/apuntes/Dispositivos del Internet de las Cosas.md",
-    "IoT/apuntes/Introducción al Internet de las Cosas.md",
     "IoT/imagenes/diferentesModulos.png",
     "IoT/imagenes/ESP32 Dev Kit.png",
     "IoT/imagenes/embeddedS.png",
@@ -177,15 +184,9 @@
     "Tarea Danna.md",
     "Cauce segmentado de ejecución (Pipeline).md",
     "Tuberia.canvas",
-    "ArquiC/apuntes/¿Qué es una computadora?.md",
-    "ArquiC/apuntes/Lógica y Secuenciación.md",
     "ArquiC/canvas/Ciclo de entrada-proceso-salida.canvas",
-    "ArquiC/Presentación - Arquitectura.md",
-    "LogicaC/apuntes/Inducción y Recursión.md",
     "LogicaC/Logica Computacional.md",
-    "LogicaC/apuntes/Cálculo de proposiciones.md",
     "ArquiC/canvas",
-    "LogicaC/Presentación - Logica.md",
     "2024-03-17.md",
     "ArquiC/apuntes",
     "IoT",

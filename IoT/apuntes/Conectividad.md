@@ -2,4 +2,4 @@
 
 # Enlaces
 
-[[Codigos de señales digitales y analógicas|<- Atras]] |
+[[Codigos de señales digitales y analogicas|<- Atras]] |
