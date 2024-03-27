@@ -13,22 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Indice de materias.md",
-                "mode": "source",
+                "file": "IoT/apuntes/Codigos de Conectividad.md",
+                "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "fa344c39772d6fe8",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c036f26b9fd597e",
@@ -94,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "IoT/apuntes/Codigos de Conectividad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "IoT/apuntes/Codigos de Conectividad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "IoT/apuntes/Codigos de Conectividad.md"
+              }
             }
           }
         ],
@@ -152,8 +148,21 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "fa344c39772d6fe8",
+  "active": "84bcdbc7c11ba33e",
   "lastOpenFiles": [
+    "IoT/Internet of Things (IoT).md",
+    "IoT/apuntes/Codigos de Conectividad.md",
+    "IoT/apuntes/Conectividad.md",
+    "IoT/imagenes/dualMode.png",
+    "IoT/imagenes/accessPointMode.png",
+    "IoT/imagenes/wifiEsp32.png",
+    "IoT/imagenes/topologiaDeRed.png",
+    "wifiEsp32.png",
+    "IoT/imagenes/stationMode.png",
+    "IoT/imagenes/comparativaWiFi.png",
+    "IoT/imagenes/perfilesBluetooth.png",
+    "IoT/imagenes/comparativaBluetooth.png",
+    "IoT/imagenes/arquitecturaBluetooth.png",
     "Indice de materias.md",
     "README.md",
     "Indice.md",
@@ -165,20 +174,8 @@
     "ArquiC/Presentacion - Arquitectura.md",
     "ArquiC/apuntes/Logica y Secuenciacion.md",
     "ArquiC/apuntes/Que es una computadora.md",
-    "IoT/Internet of Things (IoT).md",
-    "IoT/apuntes/Conectividad.md",
     "ArquiC/Arquitectura de Computadoras.md",
     "IoT/apuntes/Dispositivos del Internet de las Cosas.md",
-    "IoT/imagenes/diferentesModulos.png",
-    "IoT/imagenes/ESP32 Dev Kit.png",
-    "IoT/imagenes/embeddedS.png",
-    "IoT/imagenes/SoC.png",
-    "IoT/imagenes/actuadores.png",
-    "IoT/imagenes/sensores.png",
-    "IoT/imagenes/capa1ArqIoT.png",
-    "IoT/imagenes/PWM.png",
-    "IoT/imagenes/DAC.png",
-    "IoT/imagenes/ADC.png",
     "IoT/imagenes",
     "IoT/apuntes",
     "Tarea Danna.md",
