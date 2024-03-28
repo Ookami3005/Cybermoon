@@ -6,17 +6,46 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "file:Indice de materias",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "path:IoT  ",
+      "color": {
+        "a": 1,
+        "rgb": 13924108
+      }
+    },
+    {
+      "query": "path:ArquiC  ",
+      "color": {
+        "a": 1,
+        "rgb": 275134
+      }
+    },
+    {
+      "query": "path:LogicaC  ",
+      "color": {
+        "a": 1,
+        "rgb": 109825
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": false,
+  "lineSizeMultiplier": 1.68229166666667,
+  "collapse-forces": true,
   "centerStrength": 0.859375,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 42,
-  "scale": 0.9391634192637438,
+  "scale": 0.7215756178883688,
   "close": true
 }

@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "8c1632fe5635aa42",
+        "id": "dbeb506f42994478",
         "type": "tabs",
         "children": [
           {
-            "id": "84bcdbc7c11ba33e",
+            "id": "98fff2ba98c3adf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IoT/apuntes/Codigos de Conectividad.md",
+                "file": "IoT/Internet of Things (IoT).md",
                 "mode": "preview",
                 "source": false
               }
             }
+          },
+          {
+            "id": "ba89c12365f03b6d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c036f26b9fd597e",
@@ -86,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IoT/apuntes/Codigos de Conectividad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IoT/apuntes/Codigos de Conectividad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "IoT/apuntes/Codigos de Conectividad.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -148,22 +152,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "84bcdbc7c11ba33e",
+  "active": "ba89c12365f03b6d",
   "lastOpenFiles": [
     "IoT/Internet of Things (IoT).md",
+    "IoT/apuntes/Codigos MQTT.md",
+    "IoT/apuntes/Ciberseguridad.md",
+    "IoT/apuntes/Codigos AES.md",
+    "IoT/imagenes/blowfish.png",
+    "IoT/imagenes/ecc.png",
+    "IoT/imagenes/rsa.png",
+    "IoT/imagenes/3des.png",
+    "IoT/imagenes/des.png",
+    "IoT/imagenes/aes.png",
+    "IoT/imagenes/encriptacionAlternativos.png",
+    "IoT/imagenes/encriptacionAlgoritmos.png",
+    "IoT/apuntes/Codigos avanzados HTTP.md",
+    "IoT/apuntes/Protocolos de mensajeria (MQTT).md",
+    "IoT/imagenes/encriptaciónClaves.png",
+    "IoT/imagenes/ataquesIoT.png",
+    "IoT/apuntes/Codigos básicos HTTP.md",
+    "Indice de materias.md",
+    "IoT/apuntes/SPIFFS.md",
+    "IoT/apuntes/Protocolos de mensajeria (HTTP).md",
     "IoT/apuntes/Codigos de Conectividad.md",
     "IoT/apuntes/Conectividad.md",
-    "IoT/imagenes/dualMode.png",
-    "IoT/imagenes/accessPointMode.png",
-    "IoT/imagenes/wifiEsp32.png",
-    "IoT/imagenes/topologiaDeRed.png",
-    "wifiEsp32.png",
-    "IoT/imagenes/stationMode.png",
-    "IoT/imagenes/comparativaWiFi.png",
-    "IoT/imagenes/perfilesBluetooth.png",
-    "IoT/imagenes/comparativaBluetooth.png",
-    "IoT/imagenes/arquitecturaBluetooth.png",
-    "Indice de materias.md",
     "README.md",
     "Indice.md",
     "LogicaC/apuntes/Induccion y Recursion.md",
@@ -182,9 +194,7 @@
     "Cauce segmentado de ejecución (Pipeline).md",
     "Tuberia.canvas",
     "ArquiC/canvas/Ciclo de entrada-proceso-salida.canvas",
-    "LogicaC/Logica Computacional.md",
     "ArquiC/canvas",
-    "2024-03-17.md",
     "ArquiC/apuntes",
     "IoT",
     "imagenes",
