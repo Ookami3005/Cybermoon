@@ -1,6 +1,6 @@
  [<- Indice de materias](Indice%20de%20materias.md)
 
-![hs](hoguerads.png)
+![hs](imagenes/hoguerads.png)
 
 [Presentacion](Presentacion%20Arquitectura.md)
 

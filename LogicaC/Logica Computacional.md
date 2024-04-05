@@ -1,6 +1,6 @@
 [<- Índice de materias](Indice%20de%20materias.md)
 
-![hogueraDS.png](hogueraDS.png)
+![hogueraDS.png](imagenes/hogueraDS.png)
 
 - [Presentacion](Presentacion%20-%20Logica.md)
 - [Reportes](Indice%20de%20reportes%20Logica.md)

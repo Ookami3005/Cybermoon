@@ -1,6 +1,6 @@
  [<- Indice de materias](Indice%20de%20materias.md)
 
-![hogueraDS](hogueraDS.png)
+![hogueraDS](imagenes/hogueraDS.png)
 
 Notas:
 
