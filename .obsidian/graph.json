@@ -5,13 +5,13 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "file:Indice de materias",
       "color": {
         "a": 1,
-        "rgb": 0
+        "rgb": 6419853
       }
     },
     {
@@ -46,6 +46,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 42,
-  "scale": 0.7215756178883688,
+  "scale": 0.721575617888371,
   "close": true
 }

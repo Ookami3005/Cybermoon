@@ -3,6 +3,7 @@
 ![[hogueraDS.png]]
 
 - [[Presentacion - Logica|Presentación]]
+- [[Indice de reportes - Lógica|Reportes]]
 
 Notas:
 - [[Induccion y Recursion]]
