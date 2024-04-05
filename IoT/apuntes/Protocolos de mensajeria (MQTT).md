@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 
 ## Protocolos de mensajería
 
@@ -11,26 +11,26 @@
 - XMPP (*Whatssap y Messenger*)
 - WMQ
 
-![[comparacionProtocolos.png]]
+![comparacionProtocolos.png](comparacionProtocolos.png)
 
 ## MQTT
 
 *Messafe Queue Telemetry Transport* (MQTT) es un protocolo de pub-sub simple y ligero, diseñado principalmente para mensajería en redes y dispositivos restringidos. Proporciona una distribución de mensajes de uno a muchos y es independiente del contenido de la carga útil.
 
-![[mqtt.png]]
+![mqtt.png](mqtt.png)
 
 #### Brokers
 
 Los *Brokers* son intermediarios entre los *clientes MQTT* y los *suscritores MQTT* pudiendo filtrar los mensajes enviados por temas.
 
-![[brokersMqtt.png]]
+![brokersMqtt.png](brokersMqtt.png)
 
 #### ESP32
 
 El *broker* que utiliza el *ESP32* es *Mosquitto*
 
-![[mosquitto.png]]
+![mosquitto.png](mosquitto.png)
 
 # Enlaces
 
-[[Codigos avanzados HTTP|<- Anterior]] | [[Codigos MQTT|Siguiente ->]]
+[<- Anterior](Codigos%20avanzados%20HTTP.md) | [Siguiente ->](Codigos%20MQTT.md)

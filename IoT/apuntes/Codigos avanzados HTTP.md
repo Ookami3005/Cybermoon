@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 
 ## LEDS
 
@@ -1133,4 +1133,4 @@ setInterval(function () {
 
 # Enlace
 
-[[Codigos básicos HTTP|<- Anterior]] | [[Protocolos de mensajeria (MQTT)|Siguiente ->]]
+[<- Anterior](Codigos%20b%C3%A1sicos%20HTTP.md) | [Siguiente ->](Protocolos%20de%20mensajeria%20(MQTT).md)

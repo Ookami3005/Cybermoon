@@ -1,10 +1,10 @@
-[[Indice de materias|<- Índice de materias]]
+[<- Índice de materias](Indice%20de%20materias.md)
 
-![[hogueraDS.png]]
+![hogueraDS.png](hogueraDS.png)
 
-- [[Presentacion - Logica|Presentación]]
-- [[Indice de reportes - Lógica|Reportes]]
+- [Presentacion](Presentacion%20-%20Logica.md)
+- [Reportes](Indice%20de%20reportes%20Logica.md)
 
 Notas:
-- [[Induccion y Recursion]]
-- [[Calculo de proposiciones]]
+- [Induccion y Recursion](Induccion%20y%20Recursion.md)
+- [Calculo de proposiciones](Calculo%20de%20proposiciones.md)

@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 ## Ciberseguridad y ataques cibernéticos
 
 Un **ataque cibernético** es cuando un individuo o una organización intenta deliberada y maliciosamente violar el sistema de información de otro individuo u organización. Si bien suele haber un objetivo económico, algunos ataques recientes muestran la destrucción de datos como un objetivo.
@@ -8,23 +8,23 @@ La **ciberseguridad** es la encargada de evitar dichos ataques.
 ## Tipos de ataques
 
 - *Malware*
-![[tiposMalware.png]]
+![tiposMalware.png](tiposMalware.png)
 - *Phishing*
-![[phishing.png]]
+![phishing.png](phishing.png)
 - MitM
-![[mitM.png]]
+![mitM.png](mitM.png)
 - DOS
-![[dos.png]]
+![dos.png](dos.png)
 - Inyecciones SQL
-![[inyeccionesSql.png]]
+![inyeccionesSql.png](inyeccionesSql.png)
 - Explotación de día cero
-![[dia0.png]]
+![dia0.png](dia0.png)
 - Ataque de contraseña
-![[ataqueContrasena.png]]
+![ataqueContrasena.png](ataqueContrasena.png)
 - Secuencia de comandos entre sitios
-![[comandosEntreSitios.png]]
+![comandosEntreSitios.png](comandosEntreSitios.png)
 - ***Ataques IoT***
-![[ataquesIoT.png]]
+![ataquesIoT.png](ataquesIoT.png)
 
 ## Ciberataques en IoT
 
@@ -65,30 +65,30 @@ La encriptación de datos es el proceso de cifrado de información que permite p
 	- Encriptación simétrica
 	- Encriptación asimétrica
 	- Encriptación mixta
-![[encriptaciónClaves.png]]
+![encriptaciónClaves.png](encriptaci%C3%B3nClaves.png)
 - Según algoritmos
 	- Encriptación en flujo
 	- Encriptación por bloques
-![[encriptacionAlgoritmos.png]]
+![encriptacionAlgoritmos.png](encriptacionAlgoritmos.png)
 - Sistemas alternativos
 	- Esteganografía
 	- Spread-Spectrum
-![[encriptacionAlternativos.png]]
+![encriptacionAlternativos.png](encriptacionAlternativos.png)
 
 #### Algortimos
 
 - AES
-![[aes.png]]
+![aes.png](aes.png)
 - DES
-![[des.png]]
+![des.png](des.png)
 - 3DES
-![[3des.png]]
+![3des.png](3des.png)
 - RSA
-![[rsa.png]]
+![rsa.png](rsa.png)
 - ECC
-![[ecc.png]]
+![ecc.png](ecc.png)
 - Blowfish
-![[blowfish.png]]
+![blowfish.png](blowfish.png)
 
 #### Empresas
 
@@ -105,4 +105,4 @@ La encriptación de datos es el proceso de cifrado de información que permite p
 
 # Enlaces
 
-[[Codigos MQTT|<- Anterior]] | [[Codigos AES|Siguiente ->]]
+[<- Anterior](Codigos%20MQTT.md) | [Siguiente ->](Codigos%20AES.md)

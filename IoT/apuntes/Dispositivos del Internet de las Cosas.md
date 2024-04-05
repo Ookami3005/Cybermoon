@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 
 ## Señales
 
@@ -6,7 +6,7 @@
 
 Tanto en el Internet de las cosas (IoT) como en la electrónica en general se utilizan 2 tipos de señales: ==Digital== y ==Analógica==
 
-![[digitalVsAnalogica.png]]
+![digitalVsAnalogica.png](digitalVsAnalogica.png)
 
 ##### Señales analógicas
 
@@ -17,7 +17,7 @@ Señal contínua representada por una frecuencia, longitud de onda, periodo y am
 - Longitud de onda ($\lambda$)
 - Amplitud (A)
 
-![[analogica.png]]
+![analogica.png](analogica.png)
 
 ##### Señales digitales
 
@@ -51,19 +51,19 @@ Convertir señales analógicas a señales digitales
 3 bits -> $2^3$ -> 8
 16 bits -> $2^{16}$ -> 65536
 
-![[ADC.png]]
+![ADC.png](ADC.png)
 
 ###### DAC (Digital to Analogue Converter)
 
 Convertir señales digitales a señales analógicas
 
-![[DAC.png]]
+![DAC.png](DAC.png)
 
 ###### PWM (Pulse Width Modulation)
 
 Simular una señal analógica con el ancho de banda
 
-![[PWM.png]]
+![PWM.png](PWM.png)
 
 ## Dispositivos
 
@@ -72,7 +72,7 @@ Los dispositivos básicos que arman la primer capa de la arquitecutra IoT son 2:
 - Transductores
 - Controladores
 
-![[capa1ArqIoT.png]]
+![capa1ArqIoT.png](capa1ArqIoT.png)
 
 #### Transductores
 
@@ -82,13 +82,13 @@ En su forma más básica, un transductor es un dispositivo que convierte un tipo
 
 Es un transductor que detecta cambios en su entorno generando fluctuaciones proporcionales a estos de la energía electrica inducida al dispositivo.
 
-![[sensores.png]]
+![sensores.png](sensores.png)
 
 ##### Actuadores
 
 Al contrario de los sensores, estos son transuctores que en función de una señal electrica de entrada, generan una acción de alguna forma física de salida.
 
-![[actuadores.png]]
+![actuadores.png](actuadores.png)
 
 #### Controladores
 
@@ -98,13 +98,13 @@ Dispositivos que procesan las señales de entrada y ejecutan acciones en funció
 
 Todos los componentes de un sistema electrónico (o de cómputo) está integrado en un chip.
 
-![[SoC.png]]
+![SoC.png](SoC.png)
 
 ##### Embedded system
 
 Es un sistema de computación diseñado para realizar funciones específicas, y cuyos componentes se encuentran integrados en una placa base.
 
-![[embeddedS.png]]
+![embeddedS.png](embeddedS.png)
 
 ##### ¿Qué microcontroladores hay en IoT?
 
@@ -119,11 +119,11 @@ Es un sistema de computación diseñado para realizar funciones específicas, y 
 
 ###### Node MCU ESP32 Dev Kit V1
 
-![[ESP32 Dev Kit.png]]
+![ESP32 Dev Kit.png](ESP32%20Dev%20Kit.png)
 
 ###### Diferentes módulos
 
 ![[diferentesModulos.png]]
 
 # Enlaces
-[[Introduccion al Internet de las Cosas|<- Atras]] | [[Codigos de señales digitales y analogicas|Siguiente ->]]
+[<- Anterior](Introduccion%20al%20Internet%20de%20las%20Cosas.md) | [Siguiente ->](Codigos%20de%20se%C3%B1ales%20digitales%20y%20analogicas.md)

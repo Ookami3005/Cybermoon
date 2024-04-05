@@ -1,4 +1,4 @@
-[[Arquitectura de Computadoras|<- Índice]]
+[<- Índice](Arquitectura%20de%20Computadoras.md)
 ## Datos, información y el concepto de programa almacenado
 
 Procesar datos extrae su significado. Una computadora es una máquina de procesamiento de datos.
@@ -156,4 +156,4 @@ Los dos últimos niveles más altos en el estudio de sistemas de cómputo, ==len
 | **Máquina**                                 |
 | **Elementos lógicos**                       |
 
-[[Logica y Secuenciacion|Siguiente ->]]
+[Siguiente ->](Logica%20y%20Secuenciacion.md)

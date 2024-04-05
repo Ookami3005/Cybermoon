@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LogicaC/reportes/Practica 3.md",
+                "file": "IoT/apuntes/Ciberseguridad.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LogicaC/reportes/Practica 3.md",
+                "file": "IoT/apuntes/Ciberseguridad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LogicaC/reportes/Practica 3.md",
+                "file": "IoT/apuntes/Ciberseguridad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LogicaC/reportes/Practica 3.md"
+                "file": "IoT/apuntes/Ciberseguridad.md"
               }
             }
           }
@@ -150,18 +150,32 @@
   },
   "active": "ba89c12365f03b6d",
   "lastOpenFiles": [
-    "README.md",
-    "LogicaC/reportes/Practica 3.md",
-    "LogicaC/reportes/Indice de reportes - Lógica.md",
-    "LogicaC/Logica Computacional.md",
-    "LogicaC/reportes",
-    "Indice de materias.md",
+    "IoT/apuntes/Codigos MQTT.md",
+    "IoT/apuntes/Protocolos de mensajeria (MQTT).md",
+    "IoT/apuntes/Codigos avanzados HTTP.md",
+    "IoT/apuntes/Codigos básicos HTTP.md",
+    "IoT/apuntes/SPIFFS.md",
+    "IoT/apuntes/Protocolos de mensajeria (HTTP).md",
+    "IoT/apuntes/Codigos de Conectividad.md",
+    "IoT/apuntes/Conectividad.md",
+    "IoT/apuntes/Codigos de señales digitales y analogicas.md",
     "IoT/apuntes/Dispositivos del Internet de las Cosas.md",
     "IoT/apuntes/Introduccion al Internet de las Cosas.md",
     "IoT/Internet of Things (IoT).md",
-    "IoT/apuntes/Codigos MQTT.md",
     "IoT/apuntes/Ciberseguridad.md",
     "IoT/apuntes/Codigos AES.md",
+    "Indice de materias.md",
+    "ArquiC/Arquitectura de Computadoras.md",
+    "LogicaC/Logica Computacional.md",
+    "ArquiC/apuntes/Logica y Secuenciacion.md",
+    "ArquiC/apuntes/Que es una computadora.md",
+    "ArquiC/Presentacion Arquitectura.md",
+    "LogicaC/reportes/Indice de reportes Logica.md",
+    "LogicaC/reportes/Practica 3.md",
+    "LogicaC/Presentacion - Logica.md",
+    "imagenes/hogueraDS.png",
+    "README.md",
+    "LogicaC/reportes",
     "IoT/imagenes/blowfish.png",
     "IoT/imagenes/ecc.png",
     "IoT/imagenes/rsa.png",
@@ -170,23 +184,9 @@
     "IoT/imagenes/aes.png",
     "IoT/imagenes/encriptacionAlternativos.png",
     "IoT/imagenes/encriptacionAlgoritmos.png",
-    "IoT/apuntes/Codigos avanzados HTTP.md",
-    "IoT/apuntes/Protocolos de mensajeria (MQTT).md",
     "IoT/imagenes/encriptaciónClaves.png",
-    "IoT/imagenes/ataquesIoT.png",
-    "IoT/apuntes/Codigos básicos HTTP.md",
-    "IoT/apuntes/SPIFFS.md",
-    "IoT/apuntes/Protocolos de mensajeria (HTTP).md",
-    "IoT/apuntes/Codigos de Conectividad.md",
-    "IoT/apuntes/Conectividad.md",
     "Indice.md",
     "LogicaC/apuntes/Induccion y Recursion.md",
-    "LogicaC/apuntes/Calculo de proposiciones.md",
-    "IoT/apuntes/Codigos de señales digitales y analogicas.md",
-    "LogicaC/Presentacion - Logica.md",
-    "ArquiC/Presentacion - Arquitectura.md",
-    "ArquiC/apuntes/Logica y Secuenciacion.md",
-    "ArquiC/apuntes/Que es una computadora.md",
     "IoT/imagenes",
     "IoT/apuntes",
     "Tuberia.canvas",

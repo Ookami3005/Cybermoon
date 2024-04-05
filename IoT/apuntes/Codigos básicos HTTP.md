@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 
 ## HTTP
 #### Devolviendo texto plano a las peticiones del cliente
@@ -457,4 +457,4 @@ void loop() {}
 ```
 # Enlaces
 
-[[SPIFFS|<- Anterior]] | [[Codigos avanzados HTTP|Siguiente ->]]
+[<- Anterior](SPIFFS.md) | [Siguiente ->](Codigos%20avanzados%20HTTP.md)

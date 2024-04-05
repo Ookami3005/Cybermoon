@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 
 ## Salidas digitales
 
@@ -473,4 +473,4 @@ void loop() {
 
 # Enlaces
 
-[[Dispositivos del Internet de las Cosas|<- Anterior]] | [[Conectividad|Siguiente ->]]
+[<- Anterior](Dispositivos%20del%20Internet%20de%20las%20Cosas.md) | [Siguiente ->](Conectividad.md)

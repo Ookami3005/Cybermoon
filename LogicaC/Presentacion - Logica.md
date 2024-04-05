@@ -24,4 +24,4 @@ y 2 reposiciones de exámenes parciales o un final. Tambien habrá seis práctic
 de programación. Los exámenes contarán el 70% de la calificación, las tareas el
 15% y las prácticas el 15% restante.k
 
-[[Logica Computacional|Notas]]
+[NOTAS](Logica%20Computacional.md)

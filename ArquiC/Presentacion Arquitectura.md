@@ -48,4 +48,4 @@ http://www.matematicas.unam.mx/jloa/curso.orgarqcomp.html
 - Computer System Architecture. Mano, M.M. Prentice-Hall, 1999.
 - Diseño de Sistemas Digitales y Arquitectura de	Computadoras. Ortega-Arjona, J. Facultad de Ciencias, UNAM. 2019.
 
-[[Arquitectura de Computadoras|Notas]]
+[NOTAS](Arquitectura%20de%20Computadoras.md)

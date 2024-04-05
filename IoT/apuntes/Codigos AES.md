@@ -1,4 +1,4 @@
-[[Internet of Things (IoT)|<- Índice]]
+[<- Índice](Internet%20of%20Things%20(IoT).md)
 #### Código que cifra un texto por *AES*
 
 ```ino
@@ -75,4 +75,4 @@ void loop() {}
 
 # Enlaces
 
-[[Ciberseguridad|<- Anterior]] |
+[<- Anterior](Ciberseguridad.md) |

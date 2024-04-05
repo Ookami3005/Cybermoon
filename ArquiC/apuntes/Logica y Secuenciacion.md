@@ -1,4 +1,4 @@
-[[Arquitectura de Computadoras|<- Índice]]
+[<- Índice](Arquitectura%20de%20Computadoras.md)
 ## Sistema numérico binario
 
 El sistema utilizado en las computadoras para representar y procesar datos e información es el ==sistema numérico binario==, o base 2.
@@ -87,4 +87,4 @@ Si se desea convertir un número decimal a su equivalente octal o hexadecimal, s
 
 ## Aritmética binaria elemental
 
-[[Que es una computadora|<- Anterior]]
+[<- Anterior](Que%20es%20una%20computadora.md) |
