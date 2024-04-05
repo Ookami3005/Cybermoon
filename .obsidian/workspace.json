@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Indice de materias.md",
+                "file": "IoT/Internet of Things (IoT).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Indice de materias.md",
+                "file": "IoT/Internet of Things (IoT).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Indice de materias.md",
+                "file": "IoT/Internet of Things (IoT).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Indice de materias.md"
+                "file": "IoT/Internet of Things (IoT).md"
               }
             }
           }
@@ -149,10 +149,11 @@
   },
   "active": "ba89c12365f03b6d",
   "lastOpenFiles": [
-    "ArquiC/Arquitectura de Computadoras.md",
-    "Indice de materias.md",
-    "LogicaC/Logica Computacional.md",
+    "IoT/apuntes/Introduccion al Internet de las Cosas.md",
     "IoT/Internet of Things (IoT).md",
+    "Indice de materias.md",
+    "ArquiC/Arquitectura de Computadoras.md",
+    "LogicaC/Logica Computacional.md",
     "IoT/apuntes/Ciberseguridad.md",
     "IoT/apuntes/Codigos MQTT.md",
     "IoT/apuntes/Protocolos de mensajeria (MQTT).md",
@@ -164,7 +165,6 @@
     "IoT/apuntes/Conectividad.md",
     "IoT/apuntes/Codigos de señales digitales y analogicas.md",
     "IoT/apuntes/Dispositivos del Internet de las Cosas.md",
-    "IoT/apuntes/Introduccion al Internet de las Cosas.md",
     "IoT/apuntes/Codigos AES.md",
     "ArquiC/apuntes/Logica y Secuenciacion.md",
     "ArquiC/apuntes/Que es una computadora.md",

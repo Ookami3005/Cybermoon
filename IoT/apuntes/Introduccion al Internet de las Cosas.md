@@ -1,4 +1,4 @@
-[<- Índice](Internet%20of%20Things%20(IoT).md)
+[<- Índice](../Internet%20of%20Things%20(IoT).md)
 ## ¿Qué es?
 
 El internet de las cosas (Iot) es el proceso que permite conectar elementos físicos cotidianos al Internet: desde objetos domésticos comunes, como las bombillas de luz, hasta recursos para la atención de la salud, como los dispositivos médicos; tambien abarca prendas y artículos personales.

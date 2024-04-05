@@ -1,11 +1,11 @@
- [<- Indice de materias](Indice%20de%20materias.md)
+ [<- Indice de materias](../Indice%20de%20materias.md)
 
-![hogueraDS](imagenes/hogueraDS.png)
+![hogueraDS](../imagenes/hogueraDS.png)
 
 Notas:
 
-1. [Introduccion al Internet de las Cosas](Introduccion%20al%20Internet%20de%20las%20Cosas.md)
-2. [Dispositivos del Internet de las Cosas](Dispositivos%20del%20Internet%20de%20las%20Cosas.md)
+1. [Introduccion al Internet de las Cosas](apuntes/Introduccion%20al%20Internet%20de%20las%20Cosas.md)
+2. [Dispositivos del Internet de las Cosas](apuntes/Dispositivos%20del%20Internet%20de%20las%20Cosas.md)
 3. [Codigos de señales digitales y analogicas](Codigos%20de%20se%C3%B1ales%20digitales%20y%20analogicas.md)
 ---
 4. [Conectividad](Conectividad.md)
