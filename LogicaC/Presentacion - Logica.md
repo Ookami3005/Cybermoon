@@ -22,6 +22,6 @@ Además de la parte teórica, se realizaran prácticas de programación.
 Habŕa seis tareas y tres exámenes (una tarea por tema y un examen cada 2 temas)
 y 2 reposiciones de exámenes parciales o un final. Tambien habrá seis prácticas
 de programación. Los exámenes contarán el 70% de la calificación, las tareas el
-15% y las prácticas el 15% restante.k
+15% y las prácticas el 15% restante.
 
 [NOTAS](Logica%20Computacional.md)
