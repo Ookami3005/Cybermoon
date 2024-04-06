@@ -1,11 +1,11 @@
-[<- Índice](Internet%20of%20Things%20(IoT).md)
+[<- Índice](../Internet%20of%20Things%20(IoT).md)
 ## ¿Qué es?
 
 *HTTP*, de sus siglas en inglés: "HyperText Transfer Control", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser los documentos *HTML*.
 
 Es un protocolo basado en el principio de cliente-servidor. Las peticiones son enviadas por una entidad: el agente del usuario (*cliente*).
 
-![http.png](http.png)
+![http.png](imagenes/http.png)
 
 #### Características
 
@@ -15,28 +15,28 @@ Es un protocolo basado en el principio de cliente-servidor. Las peticiones son e
 
 #### Componentes
 
-![componentesHttp.png](componentesHttp.png)
+![componentesHttp.png](imagenes/componentesHttp.png)
 
 #### Mensajes
 
 ###### Peticiones
 
-![peticionesHttp.png](peticionesHttp.png)
+![peticionesHttp.png](imagenes/peticionesHttp.png)
 
 ###### Respuestas
 
-![respuestasHttp.png](respuestasHttp.png)
+![respuestasHttp.png](imagenes/respuestasHttp.png)
 
 ## Implementación ESP32
 
-![httpEsp32.png](httpEsp32.png)
+![httpEsp32.png](imagenes/httpEsp32.png)
 
 #### Tipos de servidores
 
 - Síncronos
 - Asíncronos
 
-![tiposDeServidores.png](tiposDeServidores.png)
+![tiposDeServidores.png](imagenes/tiposDeServidores.png)
 
 #### Bibliotecas
 
@@ -49,7 +49,7 @@ Es un protocolo basado en el principio de cliente-servidor. Las peticiones son e
 - *CSS*
 - *JavaScript*
 
-![archivosNecesarios.png](archivosNecesarios.png)
+![archivosNecesarios.png](imagenes/archivosNecesarios.png)
 
 ###### HTML
 
@@ -73,9 +73,9 @@ Las hojas de estilo en cascada (*CSS*) son un lenguaje de hojas de estilo que se
 
 Es una *API* que nos permite realizar comunicación **bidireccional y abierta** entre 2 dispositivos; en este preciso caso, entre un cliente y un servidor
 
-![webSockets.png](webSockets.png)
+![webSockets.png](imagenes/webSockets.png)
 
-![httpsVsWebSocket.png](httpsVsWebSocket.png)
+![httpsVsWebSocket.png](imagenes/httpsVsWebSocket.png)
 
 # Enlaces
 

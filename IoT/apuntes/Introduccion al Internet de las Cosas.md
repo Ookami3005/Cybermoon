@@ -29,7 +29,7 @@ El internet de las cosas (Iot) es el proceso que permite conectar elementos fís
 
 ## Arquitectura
 
-![ArquitecturaIot.png](ArquitecturaIot.png)
+![ArquitecturaIot.png](imagenes/ArquitecturaIot.png)
 
 ---
 
