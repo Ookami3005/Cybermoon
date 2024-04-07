@@ -1,4 +1,4 @@
-[<- Índice](Internet%20of%20Things%20(IoT).md)
+[<- Índice](../Internet%20of%20Things%20(IoT).md)
 ## Bluetooth
 
 Para comunicarse mediante *Bluetooth* con el *ESP32*, utilizamos una aplicación llamada *Serial Bluetooth Terminal*

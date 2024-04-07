@@ -1,4 +1,4 @@
-[<- Notas](Logica%20Computacional.md)
+[<- Notas](../Logica%20Computacional.md)
 
 Aqui se encuentran los reportes o *readmes* de cada práctica realizada para esta materia.
 

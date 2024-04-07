@@ -1,4 +1,4 @@
-[<- Índice](Arquitectura%20de%20Computadoras.md)
+[<- Índice](../Arquitectura%20de%20Computadoras.md)
 ## Sistema numérico binario
 
 El sistema utilizado en las computadoras para representar y procesar datos e información es el ==sistema numérico binario==, o base 2.

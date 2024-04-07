@@ -1,1 +1,1 @@
-[[Logica Computacional|<- Índice]]
+[<- Índice](../Logica%20Computacional.md)

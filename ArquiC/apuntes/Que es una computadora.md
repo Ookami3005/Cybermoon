@@ -1,4 +1,4 @@
-[<- Índice](Arquitectura%20de%20Computadoras.md)
+[<- Índice](../Arquitectura%20de%20Computadoras.md)
 ## Datos, información y el concepto de programa almacenado
 
 Procesar datos extrae su significado. Una computadora es una máquina de procesamiento de datos.
@@ -110,7 +110,7 @@ El **bus** del sistema es la conexión más importante dentro de la computadora,
 
 El ==*ciclo de entrada/proceso/salida*== es la secuencia básica mediante la cual una computadora procesa datos.
 
-![[Ciclo de entrada-proceso-salida.canvas|Ciclo de entrada-proceso-salida]]
+![Ciclo de entrada-proceso-salida](canvas/Ciclo%20de%20entrada-proceso-salida.canvas)
 #### Software
 
 Los programas y datos sólo existen como pulsos electrónicos que se encuentran en la memoria, y se les conoce con el nombre genérico de *==software==*.
