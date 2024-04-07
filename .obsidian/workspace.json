@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IoT/Internet of Things (IoT).md",
+                "file": "ArquiC/reportes/Practica 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c036f26b9fd597e",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IoT/Internet of Things (IoT).md",
+                "file": "ArquiC/reportes/Practica 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IoT/Internet of Things (IoT).md",
+                "file": "ArquiC/reportes/Practica 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IoT/Internet of Things (IoT).md"
+                "file": "ArquiC/reportes/Practica 4.md"
               }
             }
           }
@@ -149,8 +150,11 @@
   },
   "active": "ba89c12365f03b6d",
   "lastOpenFiles": [
-    "IoT/apuntes/Introduccion al Internet de las Cosas.md",
+    "ArquiC/reportes/Indice de reportes Arquitectura.md",
+    "ArquiC/reportes/Practica 4.md",
     "IoT/Internet of Things (IoT).md",
+    "ArquiC/reportes",
+    "IoT/apuntes/Introduccion al Internet de las Cosas.md",
     "Indice de materias.md",
     "ArquiC/Arquitectura de Computadoras.md",
     "LogicaC/Logica Computacional.md",
@@ -184,8 +188,6 @@
     "IoT/imagenes/encriptacionAlternativos.png",
     "IoT/imagenes/encriptacionAlgoritmos.png",
     "IoT/imagenes/encriptaciónClaves.png",
-    "Indice.md",
-    "LogicaC/apuntes/Induccion y Recursion.md",
     "IoT/imagenes",
     "IoT/apuntes",
     "Tuberia.canvas",
@@ -195,7 +197,6 @@
     "IoT",
     "imagenes",
     "ArquiC",
-    "LogicaC/apuntes/induccionyrecursion",
-    "LogicaC/apuntes"
+    "LogicaC/apuntes/induccionyrecursion"
   ]
 }
