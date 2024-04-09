@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bde78488624fa990",
@@ -149,8 +148,11 @@
   },
   "active": "9bca6e1bd2c65f35",
   "lastOpenFiles": [
-    "IoT/Internet of Things (IoT).md",
+    "LogicaC/tareas/Tareas.md",
+    "LogicaC/Logica Computacional.md",
+    "LogicaC/Sin título",
     "LogicaC/tareas/Tarea 3.md",
+    "IoT/Internet of Things (IoT).md",
     "LogicaC/tareas",
     "IoT/apuntes/Alarmas y Control.md",
     "IoT/apuntes/Codigos AES.md",
