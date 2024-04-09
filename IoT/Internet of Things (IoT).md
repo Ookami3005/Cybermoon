@@ -21,3 +21,10 @@ Notas:
 ---
 12. [Ciberseguridad](apuntes/Ciberseguridad.md)
 13. [Codigos AES](apuntes/Codigos%20AES.md)
+---
+14. [Almacenamiento](apuntes/Almacenamiento.md)
+15. [Alarmas y Control](apuntes/Alarmas%20y%20Control.md)
+16. [Codigos de Control PID](apuntes/Codigos%20de%20Control%20PID.md)
+---
+17. [Bots](apuntes/Bots.md)
+18. [Codigos Bots](apuntes/Codigos%20Bots.md)

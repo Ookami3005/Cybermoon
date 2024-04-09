@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "2e2a560fcb1d8bd7",
+    "type": "split",
+    "children": [
+      {
+        "id": "428cb415afe3ecb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bca6e1bd2c65f35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LogicaC/tareas/Tarea 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f78283d302c4fcdb",
+    "type": "split",
+    "children": [
+      {
+        "id": "28ffbfac10ba98c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32bc390c316897cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14409ea1e0b82d77",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f7ad0b81d1f0efec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bde78488624fa990",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8a4bf68680b0e39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8abde75547c85ed6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LogicaC/tareas/Tarea 3.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "02ad908885df5ebc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LogicaC/tareas/Tarea 3.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3b2843b0adff001c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9b1ddfc6712b7b6f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LogicaC/tareas/Tarea 3.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "9bca6e1bd2c65f35",
+  "lastOpenFiles": [
+    "IoT/Internet of Things (IoT).md",
+    "LogicaC/tareas/Tarea 3.md",
+    "LogicaC/tareas",
+    "IoT/apuntes/Alarmas y Control.md",
+    "IoT/apuntes/Codigos AES.md",
+    "IoT/apuntes/Codigos de Control PID.md",
+    "IoT/apuntes/Bots.md",
+    "IoT/apuntes/Codigos Bots.md",
+    "IoT/apuntes/Almacenamiento.md",
+    "ArquiC/apuntes/Que es una computadora.md",
+    "ArquiC/apuntes/canvas/Ciclo de entrada-proceso-salida.canvas",
+    "ArquiC/Arquitectura de Computadoras.md",
+    "Indice de materias.md",
+    "IoT/apuntes/Protocolos de mensajeria (MQTT).md"
+  ]
+}
