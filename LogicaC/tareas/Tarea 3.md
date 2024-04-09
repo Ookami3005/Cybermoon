@@ -10,7 +10,7 @@
 
 3. Realiza las siguientes sustituciones:
 	1. $((\exists x. \; P_1^3(x,y,z))) \Rightarrow P_1^1(x))_{[z \: := \: f_1^2(x,y)]}$
-	2. $(((\forall x. \; P_1^3(x,y,z)) \land (\forall y. \; P_1^3(x,y,z)) \land (\exists z. \; P_1^3(x,y,z)))_{x \: := \: f_1^2(y,z)})_{z \: := \: f_1^2(y,x)}$	
+	2. $(((\forall x. \; P_1^3(x,y,z)) \land (\forall y. \; P_1^3(x,y,z)) \land (\exists z. \; P_1^3(x,y,z)))_{[x \: := \: f_1^2(y,z)]})_{[z \: := \: f_1^2(y,x)]}$	
 
 4. Dada la siguiente interpretación, dí si las fórmulas *(a)-(e)* son satisfechas, verdaderas, válidas (o ninguna de las anteriores):
 
@@ -27,4 +27,13 @@
 - $P_1^2(f_2^1(y), c) \land P_1^2(c, f_1^1(x)).$
 
 5. Encuentra un modelo para las siguientes fórmulas:
+
+	1. $\forall x. \; (\exists y. \; P_1^2(y,x))$
+	2. $\exists x. \; \neg P_2^2(x,c) \land P_1^2(x,c)$
+	3. $\neg \forall x. \; P_2^2(c,f_1^1(x))$
+	4. $\neg \exists x. \; P_2^2(x,f_1^1(x))$
+
 6. Demuestra los siguientes teoremas de deducción natural:
+
+	1. $\vdash_N (\exists x. \; P_1^1(x) \lor P_2^1(x)) \iff (\exists x. \; P_1^1(x)) \lor (\exists x. \; P_2^1(x));$
+	2. $\forall x. \; (\exists y. \; P_1^1(x) \Rightarrow P_2^1(y)) \quad \vdash_N \quad \neg (\exists x. \; (\forall y. \; P_1^1(x) \land \neg P_2^1(y))).$
