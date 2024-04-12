@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "428cb415afe3ecb2",
+        "id": "1ff3ba6459530160",
         "type": "tabs",
         "children": [
           {
-            "id": "9bca6e1bd2c65f35",
+            "id": "86daa4de00db332e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bde78488624fa990",
@@ -147,12 +146,22 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9bca6e1bd2c65f35",
+  "active": "86daa4de00db332e",
   "lastOpenFiles": [
     "LogicaC/tareas/Tareas.md",
     "LogicaC/Logica Computacional.md",
-    "LogicaC/Sin título",
+    "Indice de materias.md",
+    "ArquiC/apuntes/Logica Secuencial.md",
+    "ArquiC/apuntes/imagenes/flip-flop.png",
+    "ArquiC/apuntes/imagenes/tablaContador.png",
+    "ArquiC/apuntes/imagenes/diagramaContador.png",
+    "ArquiC/apuntes/imagenes/diagramaSemaforo.png",
+    "ArquiC/apuntes/imagenes",
+    "ArquiC/apuntes/imagenes/semaforo.png",
+    "ArquiC/apuntes/canvas/Sin título.canvas",
+    "ArquiC/Arquitectura de Computadoras.md",
     "LogicaC/tareas/Tarea 3.md",
+    "LogicaC/Sin título",
     "IoT/Internet of Things (IoT).md",
     "LogicaC/tareas",
     "IoT/apuntes/Alarmas y Control.md",
@@ -163,8 +172,6 @@
     "IoT/apuntes/Almacenamiento.md",
     "ArquiC/apuntes/Que es una computadora.md",
     "ArquiC/apuntes/canvas/Ciclo de entrada-proceso-salida.canvas",
-    "ArquiC/Arquitectura de Computadoras.md",
-    "Indice de materias.md",
     "IoT/apuntes/Protocolos de mensajeria (MQTT).md"
   ]
 }
