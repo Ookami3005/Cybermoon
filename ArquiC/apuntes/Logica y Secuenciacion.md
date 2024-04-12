@@ -87,4 +87,6 @@ Si se desea convertir un número decimal a su equivalente octal o hexadecimal, s
 
 ## Aritmética binaria elemental
 
+
+
 [<- Anterior](Que%20es%20una%20computadora.md) |
