@@ -1,4 +1,4 @@
-[<- Índice](../Internet%20of%20Things%20(IoT).md)
+[<- Índice](InternetOfThings.md)
 
 ## ¿Qué es?
 

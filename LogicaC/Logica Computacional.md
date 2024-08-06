@@ -2,7 +2,7 @@
 
 ![hogueraDS.png](../imagenes/hogueraDS.png)
 
-- [Presentacion](Presentacion%20-%20Logica.md)
+- [Presentacion](Presentacion-Logica.md)
 - [Reportes](reportes/Indice%20de%20reportes%20Logica.md)
 - [Tareas](tareas/Tareas.md)
 

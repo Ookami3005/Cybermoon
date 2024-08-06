@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "61cfb52a7a8ef9b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f07e6dc67ef1c32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da6b3c8b9882eac1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "InteligenciaArtificial/05_08_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a8793bf4145b8d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "5548d0a9f06e005c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "409f24c53b88eaea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "521aba79ce626bd3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "df8775306d0bc1ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "31ec043fbea66520",
+    "type": "split",
+    "children": [
+      {
+        "id": "44e5854378e7c1d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b618c0eef14cdb6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "InteligenciaArtificial/05_08_2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e1a3001dbbea8b0e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "InteligenciaArtificial/05_08_2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "265db17bcfdf11d1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9f3b94a8a0416fa5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "InteligenciaArtificial/05_08_2024.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "da6b3c8b9882eac1",
+  "lastOpenFiles": [
+    "InteligenciaArtificial/Presentacion-IA.md",
+    "AnalisisAlgoritmos/Presentacion-Analisis.md",
+    "ComputacionDistribuida/Presentacion-Distribuida.md",
+    "IoT/InternetOfThings.md",
+    "ArquiC/Presentacion-Arquitectura.md",
+    "ArquiC/Arquitectura de Computadoras.md",
+    "LogicaC/Presentacion-Logica.md",
+    "InteligenciaArtificial/05_08_2024.md",
+    "HFC/Intro.md",
+    "ComputacionDistribuida",
+    "HFC",
+    "AnalisisAlgoritmos",
+    "Indice de materias.md",
+    "InteligenciaArtificial"
+  ]
+}

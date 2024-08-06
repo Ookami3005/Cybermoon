@@ -1,4 +1,4 @@
-[<- Índice](../Internet%20of%20Things%20(IoT).md)
+[<- Índice](InternetOfThings.md)
 ## ¿Qué es?
 
 *HTTP*, de sus siglas en inglés: "HyperText Transfer Control", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser los documentos *HTML*.

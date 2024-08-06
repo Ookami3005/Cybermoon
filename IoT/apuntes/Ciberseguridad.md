@@ -1,4 +1,4 @@
-[<- Índice](../Internet%20of%20Things%20(IoT).md)
+[<- Índice](InternetOfThings.md)
 ## Ciberseguridad y ataques cibernéticos
 
 Un **ataque cibernético** es cuando un individuo o una organización intenta deliberada y maliciosamente violar el sistema de información de otro individuo u organización. Si bien suele haber un objetivo económico, algunos ataques recientes muestran la destrucción de datos como un objetivo.
