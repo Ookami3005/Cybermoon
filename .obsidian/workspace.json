@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "InteligenciaArtificial/05_08_2024.md",
+                "file": "IoT/InternetOfThings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "InteligenciaArtificial/05_08_2024.md",
+                "file": "IoT/InternetOfThings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "InteligenciaArtificial/05_08_2024.md",
+                "file": "IoT/InternetOfThings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "InteligenciaArtificial/05_08_2024.md"
+                "file": "IoT/InternetOfThings.md"
               }
             }
           }
@@ -148,19 +148,36 @@
   },
   "active": "da6b3c8b9882eac1",
   "lastOpenFiles": [
+    "IoT/apuntes/Bots.md",
+    "IoT/apuntes/CodigosBots.md",
+    "IoT/apuntes/CodigosControlPID.md",
+    "IoT/apuntes/AlarmasYControl.md",
+    "IoT/apuntes/CodigosAES.md",
+    "IoT/apuntes/Ciberseguridad.md",
+    "IoT/apuntes/CodigosMQTT.md",
+    "IoT/apuntes/ProtocolosDeMensajeria_MQTT.md",
+    "IoT/apuntes/CodigosAvanzadosHTTP.md",
+    "IoT/apuntes/CodigosbasicosHTTP.md",
+    "IoT/apuntes/SPIFFS.md",
+    "IoT/apuntes/ProtocolosDeMensajeria_HTTP.md",
+    "IoT/apuntes/CodigosConectividad.md",
+    "IoT/apuntes/Conectividad.md",
+    "IoT/apuntes/CodigosSeñalesDigitalesYAnalogicas.md",
+    "IoT/apuntes/DispositivosInternetDeLasCosas.md",
+    "IoT/apuntes/Introduccion.md",
+    "IoT/InternetOfThings.md",
+    "IoT/apuntes/Almacenamiento.md",
+    "IndiceDeMaterias.md",
+    "ArquiC/ArquitecturaDeComputadoras.md",
+    "ArquiC",
+    "LogicaC/Presentacion-Logica.md",
+    "LogicaC/LogicaComputacional.md",
+    "InteligenciaArtificial/05_08_2024.md",
     "InteligenciaArtificial/Presentacion-IA.md",
     "AnalisisAlgoritmos/Presentacion-Analisis.md",
-    "ComputacionDistribuida/Presentacion-Distribuida.md",
-    "IoT/InternetOfThings.md",
-    "ArquiC/Presentacion-Arquitectura.md",
-    "ArquiC/Arquitectura de Computadoras.md",
-    "LogicaC/Presentacion-Logica.md",
-    "InteligenciaArtificial/05_08_2024.md",
-    "HFC/Intro.md",
     "ComputacionDistribuida",
     "HFC",
     "AnalisisAlgoritmos",
-    "Indice de materias.md",
     "InteligenciaArtificial"
   ]
 }

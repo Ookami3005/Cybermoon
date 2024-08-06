@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## Arquitectura
 
@@ -98,4 +98,4 @@ Para el WiFi en el ESP32, manejaremos principalmente 3 modos:
 
 # Enlaces
 
-[<- Anterior](Codigos%20de%20se%C3%B1ales%20digitales%20y%20analogicas.md) | [Siguiente ->](Codigos%20de%20Conectividad.md)
+[<- Anterior](CodigosSeñalesDigitalesYAnalogicas.md) | [Siguiente ->](CodigosConectividad.md)

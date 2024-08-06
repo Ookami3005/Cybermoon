@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## LEDS
 
@@ -1133,4 +1133,4 @@ setInterval(function () {
 
 # Enlace
 
-[<- Anterior](Codigos%20b%C3%A1sicos%20HTTP.md) | [Siguiente ->](Protocolos%20de%20mensajeria%20(MQTT).md)
+[<- Anterior](CodigosbasicosHTTP.md) | [Siguiente ->](ProtocolosDeMensajeria_MQTT.md)

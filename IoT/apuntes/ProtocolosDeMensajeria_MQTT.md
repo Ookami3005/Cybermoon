@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## Protocolos de mensajería
 
@@ -33,4 +33,4 @@ El *broker* que utiliza el *ESP32* es *Mosquitto*
 
 # Enlaces
 
-[<- Anterior](Codigos%20avanzados%20HTTP.md) | [Siguiente ->](Codigos%20MQTT.md)
+[<- Anterior](CodigosAvanzadosHTTP.md) | [Siguiente ->](CodigosMQTT.md)

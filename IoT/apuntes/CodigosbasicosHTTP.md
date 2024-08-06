@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## HTTP
 #### Devolviendo texto plano a las peticiones del cliente
@@ -457,4 +457,4 @@ void loop() {}
 ```
 # Enlaces
 
-[<- Anterior](SPIFFS.md) | [Siguiente ->](Codigos%20avanzados%20HTTP.md)
+[<- Anterior](SPIFFS.md) | [Siguiente ->](CodigosAvanzadosHTTP.md)

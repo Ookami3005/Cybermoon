@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 ## Bluetooth
 
 Para comunicarse mediante *Bluetooth* con el *ESP32*, utilizamos una aplicación llamada *Serial Bluetooth Terminal*
@@ -495,4 +495,4 @@ void loop() {
 
 # Enlaces
 
-[<- Anterior](Conectividad.md) | [Siguiente ->](Protocolos%20de%20mensajeria%20(HTTP).md)
+[<- Anterior](Conectividad.md) | [Siguiente ->](ProtocolosDeMensajeria_HTTP.md)

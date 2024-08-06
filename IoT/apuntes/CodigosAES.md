@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 #### Código que cifra un texto por *AES*
 
 ```ino
@@ -75,4 +75,4 @@ void loop() {}
 
 # Enlaces
 
-[<- Anterior](Ciberseguridad.md) | [Siguiente ->](Alarmas%20y%20Control.md)
+[<- Anterior](Ciberseguridad.md) | [Siguiente ->](AlarmasYControl.md)

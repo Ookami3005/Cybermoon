@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## ¿Qué es?
 
@@ -16,4 +16,4 @@ Los archivos que utilizaremos se deben almacenar en una carpeta llamda `data`.
 
 # Enlaces
 
-[<- Anterior](Protocolos%20de%20mensajeria%20(HTTP).md) | [Siguiente ->](Codigos%20b%C3%A1sicos%20HTTP.md)
+[<- Anterior](ProtocolosDeMensajeria_HTTP.md) | [Siguiente ->](CodigosbasicosHTTP.md)

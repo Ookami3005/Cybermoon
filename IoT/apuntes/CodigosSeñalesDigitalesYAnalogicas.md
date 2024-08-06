@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## Salidas digitales
 
@@ -473,4 +473,4 @@ void loop() {
 
 # Enlaces
 
-[<- Anterior](Dispositivos%20del%20Internet%20de%20las%20Cosas.md) | [Siguiente ->](Conectividad.md)
+[<- Anterior](DispositivosInternetDeLasCosas.md) | [Siguiente ->](Conectividad.md)

@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 ## Ciberseguridad y ataques cibernéticos
 
 Un **ataque cibernético** es cuando un individuo o una organización intenta deliberada y maliciosamente violar el sistema de información de otro individuo u organización. Si bien suele haber un objetivo económico, algunos ataques recientes muestran la destrucción de datos como un objetivo.
@@ -105,4 +105,4 @@ La encriptación de datos es el proceso de cifrado de información que permite p
 
 # Enlaces
 
-[<- Anterior](Codigos%20MQTT.md) | [Siguiente ->](Codigos%20AES.md)
+[<- Anterior](CodigosMQTT.md) | [Siguiente ->](CodigosAES.md)

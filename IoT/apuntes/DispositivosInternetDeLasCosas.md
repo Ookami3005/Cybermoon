@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 
 ## Señales
 
@@ -126,4 +126,4 @@ Es un sistema de computación diseñado para realizar funciones específicas, y 
 ![diferentesModulos.png](imagenes/diferentesModulos.png)
 
 # Enlaces
-[<- Anterior](Introduccion%20al%20Internet%20de%20las%20Cosas.md) | [Siguiente ->](Codigos%20de%20se%C3%B1ales%20digitales%20y%20analogicas.md)
+[<- Anterior](Introduccion.md) | [Siguiente ->](CodigosSeñalesDigitalesYAnalogicas.md)

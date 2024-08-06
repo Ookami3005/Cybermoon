@@ -1,4 +1,4 @@
-[<- Índice](InternetOfThings.md)
+[<- Índice](../InternetOfThings.md)
 #### Configuración básica del MQTT
 
 ```ino
@@ -161,4 +161,4 @@ void loop() {
 
 # Enlaces
 
-[<- Anterior](Protocolos%20de%20mensajeria%20(MQTT).md) | [Siguiente ->](Ciberseguridad.md)
+[<- Anterior](ProtocolosDeMensajeria_MQTT.md) | [Siguiente ->](Ciberseguridad.md)

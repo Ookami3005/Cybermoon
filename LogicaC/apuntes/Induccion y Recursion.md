@@ -1,4 +1,4 @@
-[<- Índice](../Logica%20Computacional.md)
+[<- Índice](LogicaComputacional.md)
 # Conjuntos inductivos
 
 ### Definiciones inductivas
