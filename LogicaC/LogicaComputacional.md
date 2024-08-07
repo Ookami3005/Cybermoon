@@ -1,4 +1,4 @@
-[<- Índice de materias](IndiceDeMaterias.md)
+[<- Índice de materias](../IndiceDeMaterias.md)
 
 ![hogueraDS.png](../imagenes/hogueraDS.png)
 

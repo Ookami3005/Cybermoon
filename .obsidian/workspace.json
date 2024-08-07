@@ -8,15 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "da6b3c8b9882eac1",
+            "id": "d4847c3d9014472a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IoT/InternetOfThings.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IoT/InternetOfThings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IoT/InternetOfThings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "IoT/InternetOfThings.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,21 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "da6b3c8b9882eac1",
+  "active": "d4847c3d9014472a",
   "lastOpenFiles": [
+    "HFC/SistemasUNIX/tareas/tarea1.md",
+    "IndiceDeMaterias.md",
+    "ArquiC/ArquitecturaDeComputadoras.md",
+    "LogicaC/LogicaComputacional.md",
+    "TODO.md",
+    "AnalisisAlgoritmos/apuntes/07_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/06_08_2024.md",
+    "HFC/SistemasUNIX/tareas",
+    "HFC/SistemasUNIX/apuntes",
+    "HFC/SistemasUNIX",
+    "AnalisisAlgoritmos/apuntes",
+    "AnalisisAlgoritmos/apuntes/06_08_2024.md",
+    "IoT/InternetOfThings.md",
     "IoT/apuntes/Bots.md",
     "IoT/apuntes/CodigosBots.md",
     "IoT/apuntes/CodigosControlPID.md",
@@ -165,16 +170,7 @@
     "IoT/apuntes/CodigosSeñalesDigitalesYAnalogicas.md",
     "IoT/apuntes/DispositivosInternetDeLasCosas.md",
     "IoT/apuntes/Introduccion.md",
-    "IoT/InternetOfThings.md",
-    "IoT/apuntes/Almacenamiento.md",
-    "IndiceDeMaterias.md",
-    "ArquiC/ArquitecturaDeComputadoras.md",
     "ArquiC",
-    "LogicaC/Presentacion-Logica.md",
-    "LogicaC/LogicaComputacional.md",
-    "InteligenciaArtificial/05_08_2024.md",
-    "InteligenciaArtificial/Presentacion-IA.md",
-    "AnalisisAlgoritmos/Presentacion-Analisis.md",
     "ComputacionDistribuida",
     "HFC",
     "AnalisisAlgoritmos",

@@ -1,7 +1,7 @@
 ![fs](imagenes/firelinkshrine.png)
 
 - Cuarto semestre
-	- [Logica Computacional](LogicaComputacional.md)
-	- [Arquitectura de Computadoras](ArquitecturaDeComputadoras.md)
+	- [Logica Computacional](LogicaC/LogicaComputacional.md)
+	- [Arquitectura de Computadoras](ArquiC/ArquitecturaDeComputadoras.md)
 - Optativas
-	- [Introducción al Internet of Things (IoT)](InternetOfThings.md) 
+	- [Introducción al Internet of Things (IoT)](IoT/InternetOfThings.md) 
