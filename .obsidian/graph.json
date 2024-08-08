@@ -32,7 +32,14 @@
       "query": "path:LogicaC  ",
       "color": {
         "a": 1,
-        "rgb": 109825
+        "rgb": 358917
+      }
+    },
+    {
+      "query": "path:HFC",
+      "color": {
+        "a": 1,
+        "rgb": 518422
       }
     }
   ],
@@ -46,6 +53,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 42,
-  "scale": 0.5911581039877776,
+  "scale": 0.9359954577078632,
   "close": true
 }
