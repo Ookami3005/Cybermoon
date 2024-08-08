@@ -1,0 +1,2 @@
+- [Historia de UNIX y comandos básicos](apuntes/HFC06_08_2024.md)
+- [Gestión de Software, Usuarios y grupos y más comandos utiles](apuntes/HFC07_08_2024.md)

@@ -41,6 +41,20 @@
         "a": 1,
         "rgb": 518422
       }
+    },
+    {
+      "query": "path:AnalisisAlgoritmos  ",
+      "color": {
+        "a": 1,
+        "rgb": 16384000
+      }
+    },
+    {
+      "query": "path:InteligenciaArtificial  ",
+      "color": {
+        "a": 1,
+        "rgb": 16251662
+      }
     }
   ],
   "collapse-display": true,
@@ -53,6 +67,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 42,
-  "scale": 0.9359954577078632,
+  "scale": 0.6905661666446123,
   "close": true
 }

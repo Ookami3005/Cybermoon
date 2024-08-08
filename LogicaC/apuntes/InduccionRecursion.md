@@ -1,4 +1,4 @@
-[<- Índice](LogicaComputacional.md)
+[<- Índice](../LogicaComputacional.md)
 # Conjuntos inductivos
 
 ### Definiciones inductivas
@@ -285,4 +285,4 @@ Finalmente, sea $h : X \rightarrow B$ una función. Entonces, existe una única 
 
 Sea $X_+$ un conjunto generado libre e inductivamente por $X$ y $F$. Para toda $f_k^n \in F$, si $x_1,...,x_n \in X_i$ , entonces $f_k^n (x_1, ... , x_n) \notin X_i$
 
-[Siguiente ->](Calculo%20de%20proposiciones.md)
+[Siguiente ->](CalculoProposiciones.md)

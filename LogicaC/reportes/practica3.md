@@ -1,4 +1,4 @@
-[<- Índice](Indice%20de%20reportes%20Logica.md)
+[<- Índice](indiceReportesLogica.md)
 # Formas normales
 
 ## Integrantes
