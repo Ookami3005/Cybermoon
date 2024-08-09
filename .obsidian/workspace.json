@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b52434f386ea6603",
+            "id": "ab728a21b571e241",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IndiceDeMaterias.md",
+                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IndiceDeMaterias.md",
+                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IndiceDeMaterias.md",
+                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IndiceDeMaterias.md"
+                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md"
               }
             }
           }
@@ -146,43 +147,46 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "b52434f386ea6603",
+  "active": "ab728a21b571e241",
   "lastOpenFiles": [
+    "TODO.md",
+    "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
+    "HFC/SistemasUNIX/SistemasUNIX.md",
+    "HFC/HackingFightClub.md",
+    "IndiceDeMaterias.md",
+    "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
+    "HFC/SistemasUNIX/tareas/tarea1.md",
+    "tareas/tarea2.md",
+    "tareas",
+    "HFC/SistemasUNIX/tareas/overthewire.md",
+    "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
+    "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
+    "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png",
+    "HFC/SistemasUNIX/tareas/tarea2/imagenes",
+    "HFC/SistemasUNIX/tareas/tarea2",
+    "AnalisisAlgoritmos/apuntes/AA08_08_2024.md",
     "LogicaC/apuntes/CalculoProposiciones.md",
     "LogicaC/apuntes/InduccionRecursion.md",
     "LogicaC/LogicaComputacional.md",
     "LogicaC/reportes/indiceReportesLogica.md",
     "LogicaC/Presentacion-Logica.md",
     "LogicaC/reportes/practica3.md",
-    "IndiceDeMaterias.md",
-    "TODO.md",
     "InteligenciaArtificial/InteligenciaArtificial.md",
     "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
     "AnalisisAlgoritmos/Presentacion-Analisis.md",
     "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
     "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
     "ArquiC/ArquitecturaDeComputadoras.md",
-    "HFC/HackingFightClub.md",
     "InteligenciaArtificial/Presentacion-IA.md",
     "InteligenciaArtificial/apuntes/IA05_08_2024.md",
     "InteligenciaArtificial/apuntes",
-    "HFC/SistemasUNIX/SistemasUNIX.md",
     "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
-    "HFC/SistemasUNIX/tareas/tarea1.md",
     "HFC/SistemasUNIX/tareas",
     "HFC/SistemasUNIX/apuntes",
     "HFC/SistemasUNIX",
     "AnalisisAlgoritmos/apuntes",
-    "IoT/InternetOfThings.md",
-    "IoT/apuntes/Bots.md",
-    "IoT/apuntes/CodigosBots.md",
-    "IoT/apuntes/CodigosControlPID.md",
-    "IoT/apuntes/AlarmasYControl.md",
     "ArquiC",
-    "ComputacionDistribuida",
-    "HFC",
-    "AnalisisAlgoritmos",
-    "InteligenciaArtificial"
+    "ComputacionDistribuida"
   ]
 }
