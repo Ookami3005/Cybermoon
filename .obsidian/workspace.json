@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md"
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md"
               }
             }
           }
@@ -149,17 +149,18 @@
   },
   "active": "ab728a21b571e241",
   "lastOpenFiles": [
-    "TODO.md",
+    "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
+    "HFC/SistemasUNIX/SistemasUNIX.md",
+    "HFC/SistemasUNIX/tareas/overthewire.md",
     "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
     "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
-    "HFC/SistemasUNIX/SistemasUNIX.md",
+    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
+    "TODO.md",
     "HFC/HackingFightClub.md",
     "IndiceDeMaterias.md",
-    "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
     "HFC/SistemasUNIX/tareas/tarea1.md",
     "tareas/tarea2.md",
     "tareas",
-    "HFC/SistemasUNIX/tareas/overthewire.md",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png",
@@ -181,7 +182,6 @@
     "InteligenciaArtificial/Presentacion-IA.md",
     "InteligenciaArtificial/apuntes/IA05_08_2024.md",
     "InteligenciaArtificial/apuntes",
-    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
     "HFC/SistemasUNIX/tareas",
     "HFC/SistemasUNIX/apuntes",
     "HFC/SistemasUNIX",
