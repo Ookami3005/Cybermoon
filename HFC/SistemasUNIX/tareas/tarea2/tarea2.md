@@ -16,6 +16,6 @@
 
 ## Imágenes encontradas
 
-![capibara.jpg](capibara.jpg)
+![capibara.jpg](imágenes/capibara.jpg)
 
-![coco.jpg](coco.jpg)
+![coco.jpg](imágenes/coco.jpg)
