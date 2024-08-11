@@ -17,3 +17,5 @@ Aqui almacenaré las contraseñas que vaya descubriendo de los distintos juegos 
 10. FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 11. dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 12. 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+13. FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+14. MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
