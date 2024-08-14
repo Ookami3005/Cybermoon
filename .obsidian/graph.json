@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 16251662
       }
+    },
+    {
+      "query": "path:LenguajesProgramacion  ",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
     }
   ],
   "collapse-display": true,

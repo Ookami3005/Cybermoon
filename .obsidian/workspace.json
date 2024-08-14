@@ -8,15 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "02edaaa724aeb545",
+            "id": "85a585f8843c6f11",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "HFC/SistemasUNIX/SistemasUNIX.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,10 +138,16 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "02edaaa724aeb545",
+  "active": "85a585f8843c6f11",
   "lastOpenFiles": [
-    "HFC/SistemasUNIX/tareas/tarea3.md",
+    "LenguajesProgramacion/apuntes/LPNotaClase01.md",
+    "LenguajesProgramacion/apuntes/LPNotaClase02.md",
+    "LenguajesProgramacion/LenguajesProgramacion.md",
+    "LenguajesProgramacion/Presentacion-LenguajesProgramacion.md",
+    "LenguajesProgramacion/apuntes",
     "HFC/SistemasUNIX/SistemasUNIX.md",
+    "LenguajesProgramacion",
+    "HFC/SistemasUNIX/tareas/tarea3.md",
     "HFC/HackingFightClub.md",
     "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
     "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
@@ -177,16 +174,10 @@
     "LogicaC/LogicaComputacional.md",
     "LogicaC/reportes/indiceReportesLogica.md",
     "LogicaC/Presentacion-Logica.md",
-    "LogicaC/reportes/practica3.md",
-    "InteligenciaArtificial/InteligenciaArtificial.md",
-    "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
-    "AnalisisAlgoritmos/Presentacion-Analisis.md",
     "InteligenciaArtificial/apuntes",
     "HFC/SistemasUNIX/tareas",
     "HFC/SistemasUNIX/apuntes",
     "HFC/SistemasUNIX",
-    "AnalisisAlgoritmos/apuntes",
-    "ArquiC",
-    "ComputacionDistribuida"
+    "AnalisisAlgoritmos/apuntes"
   ]
 }
