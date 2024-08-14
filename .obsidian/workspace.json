@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7f07e6dc67ef1c32",
+        "id": "4adf9bb26f9ea25c",
         "type": "tabs",
         "children": [
           {
-            "id": "4889634bd57a593b",
+            "id": "02edaaa724aeb545",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ecc448a39e6886f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HFC/SistemasUNIX/tareas/tarea3.md",
-                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md"
+                "file": "HFC/SistemasUNIX/SistemasUNIX.md"
               }
             }
           }
@@ -159,18 +147,22 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "4889634bd57a593b",
+  "active": "02edaaa724aeb545",
   "lastOpenFiles": [
-    "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
     "HFC/SistemasUNIX/tareas/tarea3.md",
     "HFC/SistemasUNIX/SistemasUNIX.md",
-    "HFC/SistemasUNIX/tareas/tarea1.md",
-    "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
-    "tareas/tarea2.md",
     "HFC/HackingFightClub.md",
+    "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
+    "HFC/SistemasUNIX/tareas/tarea2/tarea2.md",
+    "HFC/SistemasUNIX/tareas/tarea1.md",
+    "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC12_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC13_08_2024.md",
+    "AnalisisAlgoritmos/apuntes/AA12_08_2024.md",
+    "AnalisisAlgoritmos/apuntes/AA08_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
+    "tareas/tarea2.md",
     "TODO.md",
     "IndiceDeMaterias.md",
     "HFC/SistemasUNIX/tareas/overthewire.md",
@@ -180,7 +172,6 @@
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes",
     "HFC/SistemasUNIX/tareas/tarea2",
-    "AnalisisAlgoritmos/apuntes/AA08_08_2024.md",
     "LogicaC/apuntes/CalculoProposiciones.md",
     "LogicaC/apuntes/InduccionRecursion.md",
     "LogicaC/LogicaComputacional.md",
@@ -190,9 +181,6 @@
     "InteligenciaArtificial/InteligenciaArtificial.md",
     "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
     "AnalisisAlgoritmos/Presentacion-Analisis.md",
-    "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
-    "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
-    "ArquiC/ArquitecturaDeComputadoras.md",
     "InteligenciaArtificial/apuntes",
     "HFC/SistemasUNIX/tareas",
     "HFC/SistemasUNIX/apuntes",
