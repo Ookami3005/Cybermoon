@@ -10,7 +10,7 @@
 - [Gestión de Software, Usuarios y grupos y más comandos utiles](apuntes/HFC07_08_2024.md)
 - [sudo, Permisos, Variables de Entorno y Redes](apuntes/HFC08_08_2024.md)
 - [Herramientas de busqueda y Bash Scripting](apuntes/HFC09_08_2024.md)
-- [Procesos y Cron](HFC12_08_2024.md)
+- [Procesos y Cron](apuntes/HFC12_08_2024.md)
 
 ## Tareas
 
