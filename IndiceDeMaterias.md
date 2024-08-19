@@ -14,6 +14,7 @@
 	
 - Quinto semestre
 	- [Analisis de Algoritmos](AnalisisAlgoritmos/AnalisisAlgoritmos.md)
+	- [Lenguajes de Programación](LenguajesProgramacion/LenguajesProgramacion.md)
 
 - Sexto semestre
 	- [Inteligencia Artificial](InteligenciaArtificial/InteligenciaArtificial.md)

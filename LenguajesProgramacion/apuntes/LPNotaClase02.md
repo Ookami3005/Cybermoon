@@ -113,8 +113,20 @@ Aunque son un componente clave de los lenguajes de progrmación, su estudio reca
 
 #### Ejemplo
 
-Supongamos que estamos desarrollando una aplicación web en *Python*. En lugar de construir todo desde 0, decidimos usar *Django*, un *framework* de alto nivel. Esta decisión es un ejemplo de pragmática donde *Django* ofrece un conjunto de herramientas y convenciones que facilitan y aceleran el desarrollo
+Supongamos que estamos desarrollando una aplicación web en *Python*. En lugar de construir todo desde 0, decidimos usar *Django*, un *framework* de alto nivel.
+Esta decisión es un ejemplo de pragmática donde *Django* ofrece un conjunto de herramientas y convenciones que facilitan y aceleran el desarrollo.
+
+
+- **Reutilización de código** : *Django* proporciona componentes reutilizables, reduciendo el tiempo de desarrollo.
+
+- **Convenciones y eficiencia** : Sigue las convenciones de *Django* para la creación de modelos, lo que facilita la colaboración y el mantenimiento de código por parte de otras personas.
+
+- **Funciones integradas** :  Incluye funciones pragmáticas para asegurar el resultado de cierto tipo de operaciones
+
+- **Comunidad y documentación** : *Django* tiene una amplia comunidad y documentación exhaustiva
+
+- **Escalabilidad y seguridad** : Incluye muchas características listas para usarse que abordan preocupaciones comunes de seguridad y escalabilidad.
 
 # Enlaces
 
-[<- Anterior](LPNotaClase01.md) |
+[<- Anterior](LPNotaClase01.md) | [Siguiente ->](LPNotaClase03.md)

@@ -6,9 +6,9 @@
 - [x] Investigar que es una función *hash*
 - [x] Investigar cómo es que UNIX cifra las contraseñas del archivo `/etc/shadow` e indica que función utiliza
 - [ ] Investiga las características de los algoritmos: (`md5`, `Blowfish`, `sha256` y `sha512`)
-- [ ] Investigar que es una red
-- [ ] Investigar que es *Secure Shell (SSH)*
-- [ ] Investigar más sobre Bash Scripting
+- [x] Investigar que es una red
+- [x] Investigar que es *Secure Shell (SSH)*
+- [x] Investigar más sobre Bash Scripting
 
 #### Opcional
 
