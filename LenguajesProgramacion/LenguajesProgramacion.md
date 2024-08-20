@@ -5,6 +5,10 @@
 
 [Presentación](Presentacion-LenguajesProgramacion.md)
 
+## Tareas:
+
+1. [Tarea semanal 1](tareas/LPTarea01.md)
+
 ## Notas:
 
 1. **Introducción**

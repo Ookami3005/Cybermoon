@@ -1,3 +1,4 @@
+[<- Volver](ComputacionDistrubuida.md)
 # Computación Distribuida
 
 La Computación Distribuida comprende herramientas, algoritmos y problemas de cómputo en un contexto donde los recursos computacionales se encuentran descentralizados y se acceden por medio de una red.

@@ -211,6 +211,16 @@ Las agrupaciones de elementos se indican usando paréntesis ().
 ##### Alternativas
 Las alternativas se heredan de BNF mediante el operador |.
 
+#### Ejemplo: MiniLisp
+
+> \<S\> := \<Expr\> 
+> \<Expr\> := \<Int\> |  (+ \<Expr\> \<Expr\>) | (- \<Expr\> \<Expr\>) 
+> \<Int\> := \[\<Sg\>\] \<Num\>
+> \<NZ\> := 1 | 2 | ... | 9
+> \<D\> := 0 | 1 | 2 | ... | 9
+> \<Num\> := 0 | \<NZ\>{\<D\>}
+> \<Sg\> := -
+
 ## Sintaxis concreta
 
 La sintaxis concreta de un lenguaje de programación  puede formalizarse matemáticamente utilizando las definiciones de la sintaxis léxica y la sintaxis libre de contexto.
