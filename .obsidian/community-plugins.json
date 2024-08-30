@@ -1,5 +1,7 @@
 [
   "obsidian-export-to-tex",
   "obsidian-minimal-settings",
-  "wikilinks-to-mdlinks-obsidian"
+  "wikilinks-to-mdlinks-obsidian",
+  "obsidian-latex",
+  "quick-latex"
 ]

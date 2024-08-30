@@ -55,7 +55,7 @@ graph TB
 	E-->H((5))
 ```
 
-En el *AST*, los paréntesis no se representan explícitamente, en cambio, se conserva la estructura jerárquica de las operaciones, con la multiplicación en el nivel superior y la suma como una de sus operandos.
+En el *ASA*, los paréntesis no se representan explícitamente, en cambio, se conserva la estructura jerárquica de las operaciones, con la multiplicación en el nivel superior y la suma como una de sus operandos.
 
 ##### Beneficios de la sintaxis abstracta
 
@@ -159,7 +159,7 @@ Sea $lexer \; : \; S \rightarrow [Token]$ y $parser \; : \; [Token] \rightarrow 
 
 Donde, por ejemplo, $\phi((+ \; 17 \quad -29)) \; = \; Add(Num(17), \; Num(-29))$
 
-# Semántica
+# Introducción a semántica
 
 Vamos a tener 2 tipos de semánticas: **Semántica estática** y **Semántica dinámica**.
 
@@ -175,17 +175,13 @@ A grosso modo, se encarga de combinar los constructores para obtener un resultad
 
 - **Semántica operacional**: Nos enfocaremos en esta durante el curso. Define el significado de los programas mediante la especificación de reglas de transición
 
-## Semántica operacional
+### Semántica operacional
 
 Tenemos 2 tipos de semántica operacional:
 
 - **Semántica de paso pequeño**
 - **Semántica de paso grande**
 
-#### Sistemas de transición
-
-Modelan sistemas dinámicos que permiten pasar de un estado a otro.
-
 # Enlaces
 
-[<- Anterior](LPNotaClase04.md) |
+[<- Anterior](LPNotaClase04.md) | [Siguiente ->](LP22_08_2024.md)

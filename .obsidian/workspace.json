@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4adf9bb26f9ea25c",
+        "id": "8c9286f2359e614e",
         "type": "tabs",
         "children": [
           {
-            "id": "81131159e926050e",
+            "id": "2e2d0ce1f03c4818",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LPNotaClase05.md",
-                "mode": "source",
+                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LPNotaClase05.md",
+                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LPNotaClase05.md",
+                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LPNotaClase05.md"
+                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md"
               }
             }
           }
@@ -147,44 +147,44 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "81131159e926050e",
+  "active": "2e2d0ce1f03c4818",
   "lastOpenFiles": [
-    "LenguajesProgramacion/apuntes/LPNotaClase04.md",
+    "AnalisisAlgoritmos/apuntes/AA_Complejidad.md",
+    "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+    "AnalisisAlgoritmos/apuntes/AA_Introduccion.md",
+    "AnalisisAlgoritmos/Presentacion-Analisis.md",
+    "AnalisisAlgoritmos/apuntes",
+    "HFC/SistemasWindows/HFC29_08_2024.md",
+    "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
+    "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP29_08_2024.md",
+    "LenguajesProgramacion/tareas/LPTarea3.md",
+    "HFC/SistemasWindows/HFC28_08_2024.md",
+    "LenguajesProgramacion/tareas/tmp.md",
+    "HFC/SistemasWindows/HFC26_08_2024.md",
+    "HFC/RedesComputadora/apuntes/LP26_08_2024.md",
+    "HFC/SistemasWindows",
+    "LenguajesProgramacion/apuntes/LP23_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP22_08_2024.md",
+    "HFC/RedesComputadora/apuntes/HFC23_08_2024.md",
     "LenguajesProgramacion/apuntes/LPNotaClase05.md",
+    "HFC/RedesComputadora/apuntes/HFC22_08_2024.md",
+    "HFC/RedesComputadora/apuntes/HFC21_08_2024.md",
+    "LenguajesProgramacion/tareas/LPTarea2.md",
+    "HFC/RedesComputadora/apuntes/HFC20_08_2024.md",
+    "HFC/RedesComputadora/apuntes/HFC16_08_2024.md",
     "HFC/RedesComputadora/apuntes/HFC19_08_2024.md",
+    "LenguajesProgramacion/apuntes/LPNotaClase04.md",
     "HFC/RedesComputadora/RedesComputadora.md",
     "AnalisisAlgoritmos/apuntes/AA19_08_2024.md",
-    "LenguajesProgramacion/LenguajesProgramacion.md",
-    "LenguajesProgramacion/tareas/LPTarea01.md",
-    "ComputacionDistribuida/Presentacion-Distribuida.md",
-    "ComputacionDistribuida/ComputacionDistrubuida.md",
-    "ComputacionDistribuida/apuntes/CPNotasIntro.md",
-    "IndiceDeMaterias.md",
     "ComputacionDistribuida/apuntes",
     "Sin nombre",
-    "HFC/RedesComputadora/apuntes/HFC16_08_2024.md",
-    "HFC/RedesComputadora/apuntes/HFC15_08_2024.md",
     "HFC/RedesComputadora/apuntes",
-    "HFC/HackingFightClub.md",
     "HFC/RedesComputadora",
-    "RedesComputadora/RedesComputadora.md",
     "RedesComputadora",
     "HFC/SistemasUNIX/RedesComputadora",
-    "HFC/SistemasUNIX/apuntes/HFC14_08_2024.md",
-    "HFC/SistemasUNIX/tareas/tarea3.md",
-    "TODO.md",
-    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
     "apuntes",
     "LenguajesProgramacion/tareas",
-    "LenguajesProgramacion/apuntes/LPNotaClase03.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase02.md",
-    "LneguajesProgramacion/LenguajesProgramacion.md",
-    "LneguajesProgramacion",
-    "HFC/SistemasUNIX/SistemasUNIX.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase01.md",
-    "LenguajesProgramacion/Presentacion-LenguajesProgramacion.md",
-    "LenguajesProgramacion/apuntes",
-    "HFC/SistemasUNIX/apuntes/HFC09_08_2024.md",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png"
