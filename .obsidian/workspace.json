@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2e2d0ce1f03c4818",
+            "id": "25a7391baa8e446f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
-                "mode": "preview",
+                "file": "HFC/SistemasWindows/SistemasWindows.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+                "file": "HFC/SistemasWindows/SistemasWindows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+                "file": "HFC/SistemasWindows/SistemasWindows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AnalisisAlgoritmos/AnalisisAlgoritmos.md"
+                "file": "HFC/SistemasWindows/SistemasWindows.md"
               }
             }
           }
@@ -147,21 +146,27 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "2e2d0ce1f03c4818",
+  "active": "25a7391baa8e446f",
   "lastOpenFiles": [
-    "AnalisisAlgoritmos/apuntes/AA_Complejidad.md",
+    "HFC/SistemasWindows/apuntes/HFC30_08_2024.md",
+    "HFC/SistemasWindows/apuntes/HFC29_08_2024.md",
+    "HFC/SistemasWindows/apuntes/HFC28_08_2024.md",
+    "HFC/SistemasWindows/apuntes/HFC26_08_2024.md",
+    "HFC/SistemasWindows/SistemasWindows.md",
+    "IndiceDeMaterias.md",
     "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+    "AnalisisAlgoritmos/apuntes/AA_AlgoritmosIterativos.md",
+    "AnalisisAlgoritmos/apuntes/AA_Complejidad.md",
     "AnalisisAlgoritmos/apuntes/AA_Introduccion.md",
+    "LenguajesProgramacion/apuntes/LP30_08_2024.md",
+    "HFC/SistemasWindows/apuntes",
     "AnalisisAlgoritmos/Presentacion-Analisis.md",
     "AnalisisAlgoritmos/apuntes",
-    "HFC/SistemasWindows/HFC29_08_2024.md",
     "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
     "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
     "LenguajesProgramacion/apuntes/LP29_08_2024.md",
     "LenguajesProgramacion/tareas/LPTarea3.md",
-    "HFC/SistemasWindows/HFC28_08_2024.md",
     "LenguajesProgramacion/tareas/tmp.md",
-    "HFC/SistemasWindows/HFC26_08_2024.md",
     "HFC/RedesComputadora/apuntes/LP26_08_2024.md",
     "HFC/SistemasWindows",
     "LenguajesProgramacion/apuntes/LP23_08_2024.md",
@@ -172,11 +177,6 @@
     "HFC/RedesComputadora/apuntes/HFC21_08_2024.md",
     "LenguajesProgramacion/tareas/LPTarea2.md",
     "HFC/RedesComputadora/apuntes/HFC20_08_2024.md",
-    "HFC/RedesComputadora/apuntes/HFC16_08_2024.md",
-    "HFC/RedesComputadora/apuntes/HFC19_08_2024.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase04.md",
-    "HFC/RedesComputadora/RedesComputadora.md",
-    "AnalisisAlgoritmos/apuntes/AA19_08_2024.md",
     "ComputacionDistribuida/apuntes",
     "Sin nombre",
     "HFC/RedesComputadora/apuntes",
@@ -184,7 +184,6 @@
     "RedesComputadora",
     "HFC/SistemasUNIX/RedesComputadora",
     "apuntes",
-    "LenguajesProgramacion/tareas",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png"

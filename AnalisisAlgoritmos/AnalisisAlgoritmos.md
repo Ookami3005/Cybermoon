@@ -7,4 +7,5 @@
 ### Notas:
 
 - [Introducción](apuntes/AA_Introduccion.md)
-- [Complejidad y notaciones](apuntes/AA_Complejidad.md)
+- [Complejidad, notaciones y sus propiedades](apuntes/AA_Complejidad.md)
+- [Algoritmos iterativos](apuntes/AA_AlgoritmosIterativos.md)
