@@ -161,4 +161,4 @@ Sin embargo, si 2 funciones crecientes se multiplican, ambas importan:
 
 # Enlaces
 
-[<- Anterior](AA_Introduccion.md) | [Siguiente ->](AA_AlgoritmosIterativos.md)
+[<- Anterior](AA_Introduccion.md) | [Siguiente ->](AA_AlgoritmosIterativosRecursivos.md)

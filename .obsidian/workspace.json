@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25a7391baa8e446f",
+            "id": "e4b3ce911acdc116",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/SistemasWindows/SistemasWindows.md",
-                "mode": "source",
+                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/SistemasWindows/SistemasWindows.md",
+                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/SistemasWindows/SistemasWindows.md",
+                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/SistemasWindows/SistemasWindows.md"
+                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md"
               }
             }
           }
@@ -146,37 +147,37 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "25a7391baa8e446f",
+  "active": "e4b3ce911acdc116",
   "lastOpenFiles": [
+    "ComputacionDistribuida/apuntes/CP_AlgoritmosDistribuidos.md",
+    "ComputacionDistribuida/apuntes/CPNotasIntro.md",
+    "ComputacionDistribuida/ComputacionDistrubuida.md",
+    "ComputacionDistribuida/apuntes/CP_BusquedaDistribuida.md",
+    "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
+    "IndiceDeMaterias.md",
+    "LenguajesProgramacion/LenguajesProgramacion.md",
+    "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
+    "LogicaC/LogicaComputacional.md",
+    "TODO.md",
+    "ComputacionDistribuida/Presentacion-Distribuida.md",
+    "AnalisisAlgoritmos/apuntes/AA_DivideVenceras.md",
+    "AnalisisAlgoritmos/apuntes/AA_AlgoritmosIterativosRecursivos.md",
+    "AnalisisAlgoritmos/Presentacion-Analisis.md",
+    "HFC/HackingFightClub.md",
+    "HFC/SistemasWindows/SistemasWindows.md",
+    "HFC/SistemasWindows/apuntes/HFC26_08_2024.md",
+    "AnalisisAlgoritmos/apuntes/AA_Complejidad.md",
     "HFC/SistemasWindows/apuntes/HFC30_08_2024.md",
     "HFC/SistemasWindows/apuntes/HFC29_08_2024.md",
     "HFC/SistemasWindows/apuntes/HFC28_08_2024.md",
-    "HFC/SistemasWindows/apuntes/HFC26_08_2024.md",
-    "HFC/SistemasWindows/SistemasWindows.md",
-    "IndiceDeMaterias.md",
-    "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
-    "AnalisisAlgoritmos/apuntes/AA_AlgoritmosIterativos.md",
-    "AnalisisAlgoritmos/apuntes/AA_Complejidad.md",
     "AnalisisAlgoritmos/apuntes/AA_Introduccion.md",
     "LenguajesProgramacion/apuntes/LP30_08_2024.md",
     "HFC/SistemasWindows/apuntes",
-    "AnalisisAlgoritmos/Presentacion-Analisis.md",
     "AnalisisAlgoritmos/apuntes",
     "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
     "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
     "LenguajesProgramacion/apuntes/LP29_08_2024.md",
-    "LenguajesProgramacion/tareas/LPTarea3.md",
-    "LenguajesProgramacion/tareas/tmp.md",
-    "HFC/RedesComputadora/apuntes/LP26_08_2024.md",
     "HFC/SistemasWindows",
-    "LenguajesProgramacion/apuntes/LP23_08_2024.md",
-    "LenguajesProgramacion/apuntes/LP22_08_2024.md",
-    "HFC/RedesComputadora/apuntes/HFC23_08_2024.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase05.md",
-    "HFC/RedesComputadora/apuntes/HFC22_08_2024.md",
-    "HFC/RedesComputadora/apuntes/HFC21_08_2024.md",
-    "LenguajesProgramacion/tareas/LPTarea2.md",
-    "HFC/RedesComputadora/apuntes/HFC20_08_2024.md",
     "ComputacionDistribuida/apuntes",
     "Sin nombre",
     "HFC/RedesComputadora/apuntes",
