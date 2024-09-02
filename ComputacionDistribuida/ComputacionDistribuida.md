@@ -12,3 +12,4 @@
 - [Métricas de Desempeño de Algoritmos Distribuidos](apuntes/CP_MetricasDesempeno.md)
 
 - [Busqueda en ambientes distribuidos](apuntes/CP_BusquedaDistribuida.md)
+- [Ordenamientos en ambientes distribuidos](apuntes/CP_OrdenamientosDistribuidos.md)

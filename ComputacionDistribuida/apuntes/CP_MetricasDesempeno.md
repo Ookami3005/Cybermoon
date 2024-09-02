@@ -1,4 +1,4 @@
-[<- Índice](../ComputacionDistrubuida.md)
+[<- Índice](../ComputacionDistribuida.md)
 ## Métricas de desempeño
 
 Para esta sección, primero aclararé la notación que se utiliza:

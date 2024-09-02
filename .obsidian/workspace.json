@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
-                "mode": "preview",
+                "file": "ComputacionDistribuida/ComputacionDistribuida.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
+                "file": "ComputacionDistribuida/ComputacionDistribuida.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
+                "file": "ComputacionDistribuida/ComputacionDistribuida.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md"
+                "file": "ComputacionDistribuida/ComputacionDistribuida.md"
               }
             }
           }
@@ -149,17 +148,18 @@
   },
   "active": "e4b3ce911acdc116",
   "lastOpenFiles": [
+    "IndiceDeMaterias.md",
+    "ComputacionDistribuida/apuntes/CP_OrdenamientosDistribuidos.md",
+    "ComputacionDistribuida/ComputacionDistribuida.md",
     "ComputacionDistribuida/apuntes/CP_AlgoritmosDistribuidos.md",
-    "ComputacionDistribuida/apuntes/CPNotasIntro.md",
-    "ComputacionDistribuida/ComputacionDistrubuida.md",
     "ComputacionDistribuida/apuntes/CP_BusquedaDistribuida.md",
     "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
-    "IndiceDeMaterias.md",
+    "ComputacionDistribuida/apuntes/CPNotasIntro.md",
+    "ComputacionDistribuida/Presentacion-Distribuida.md",
+    "TODO.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
     "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
     "LogicaC/LogicaComputacional.md",
-    "TODO.md",
-    "ComputacionDistribuida/Presentacion-Distribuida.md",
     "AnalisisAlgoritmos/apuntes/AA_DivideVenceras.md",
     "AnalisisAlgoritmos/apuntes/AA_AlgoritmosIterativosRecursivos.md",
     "AnalisisAlgoritmos/Presentacion-Analisis.md",
@@ -176,7 +176,6 @@
     "AnalisisAlgoritmos/apuntes",
     "AnalisisAlgoritmos/apuntes/AA07_08_2024.md",
     "AnalisisAlgoritmos/apuntes/AA06_08_2024.md",
-    "LenguajesProgramacion/apuntes/LP29_08_2024.md",
     "HFC/SistemasWindows",
     "ComputacionDistribuida/apuntes",
     "Sin nombre",

@@ -1,4 +1,4 @@
-[<- Índice](ComputacionDistrubuida.md)
+[<- Índice](../ComputacionDistribuida.md)
 
 # Algoritmos Distribuidos
 

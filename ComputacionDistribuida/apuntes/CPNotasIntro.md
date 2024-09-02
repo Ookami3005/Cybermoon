@@ -1,4 +1,4 @@
-[<- Volver](../ComputacionDistrubuida.md)
+[<- Volver](../ComputacionDistribuida.md)
 # Introducción
 
 A continuación, sentaremos bases con una serie de definiciones importantes.
