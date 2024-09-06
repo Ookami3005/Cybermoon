@@ -13,7 +13,7 @@ Es una técnica de ejecución simultánea de diferentes tareas en el mismo insta
 Implica varias unidades de procesamiento independientes, que operan en paralelo y realizan tareas con el fin de aumentar la velocidad de cálculo y mejorar el rendimiento.
 
 #### Definición 3: Computación distribuida
-Computadoras conectadas que trabajan para resolver un problema en común meidante el intercambio de mensajes.
+Computadoras conectadas que trabajan para resolver un problema en común mediante el intercambio de mensajes.
 
 #### Definición 4: Sistema distribuido
 Un sistema distribuido es una colección de dispositivos de cómputo individuales que se pueden comunicar entre si.
@@ -123,7 +123,7 @@ Un *evento* es un registro (hora, nodo, tipo, mensaje), donde tipo es **envía**
 - Solo aceptamos algoritmos uniformes en los que el nodo con el máximo identificador puede ser el lider. Además cualquier nodo que no sea el lider debe conocer la identidad del lider.
 
 #### Definición 19: Modelo *LOCAL*
-El tiempo de ejcución es igual al número de rondas síncronas hasta que todos los nodos se detienen y anuncian sus salidas locales; en cada ronda cada nodo puede enviar un mensaje a cada uno de sus vecinos; el tamaño del mensaje es *ilimitado*; el cálculo local es libre
+El tiempo de ejecución es igual al número de rondas síncronas hasta que todos los nodos se detienen y anuncian sus salidas locales; en cada ronda cada nodo puede enviar un mensaje a cada uno de sus vecinos; el tamaño del mensaje es *ilimitado*; el cálculo local es libre
 
 #### Definición 20: Modelo *CONGEST*
 Parecido al modelo anterior, pero los mensajes están limitados a $O(log(n))$ bits.
