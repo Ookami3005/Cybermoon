@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
-                "mode": "preview",
+                "file": "HFC/Python/Python.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
+                "file": "HFC/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
+                "file": "HFC/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/Python/apuntes/HFC11_09_2024.md"
+                "file": "HFC/Python/Python.md"
               }
             }
           }
@@ -150,10 +150,11 @@
   },
   "active": "6951f47864d1d32f",
   "lastOpenFiles": [
-    "HFC/Python/apuntes/HFC12_09_2024.md",
     "HFC/Python/apuntes/HFC11_09_2024.md",
+    "HFC/Python/Python.md",
     "HFC/Python/apuntes/HFC09_09_2024.md",
     "HFC/Python/apuntes/HFC06_09_2024.md",
+    "HFC/Python/apuntes/HFC12_09_2024.md",
     "HFC/Python/apuntes/HFC05_09_2024.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
     "LenguajesProgramacion/apuntes/LPNotaClase01.md",
@@ -170,7 +171,6 @@
     "LenguajesProgramacion/apuntes/LP23_08_2024.md",
     "LenguajesProgramacion/apuntes/LP22_08_2024.md",
     "LenguajesProgramacion/apuntes/LPNotaClase05.md",
-    "HFC/Python/Python.md",
     "HFC/Python/apuntes/HFC04_09_2024.md",
     "HFC/SistemasUNIX/apuntes/HFC_extra_DistrosLinux.md",
     "HFC/SistemasUNIX/apuntes/imagenes/linuxDistros.png",
