@@ -148,4 +148,4 @@ En cada paso de un algoritmo síncrono, cada nodo sólo puede enviar y recibir $
 
 # Enlaces
 
-[Siguiente ->](CP_AlgoritmosDistribuidos.md)
+[Siguiente ->](CD_AlgoritmosDistribuidos.md)

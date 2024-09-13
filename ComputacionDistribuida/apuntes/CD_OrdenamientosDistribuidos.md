@@ -67,4 +67,4 @@ El procedimiento de un ordenamiento descentralizado es:
 
 # Enlaces
 
-[<- Anterior](CP_BusquedaDistribuida.md) |
+[<- Anterior](CD_BusquedaDistribuida.md) |

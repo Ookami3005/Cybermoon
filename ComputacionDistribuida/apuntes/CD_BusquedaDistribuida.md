@@ -124,4 +124,4 @@ Con esto dicho podemos plantear los siguientes algoritmos:
 
 # Enlaces
 
-[<- Anterior](CP_MetricasDesempeno.md) | [Siguiente ->](CP_OrdenamientosDistribuidos.md)
+[<- Anterior](CD_MetricasDesempeno.md) | [Siguiente ->](CD_OrdenamientosDistribuidos.md)

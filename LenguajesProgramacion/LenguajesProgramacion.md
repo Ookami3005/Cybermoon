@@ -19,3 +19,15 @@
 2. **Especificación formal de un lenguaje de programación**
 	1. [Sintaxis Concreta](apuntes/LPNotaClase04.md)
 	2. [Sintaxis Abstracta](apuntes/LPNotaClase05.md)
+	3. [Semántica Dinamica](apuntes/LP22_08_2024.md)
+	4. [Semántica Estática](apuntes/LP23_08_2024.md)
+	5. [Implementación del Lenguaje](apuntes/LP26_08_2024.md)
+
+3. **Variables y sutitución**
+	1. [Expresiones `Let`](apuntes/LP29_08_2024.md)
+	2. [Sustitución e Índices de *Bruijn*](apuntes/LP30_08_2024.md)
+
+4. **Calculo $\lambda$**
+	1. [Sintaxis del cálculo lambda](apuntes/LP05_09_2024.md)
+	2. [Semántica del cálculo lambda](apuntes/LP06_09_2024.md)
+	3. [Representación de datos](apuntes/LP09_09_2024.md)

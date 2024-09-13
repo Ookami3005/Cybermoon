@@ -108,4 +108,4 @@ F(n,p)=\frac{\frac{p}{S(n,p)}-1}{p-1}
 $$
 # Enlaces
 
-[<- Anterior](CP_AlgoritmosDistribuidos.md) | [Siguiente ->](CP_BusquedaDistribuida.md)
+[<- Anterior](CD_AlgoritmosDistribuidos.md) | [Siguiente ->](CD_BusquedaDistribuida.md)

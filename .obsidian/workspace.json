@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8c9286f2359e614e",
+        "id": "23befc04693ac5f3",
         "type": "tabs",
         "children": [
           {
-            "id": "8481b6c6c550b0dd",
+            "id": "6951f47864d1d32f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/Python/apuntes/HFC05_09_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b14629c4766ec63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HFC/Python/apuntes/HFC05_09_2024.md",
-                "mode": "source",
+                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/Python/apuntes/HFC05_09_2024.md",
+                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/Python/apuntes/HFC05_09_2024.md",
+                "file": "HFC/Python/apuntes/HFC11_09_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/Python/apuntes/HFC05_09_2024.md"
+                "file": "HFC/Python/apuntes/HFC11_09_2024.md"
               }
             }
           }
@@ -159,44 +148,45 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "8481b6c6c550b0dd",
+  "active": "6951f47864d1d32f",
   "lastOpenFiles": [
-    "HFC/Python/apuntes/HFC04_09_2024.md",
-    "HFC/Python/Python.md",
+    "HFC/Python/apuntes/HFC12_09_2024.md",
+    "HFC/Python/apuntes/HFC11_09_2024.md",
+    "HFC/Python/apuntes/HFC09_09_2024.md",
+    "HFC/Python/apuntes/HFC06_09_2024.md",
     "HFC/Python/apuntes/HFC05_09_2024.md",
-    "HFC/HackingFightClub.md",
-    "IndiceDeMaterias.md",
-    "HFC/Python/apuntes",
-    "LenguajesProgramacion/tareas/LPTarea2.md",
-    "HFC/Python",
-    "LenguajesProgramacion/tareas/LPTarea01.md",
-    "LenguajesProgramacion/apuntes/RepasoParcial1.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase05.md",
-    "AnalisisAlgoritmos/apuntes/AA_DivideVenceras.md",
-    "ComputacionDistribuida/apuntes/CP_OrdenamientosDistribuidos.md",
-    "ComputacionDistribuida/tareas/CP_Tarea1.md",
-    "ComputacionDistribuida/apuntes/CPNotasIntro.md",
-    "HFC/SistemasWindows/apuntes/HFC02_09_2024.md",
-    "ComputacionDistribuida/tareas",
-    "ComputacionDistribuida/apuntes/CP_BusquedaDistribuida.md",
-    "ComputacionDistribuida/apuntes/CP_MetricasDesempeno.md",
-    "ComputacionDistribuida/apuntes/CP_AlgoritmosDistribuidos.md",
-    "ComputacionDistribuida/ComputacionDistribuida.md",
-    "ComputacionDistribuida/Presentacion-Distribuida.md",
-    "TODO.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
-    "AnalisisAlgoritmos/AnalisisAlgoritmos.md",
-    "LogicaC/LogicaComputacional.md",
-    "AnalisisAlgoritmos/apuntes/AA_AlgoritmosIterativosRecursivos.md",
-    "AnalisisAlgoritmos/Presentacion-Analisis.md",
-    "HFC/SistemasWindows/SistemasWindows.md",
+    "LenguajesProgramacion/apuntes/LPNotaClase01.md",
+    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP05_09_2024.md",
+    "LenguajesProgramacion/tareas/LPTarea3.md",
+    "LenguajesProgramacion/apuntes/LP06_09_2024.md",
+    "LenguajesProgramacion/apuntes/LP09_09_2024.md",
+    "LenguajesProgramacion/apuntes/LP30_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP29_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP26_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP23_08_2024.md",
+    "LenguajesProgramacion/apuntes/LP22_08_2024.md",
+    "LenguajesProgramacion/apuntes/LPNotaClase05.md",
+    "HFC/Python/Python.md",
+    "HFC/Python/apuntes/HFC04_09_2024.md",
+    "HFC/SistemasUNIX/apuntes/HFC_extra_DistrosLinux.md",
+    "HFC/SistemasUNIX/apuntes/imagenes/linuxDistros.png",
+    "HFC/SistemasUNIX/apuntes/imagenes",
+    "ComputacionDistribuida/reportes/CP_Practica1.md",
+    "ComputacionDistribuida/reportes",
+    "IndiceDeMaterias.md",
+    "ComputacionDistribuida/apuntes/CD_06_09_2024.md",
+    "HFC/Python/apuntes",
+    "HFC/Python",
+    "ComputacionDistribuida/tareas",
     "HFC/SistemasWindows/apuntes",
     "AnalisisAlgoritmos/apuntes",
     "HFC/SistemasWindows",
     "ComputacionDistribuida/apuntes",
     "Sin nombre",
-    "HFC/RedesComputadora/apuntes",
-    "HFC/RedesComputadora",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png"

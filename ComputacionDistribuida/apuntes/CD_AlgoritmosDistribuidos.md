@@ -121,4 +121,4 @@ Sin embargo, en ocasiones puede ser útil tener segmentos secuenciales más pequ
 
 # Enlaces
 
-[<- Anterior](CPNotasIntro.md) | [Siguiente ->](CP_MetricasDesempeno.md)
+[<- Anterior](CD_NotasIntro.md) | [Siguiente ->](CD_MetricasDesempeno.md)

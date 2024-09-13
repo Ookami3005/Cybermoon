@@ -6,10 +6,10 @@
 
 ## Notas:
 
-- [Conceptos básicos](apuntes/CPNotasIntro.md)
+- [Conceptos básicos](apuntes/CD_NotasIntro.md)
 
-- [Algoritmos Distribuidos](apuntes/CP_AlgoritmosDistribuidos.md)
-- [Métricas de Desempeño de Algoritmos Distribuidos](apuntes/CP_MetricasDesempeno.md)
+- [Algoritmos Distribuidos](apuntes/CD_AlgoritmosDistribuidos.md)
+- [Métricas de Desempeño de Algoritmos Distribuidos](apuntes/CD_MetricasDesempeno.md)
 
-- [Busqueda en ambientes distribuidos](apuntes/CP_BusquedaDistribuida.md)
-- [Ordenamientos en ambientes distribuidos](apuntes/CP_OrdenamientosDistribuidos.md)
+- [Busqueda en ambientes distribuidos](apuntes/CD_BusquedaDistribuida.md)
+- [Ordenamientos en ambientes distribuidos](apuntes/CD_OrdenamientosDistribuidos.md)

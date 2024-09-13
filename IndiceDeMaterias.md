@@ -10,7 +10,7 @@
 
 - Cuarto semestre
 	- [Logica Computacional](LogicaC/LogicaComputacional.md)
-	- [Arquitectura de Computadoras = {'Pedro':58, 'Juan':34, 'Jose':40}](ArquiC/ArquitecturaDeComputadoras.md)
+	- [Arquitectura de Computadoras](ArquiC/ArquitecturaDeComputadoras.md)
 	
 - Quinto semestre
 	- [Analisis de Algoritmos](AnalisisAlgoritmos/AnalisisAlgoritmos.md)
