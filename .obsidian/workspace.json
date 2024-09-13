@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/Python/Python.md",
+                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/Python/Python.md",
+                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/Python/Python.md",
+                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/Python/Python.md"
+                "file": "HFC/Python/apuntes/HFC04_09_2024.md"
               }
             }
           }
@@ -150,12 +150,12 @@
   },
   "active": "6951f47864d1d32f",
   "lastOpenFiles": [
-    "HFC/Python/apuntes/HFC11_09_2024.md",
-    "HFC/Python/Python.md",
-    "HFC/Python/apuntes/HFC09_09_2024.md",
-    "HFC/Python/apuntes/HFC06_09_2024.md",
-    "HFC/Python/apuntes/HFC12_09_2024.md",
     "HFC/Python/apuntes/HFC05_09_2024.md",
+    "HFC/Python/apuntes/HFC06_09_2024.md",
+    "HFC/Python/apuntes/HFC09_09_2024.md",
+    "HFC/Python/apuntes/HFC11_09_2024.md",
+    "HFC/Python/apuntes/HFC12_09_2024.md",
+    "HFC/Python/Python.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
     "LenguajesProgramacion/apuntes/LPNotaClase01.md",
     "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
