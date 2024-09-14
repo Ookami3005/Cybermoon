@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
+                "file": "HFC/Pentesting/HFC13_09_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
+                "file": "HFC/Pentesting/HFC13_09_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/Python/apuntes/HFC04_09_2024.md",
+                "file": "HFC/Pentesting/HFC13_09_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/Python/apuntes/HFC04_09_2024.md"
+                "file": "HFC/Pentesting/HFC13_09_2024.md"
               }
             }
           }
@@ -150,6 +150,9 @@
   },
   "active": "6951f47864d1d32f",
   "lastOpenFiles": [
+    "HFC/Python/apuntes/HFC04_09_2024.md",
+    "HFC/Pentesting/HFC13_09_2024.md",
+    "HFC/Pentesting",
     "HFC/Python/apuntes/HFC05_09_2024.md",
     "HFC/Python/apuntes/HFC06_09_2024.md",
     "HFC/Python/apuntes/HFC09_09_2024.md",
@@ -171,14 +174,12 @@
     "LenguajesProgramacion/apuntes/LP23_08_2024.md",
     "LenguajesProgramacion/apuntes/LP22_08_2024.md",
     "LenguajesProgramacion/apuntes/LPNotaClase05.md",
-    "HFC/Python/apuntes/HFC04_09_2024.md",
     "HFC/SistemasUNIX/apuntes/HFC_extra_DistrosLinux.md",
     "HFC/SistemasUNIX/apuntes/imagenes/linuxDistros.png",
     "HFC/SistemasUNIX/apuntes/imagenes",
     "ComputacionDistribuida/reportes/CP_Practica1.md",
     "ComputacionDistribuida/reportes",
     "IndiceDeMaterias.md",
-    "ComputacionDistribuida/apuntes/CD_06_09_2024.md",
     "HFC/Python/apuntes",
     "HFC/Python",
     "ComputacionDistribuida/tareas",
@@ -186,7 +187,6 @@
     "AnalisisAlgoritmos/apuntes",
     "HFC/SistemasWindows",
     "ComputacionDistribuida/apuntes",
-    "Sin nombre",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png"
