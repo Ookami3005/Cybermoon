@@ -24,7 +24,7 @@
 	5. [Implementación del Lenguaje](apuntes/LP26_08_2024.md)
 
 3. **Variables y sutitución**
-	1. [Expresiones `Let`](apuntes/LP29_08_2024.md)
+	1. [Expresiones *Let*](apuntes/LP29_08_2024.md)
 	2. [Sustitución e Índices de *Bruijn*](apuntes/LP30_08_2024.md)
 
 4. **Calculo $\lambda$**
