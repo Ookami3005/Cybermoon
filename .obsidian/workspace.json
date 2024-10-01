@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LP05_09_2024.md",
+                "file": "HFC/WebHacking/WebHacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LP05_09_2024.md",
+                "file": "HFC/WebHacking/WebHacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LP05_09_2024.md",
+                "file": "HFC/WebHacking/WebHacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LenguajesProgramacion/apuntes/LP05_09_2024.md"
+                "file": "HFC/WebHacking/WebHacking.md"
               }
             }
           }
@@ -150,34 +150,37 @@
   },
   "active": "6b4e18694d6ea161",
   "lastOpenFiles": [
-    "LenguajesProgramacion/apuntes/LP30_08_2024.md",
+    "HFC/WebHacking/apuntes/HFC30_09_2024.md",
+    "HFC/WebHacking/apuntes/HFC27_09_2024.md",
+    "HFC/WebHacking/WebHacking.md",
+    "HFC/HackingFightClub.md",
+    "HFC/Pentesting/Pentesting.md",
+    "HFC/Python/Python.md",
+    "HFC/SistemasWindows/SistemasWindows.md",
+    "HFC/RedesComputadora/RedesComputadora.md",
+    "HFC/SistemasUNIX/SistemasUNIX.md",
+    "imagenes/bonfire2.jpg",
+    "HFC/WebHacking/apuntes/HFC26_09_2024.md",
+    "HFC/WebHacking/apuntes/HFC25_09_2024.md",
+    "HFC/Pentesting/apuntes/HFC17_09_2024.md",
+    "HFC/Pentesting/apuntes/HFC13_09_2024.md",
+    "HFC/WebHacking/apuntes",
+    "HFC/WebHacking",
+    "HFC/Pentesting/apuntes/HFC24_09_2024.md",
     "LenguajesProgramacion/apuntes/LP05_09_2024.md",
+    "LenguajesProgramacion/apuntes/LP30_08_2024.md",
     "LenguajesProgramacion/apuntes/LP29_08_2024.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
     "HFC/Pentesting/apuntes/HFC23_09_2024.md",
     "LenguajesProgramacion/apuntes/LP23_08_2024.md",
     "LenguajesProgramacion/apuntes/LP26_08_2024.md",
     "LenguajesProgramacion/apuntes/LP22_08_2024.md",
-    "HFC/Pentesting/apuntes/HFC17_09_2024.md",
     "HFC/Pentesting/apuntes/HFC18_09_2024.md",
-    "HFC/Pentesting/apuntes/HFC13_09_2024.md",
     "HFC/Pentesting/apuntes",
     "HFC/Python/apuntes/HFC04_09_2024.md",
     "HFC/Pentesting",
     "HFC/Python/apuntes/HFC05_09_2024.md",
     "HFC/Python/apuntes/HFC06_09_2024.md",
-    "HFC/Python/apuntes/HFC09_09_2024.md",
-    "HFC/Python/apuntes/HFC11_09_2024.md",
-    "HFC/Python/apuntes/HFC12_09_2024.md",
-    "HFC/Python/Python.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase01.md",
-    "HFC/SistemasUNIX/apuntes/HFC06_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC07_08_2024.md",
-    "HFC/SistemasUNIX/apuntes/HFC08_08_2024.md",
-    "LenguajesProgramacion/tareas/LPTarea3.md",
-    "LenguajesProgramacion/apuntes/LP06_09_2024.md",
-    "LenguajesProgramacion/apuntes/LP09_09_2024.md",
-    "LenguajesProgramacion/apuntes/LPNotaClase05.md",
     "HFC/SistemasUNIX/apuntes/imagenes/linuxDistros.png",
     "HFC/SistemasUNIX/apuntes/imagenes",
     "ComputacionDistribuida/reportes",
@@ -185,8 +188,6 @@
     "HFC/Python",
     "ComputacionDistribuida/tareas",
     "HFC/SistemasWindows/apuntes",
-    "AnalisisAlgoritmos/apuntes",
-    "HFC/SistemasWindows",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/coco.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/capibara.jpg",
     "HFC/SistemasUNIX/tareas/tarea2/imagenes/Ejercicio2.png"

@@ -1,6 +1,6 @@
 [<- Índice de Modulos](../HackingFightClub.md)
 
-![hogueraDS.png](../../imagenes/hogueraDS.png)
+![hogueraDS.png](../../imagenes/bonfire2.jpg)
 
 ## Notas
 
