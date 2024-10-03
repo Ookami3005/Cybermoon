@@ -29,5 +29,11 @@
 
 4. **Calculo $\lambda$**
 	1. [Sintaxis del cálculo lambda](apuntes/LP05_09_2024.md)
-	2. [Semántica del cálculo lambda](apuntes/LP06_09_2024.md)
+	2. [Semántica del cálculo lambda y Números de Church](apuntes/LP06_09_2024.md)
 	3. [Representación de datos](apuntes/LP09_09_2024.md)
+
+5. **Funciones y alcance**
+	1. [Expresiones *lambda* en *MiniLisp*](apuntes/LPNota14.md)
+	2. [Ambientes de Evaluación](apuntes/LPNota15.md)
+	3. [Alcance Estático y Dinámico](apuntes/LPNota16.md)
+	4. [Cerraduras de Función](apuntes/LPNota17.md)
