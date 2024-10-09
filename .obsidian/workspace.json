@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HFC/Pentesting/apuntes/HFC17_09_2024.md",
+                "file": "LenguajesProgramacion/apuntes/LPNota14.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "31ec043fbea66520",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HFC/Pentesting/apuntes/HFC17_09_2024.md",
+                "file": "LenguajesProgramacion/apuntes/LPNota14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HFC/Pentesting/apuntes/HFC17_09_2024.md",
+                "file": "LenguajesProgramacion/apuntes/LPNota14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HFC/Pentesting/apuntes/HFC17_09_2024.md"
+                "file": "LenguajesProgramacion/apuntes/LPNota14.md"
               }
             }
           }
@@ -150,10 +149,16 @@
   },
   "active": "2f601232b19a458d",
   "lastOpenFiles": [
+    "HFC/SistemasWindows/apuntes/HFC30_08_2024.md",
+    "HFC/SistemasWindows/SistemasWindows.md",
+    "HFC30.md",
+    "HFC/SistemasWindows/apuntes/HFC29_08_2024.md",
+    "LenguajesProgramacion/apuntes/LPNota14.md",
+    "LenguajesProgramacion/apuntes/LPNota15.md",
+    "HFC/Pentesting/apuntes/HFC17_09_2024.md",
     "HFC/Pentesting/apuntes/HFC13_09_2024.md",
     "HFC/Pentesting/apuntes/HFC24_09_2024.md",
     "HFC/Pentesting/apuntes/HFC18_09_2024.md",
-    "HFC/Pentesting/apuntes/HFC17_09_2024.md",
     "HFC/Pentesting/Pentesting.md",
     "HFC/Reversing/apuntes/HFC04_10_2024.md",
     "HFC/Reversing/apuntes/imagenes",
@@ -168,20 +173,14 @@
     "HFC/WebHacking/WebHacking.md",
     "HFC/WebHacking/apuntes/HFC27_09_2024.md",
     "LenguajesProgramacion/LenguajesProgramacion.md",
-    "LenguajesProgramacion/apuntes/LPNota15.md",
     "LenguajesProgramacion/apuntes/LPNota16.md",
     "LenguajesProgramacion/apuntes/LPNota17.md",
-    "LenguajesProgramacion/apuntes/LPNota14.md",
     "LenguajesProgramacion/apuntes/LP09_09_2024.md",
     "LenguajesProgramacion/imagenes/minilisp-lambdas.png",
     "LenguajesProgramacion/imagenes",
     "LenguajesProgramacion/apuntes/LP06_09_2024.md",
     "LenguajesProgramacion/apuntes/LP05_09_2024.md",
     "LenguajesProgramacion/apuntes/LP30_08_2024.md",
-    "IndiceDeMaterias.md",
-    "HFC/HackingFightClub.md",
-    "HFC/Python/Python.md",
-    "HFC/SistemasWindows/SistemasWindows.md",
     "imagenes/bonfire2.jpg",
     "HFC/WebHacking/apuntes",
     "HFC/WebHacking",
