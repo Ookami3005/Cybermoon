@@ -37,3 +37,5 @@
 	2. [Ambientes de Evaluación](apuntes/LPNota15.md)
 	3. [Alcance Estático y Dinámico](apuntes/LPNota16.md)
 	4. [Cerraduras de Función](apuntes/LPNota17.md)
+
+6. **Estrategias de Evaluación**
