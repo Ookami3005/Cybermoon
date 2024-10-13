@@ -45,6 +45,27 @@ Es común en lenguajes funcionales como ***Haskell***
 
 En el ejemplo de arriba, sustituiriamos la expresión $\texttt{(+ 1 3)}$, dentro de la función tal cual, sin evaluarse, y continuariamos con la ejecución del programa hasta que nos veamos forzados a evaluarla.
 
+## Importancia
+
+Las estrategias de evaluación son fundamentales para la ==eficiencia== y ==comportamiento== de un programa.
+
+- La **evaluación glotona** es fácil de razonar y más eficiente en programas que no hacen uso intensivo de funciones complejas o recursivas.
+
+- La **evaluación perezosa** puede ahorrar recursos al no calcular expresiones que nunca se usan, pero introduce mayor complejidad en la implementación y el razonamiento.
+
+Sin importar la estrategia de evaluación que usemos, debemos obtener el mismo resultado, esto se conoce como ==transparencia referencial== y enuncia:
+
+> Dos formas de evaluar la misma expresión siempre producirán el mismo resultado final.
+
+### Comparativa
+
+| Característica           | Evaluación Glotona                                                           | Evaluación Perezosa                                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Efectos secundarios      | Si una expresión tiene efectos secundarios, estos se ejecutan inmediatamente | Los efectos secundarios solo ocurren cuando la expresión es evaluada                                      |
+| Recursión infinita       | Puede resultar en un ciclo infinito si se encuentra con recursión infinita   | Puede manejar expresiones infinitas al evaluar solo las partes necesarias (Por ejemplo, listas infinitas) |
+| **Ventaja principal**    | Simplicidad y facilidad de razonar sobre el orden de evaluación              | Evita cálculos innecesarios, mejora eficiencia en ciertos contextos                                       |
+| **Desventaja principal** | Puede realizar trabajo innecesario y perder eficiencia                       | El orden de evaluación puede ser más dificil de predecir y razonar                                        |
+
 # Enlaces
 
 [<- Anterior](LPNota17.md) | [Siguiente ->](LPNota19.md)
