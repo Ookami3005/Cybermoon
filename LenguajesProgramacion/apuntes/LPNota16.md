@@ -31,9 +31,9 @@ Realizando la evaluación correspondiente a la expresión $\texttt{(+ x y)}$ con
 | *f*           | *(lambda (y) (+ x y))* |
 | *x*           | 3                      |
 
-Obtendriamos, después de 2 sustituciones, la expresión $\texttt{(+ 5 4)}$, debido a la naturaleza de la pila, que nos brindaría la última *x* que entro al ambiente, lo cual resulta en $9$.
+Obtenemos, después de 2 sustituciones, la expresión $\texttt{(+ 5 4)}$, debido a la naturaleza de la pila (extrayendo de arriba hacia abajo), que nos brinda la última *x* que entró al ambiente, lo cual resulta en $9$.
 
-**¿Cómo es posible que hayamos obtenido 2 resultados diferentes?
+**¿Cómo es posible que hayamos obtenido 2 resultados diferentes?**
 
 Esto se debe a los distintos alcances que poseen, hasta el momento, las 2 formas de evaluación que hemos visto.
 
@@ -43,7 +43,7 @@ El ==alcance estático== es una propiedad de los lenguajes de programación que 
 
 En un lenguaje con alcance estático, el valor de una variable se determina observando el bloque de código donde la variable fue declarada, sin importar dónde se invoca la función o expresión que hace referencia a dicha variable.
 
-> Dado un programa *P* y una variable *x* referenciada dentro de una función *f*, decimos que *P* utiliza **alcance estático** si el valor de *x* en cualquier punto dentro de *f* está determinado por la declaración más cercana de *x* en el código fuente ==**en el momento de la declaración de *f*** ==, no en el momento de su invocación.
+> Dado un programa *P* y una variable *x* referenciada dentro de una función *f*, decimos que *P* utiliza **alcance estático** si el valor de *x* en cualquier punto dentro de *f* está determinado por la declaración más cercana de *x* en el código fuente ==**en el momento de la declaración de *f***==, no en el momento de su invocación.
 
 El alcance estático facilita la comprensión y razonamiento sobre el código, ya que el valor de una variable siempre puede determinarse observando el código fuente, independientemente de cómo o desde dónde se invoque la función.
 
@@ -70,7 +70,7 @@ Al momento de plantear el **ambiente principal**:
 | *f*           | *(lambda (y) (+ x y))* |
 | *x*           | 3                      |
 
-Debemos de conservar tambíen el **subambiente** de la expresión $\texttt{(lambda (y) (+ x y))}$ del estado de las variables cuando esta fue declarada (es decir, debajo de donde esta se insertó a la pila)
+Debemos de conservar tambíen el **subambiente** de la expresión $\texttt{(lambda (y) (+ x y))}$ del estado de las variables cuando ésta fue declarada (es decir, debajo de donde ésta se insertó a la pila)
 
 **Subambiente de** $\texttt{(lambda (y) (+ x y))}$:
 
