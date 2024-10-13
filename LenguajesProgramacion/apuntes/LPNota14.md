@@ -3,7 +3,7 @@
 
 Para estudiar estos conceptos se extiende *MiniLisp* para que soporte funciones *lambda*:
 
-![minilisp-lambdas.png](../imagenes/minilisp-lambdas.png)
+![minilisp-lambdas.png](imagenes/minilisp-lambdas.png)
 
 Ahora es posible definir funciones, por ejemplo, la identidad:
 

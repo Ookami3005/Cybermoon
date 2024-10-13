@@ -8,6 +8,7 @@
 ## Tareas:
 
 1. [Tarea semanal 1](tareas/LPTarea01.md)
+2. [Tarea semanal 2](tareas/LPTarea2.md)
 
 ## Notas:
 
@@ -39,3 +40,8 @@
 	4. [Cerraduras de Función](apuntes/LPNota17.md)
 
 6. **Estrategias de Evaluación**
+	1. [Estrategias de Evaluación Clasicas](apuntes/LPNota18.md)
+	2. [Estrategias de Evaluación y Alcances](apuntes/LPNota19.md)
+	3. [Puntos estrictos](apuntes/LPNota20.md)
+7. **Recursión**
+	1. [Expresiones `letrec`](apuntes/LPNota21.md)
