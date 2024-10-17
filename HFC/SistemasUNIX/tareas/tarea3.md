@@ -1,5 +1,4 @@
 [<- Volver](SistemasUNIX.md)
-
 ## ¿Qué es una función `hash`?
 
 Es un algoritmo matemático que transofroma cualquier bloque arbitario de datos en una nueva serie de caracteres con una longitud fija. Independientemente de la longitud de los datos de entrada, el valor *hash*.
