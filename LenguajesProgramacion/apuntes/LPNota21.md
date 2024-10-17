@@ -5,7 +5,7 @@ Añadiremos ahora una nueva construcción a nuestro *MiniLisp* la cual nos permi
 
 Este constructor se llama `letrec` y se añade a la gramática de nuestro lenguaje como sigue:
 
-![minilisp-letrec.png](minilisp-letrec.png)
+![minilisp-letrec.png](imágenes/minilisp-letrec.png)
 
 Este nuevo constructor es una extensión de nuestro ya conocido `let` que se incluye en lenguajes como *Lisp*, *Scheme* o *Racket* y tiene como objetivo definir variables o funciones de forma recursiva.
 
