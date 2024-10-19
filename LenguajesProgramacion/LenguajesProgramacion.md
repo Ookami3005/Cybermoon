@@ -1,4 +1,4 @@
-[<- Volver](IndiceDeMaterias.md)
+[<- Índice de Materias](IndiceDeMaterias.md)
 # Lenguajes de programación
 
 ![hoguera](../imagenes/hogueraDS.png)
@@ -43,5 +43,6 @@
 	1. [Estrategias de Evaluación Clasicas](apuntes/LPNota18.md)
 	2. [Estrategias de Evaluación y Alcances](apuntes/LPNota19.md)
 	3. [Puntos estrictos](apuntes/LPNota20.md)
+
 7. **Recursión**
-	1. [Expresiones `letrec`](apuntes/LPNota21.md)
+	1. [Expresiones *letrec*](apuntes/LPNota21.md)
