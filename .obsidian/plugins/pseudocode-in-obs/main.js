@@ -14867,3 +14867,5 @@ var PseudocodePlugin = class extends import_obsidian3.Plugin {
     await this.saveData(this.settings);
   }
 };
+
+/* nosourcemap */
