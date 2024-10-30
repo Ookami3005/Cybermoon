@@ -46,3 +46,4 @@
 
 7. **Recursión**
 	1. [Expresiones *letrec*](apuntes/LPNota21.md)
+	2. [Combinadores de Punto FIjo](apuntes/LPNota22.md)
