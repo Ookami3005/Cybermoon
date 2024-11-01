@@ -1,5 +1,6 @@
 {
   "accentColor": "#fd1c1c",
   "cssTheme": "",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "monospaceFontFamily": "Liberation Mono"
 }
