@@ -59,4 +59,4 @@ Para corregir esto, tendremos que ahondar aun más en el estudio del *Calculo $\
 
 # Enlaces
 
-[<- Anterior](LPNota20.md) |
+[<- Anterior](LPNota20.md) | [Siguiente ->](LPNota22.md)

@@ -49,4 +49,68 @@ Entonces podemos aplicar estos mismos pasos para lograr la recursión de cualqui
 
 Sin embargo, en un lenguaje de programación real (y en general) ==el paso 2 puede ser complicado== pues dependemos de analizar la estructura del cuerpo de la función, lo cual ==complica, entre otras cosas, el análisis sintáctico== pues hay que detectar todos los puntos donde se manda a llamar la función.
 
-Es aqui
+> Es aqui donde entran los combinadores de punto fijo.
+
+Si $F$ es un **combinador de punto fijo** y $g$ es una función cualquiera, entonces $(Fg)$ da como resultado el punto fijo de $g$, es decir:
+
+$$
+Fg = g(Fg)
+$$
+
+Por ejemplo, si retomamos nuestra definición de $A$ sin la autoaplicación:
+$$
+A \; =_{def} \; \lambda f. \lambda n. \; if0 \; n \; 0 \; (S \; n \; (f \; (Pn)))
+$$
+
+Podemos aplicar algún combinador de punto fijo $F$ para lograr la recursión sin necesidad de autoaplicar explícitamente.
+
+![combinadorRecursion.png](imagenes/combinadorRecursion.png)
+
+---
+### Combinador de Punto Fijo Y
+
+Existen distintos combinadores de punto fijo, el más conocido y descubierto por *Haskell Curry* es el ==**Combinador Y**==.
+
+> $Y \; =_{def} \; \lambda f. \; (\lambda x. \; f(xx))(\lambda x. \; f(xx))$
+
+## Modificando MiniLisp
+
+Usando la definición del *Combinador Y*, es posible cambiar el diseño de nuestro lenguaje sin modificar las reglas semánticas de manera tal que permita la recursión de expresiones sin el uso de la primitiva `letrec`.
+
+Por ejemplo, podemos partir de la siguiente expresión que lanza un error de variable libre.
+
+$\texttt{(let (sum (lambda (n) (if0 n 0 (+ n (sum (- n 1))))))}$
+$\hspace{1cm}\texttt{(sum 3))}$
+
+Para usar el *Combinador Y*, debemos adaptar nuestra definición, de manera que la función reciba una función como parámetro.
+
+$\texttt{(let (sum (lambda (sum) (lambda (n) (if0 n 0 (+ n (sum (- n 1)))))))}$
+$\hspace{1cm}\texttt{(sum 3))}$
+
+De esta forma, podemos definir $Y$ mediante otro identificador y aplicarlo a $\texttt{sum}$.
+
+$\texttt{(let (Y (lambda (f) ((lambda (x) (f (x x)))(lambda (x) (f (x x))))))}$
+$\hspace{1cm}\texttt{(let (sum (Y (lambda (sum) (lambda (n) (if0 n 0 (+ n (sum (- n 1))))))))}$
+$\hspace{2cm}\texttt{(sum 3))}$
+
+con lo cual, ==sin modificar nuestras reglas==, se obtiene un resultado de $6$.
+
+De esta forma, basta con jugar con el azucar sintáctica como sigue:
+
+1. Considerar la primitiva `letrec` como azucar sintáctica de `let`, añadiendo la aplicación de $\texttt{Y}$ al principio del valor asociado al identificador correspondiente. Esto es:
+
+$\texttt{(letrec (<id> <value>)}$
+$\hspace{1cm}\texttt{<body>)}$
+
+Se transforma a:
+
+$\texttt{(let (<id> (Y (lambda (<id>) <value>)))}$
+$\hspace{1cm}\texttt{<body>)}$
+
+2. Al llamar al realizar las reducciones, añadir al ambiente de evaluación inicial la definición de $\texttt{Y}$.
+
+$e,[Y \leftarrow (\texttt{(lambda (f) ...)})] \; \Rightarrow \; ...$
+
+# Enlaces
+
+[<- Anterior](LPNota21.md) |

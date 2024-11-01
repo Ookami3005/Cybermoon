@@ -9,6 +9,7 @@
 
 1. [Tarea semanal 1](tareas/LPTarea01.md)
 2. [Tarea semanal 2](tareas/LPTarea2.md)
+3. [Tarea semanal 9](tareas/LPTarea09.md)
 
 ## Notas:
 
@@ -47,3 +48,6 @@
 7. **Recursión**
 	1. [Expresiones *letrec*](apuntes/LPNota21.md)
 	2. [Combinadores de Punto FIjo](apuntes/LPNota22.md)
+
+8. **Continuaciones**
+	1. [Expresiones *let/cc*](LPNota23.md)
