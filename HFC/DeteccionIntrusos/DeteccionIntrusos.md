@@ -12,5 +12,6 @@
 1. [Introducción a Ciberseguridad Defensiva](apuntes/HFC22_10_2024.md)
 2. [Dispositivos de Red enfocados a Defensa](HFC23_10_2024.md)
 3. [IDS/NIDS](apuntes/HFC24_10_2024.md)
-5. [Snort y Proxies](apuntes/HFC28_10_2024.md)
+4. [Snort](./apuntes/HFC25_10_2024.md)
+5. [Proxies](apuntes/HFC28_10_2024.md)
 6. [DNS y Dispositivos Finales](apuntes/HFC29_10_2024.md)
