@@ -1,7 +1,7 @@
 [<- Índice de Módulos](../HackingFightClub.md)
 # Detección de Intrusos
 
-![bonfire2.jpg](../../bonfire2.jpg)
+![bonfire2.jpg](../../imagenes/bonfire2.jpg)
 
 ## Tareas
 
