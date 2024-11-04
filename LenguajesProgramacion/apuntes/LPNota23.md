@@ -88,6 +88,49 @@ $\texttt{(lambda (v) (+ (expt 2 2) (expt 2 3) v (expt 2 5)))}$
 
 Sin embargo al ejecutar en *Racket* se obtiene 60 como resultado.
 
+Nuestra ejecución hecha a mano muestra un resultado distinto porque considera la **continuación asociada** como si se tratara de cualquier función del lenguaje.
+
+Es decir, ==al aplicarse la continuación, devuelve un resultado que es **integrado** en la expresión original==.
+
+Sin embargo, al aplicar una continuación comúnmente se espera que ésta ==tóme el control de la ejecución== y devuelva **inmediatamente** su evaluación como resultado de toda la expresión.
+
+> Para no causar confusiones suele usarse la notación $\texttt{lambda} \uparrow$, para distinguir entre continuaciones y el resto de las funciones del lenguaje.
+
+Estas funciones reciben el nombre de ==**escapes**==, pues al aplicarse, se finaliza la ejecución del programa.
+
+Ahora, al evaluar la misma expresión de arriba, obtenemos la continuacióna sociada en notación $\texttt{lambda} \uparrow$ :
+
+$\texttt{(lambda} \uparrow (v) \; \texttt{(+ (expt 2 2) (expt 2 3) v (expt 2 5)))}$
+
+Que al aplicarse a $\texttt{(expt 2 4)}$, ignoramos el resto de la expresión y resulta en:
+
+$$
+\texttt{((lambda}\uparrow \texttt{(v) (+ 4 8 v 32)) 16)}
+$$
+
+Obteniendo así $60$ y finalizando la ejecución del programa.
+
+### Ejemplo
+
+Un uso más convencional de continuaciones podría ser por ejemplo:
+
+```Racket
+(define c #f)
+
+(+ 1 (let/cc here
+		(set! c here)
+		2)) ; 3
+		
+(c 10) ; 11
+```
+
+- La primera expresión define una variable `c` (de continuación) como falsa por pura **convención en Racket**.
+
+- La segunda expresión define una suma con una expresión `let/cc` anidada donde redefinimos `c` con la continuación capturada `here` y finalmente devolvemos un `2` para que la expresión pueda evaluarse como `3`.
+
+- En esta última expresión utilizamos nuestra continuación almacenada en `c` aplicada con `10`.
+
+A pesar de que sea raro el procedimiento de las primeras 2 expresiones, se realiza con el objetivo de ==**almacenar la continuación**== en una variable, permitiendonos usarla más **libremente**.
 # Enlaces
 
-[<- Anterior](LPNota22.md) |
+[<- Anterior](LPNota22.md) | [Siguiente ->](LPNota24.md)
