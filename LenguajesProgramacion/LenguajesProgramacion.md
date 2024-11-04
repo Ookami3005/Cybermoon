@@ -50,4 +50,5 @@
 	2. [Combinadores de Punto FIjo](apuntes/LPNota22.md)
 
 8. **Continuaciones**
-	1. [Expresiones *let/cc*](LPNota23.md)
+	1. [Expresiones *let/cc*](apuntes/LPNota23.md)
+	2. [*Continuation Passing Style*](apuntes/LPNota24.md)
