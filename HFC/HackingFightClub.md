@@ -19,3 +19,4 @@
 - [Análisis de *Malware*](AnalisisMalware/AnalisisMalware.md)
 - [Detección de Intrusos](DeteccionIntrusos/DeteccionIntrusos.md)
 - [Seguridad Perimetral](SeguridadPerimetral/SeguridadPerimetral.md)
+- [Análisis Forense](Forense/Forense.md)
