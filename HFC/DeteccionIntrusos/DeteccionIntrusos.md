@@ -3,11 +3,13 @@
 
 ![bonfire2.jpg](../../imagenes/bonfire2.jpg)
 
-## Tareas
+## *Tareas*
 
 1. [Análisis de Visibilidad](tareas/DI_Tarea1.md)
 
-## Notas
+## *Notas*
+
+> Basadas, en su mayoría, en el material del curso *"Detección de Intrusos"* impartido por el *Hackers Fight Club*, *Facultad de Ciencias*, *UNAM*
 
 1. [Introducción a Ciberseguridad Defensiva](apuntes/HFC22_10_2024.md)
 2. [Dispositivos de Red enfocados a Defensa](apuntes/HFC23_10_2024.md)
