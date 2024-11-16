@@ -34,3 +34,7 @@ Utiliza 3 tipos de mensajes:
 - Elección (E)
 - Respuesta (R)
 - Ganador o Electo (G)
+
+# Enlaces
+
+[<- Anterior](CompDis_3-1.md) |

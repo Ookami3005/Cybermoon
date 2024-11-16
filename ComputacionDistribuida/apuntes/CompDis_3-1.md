@@ -42,4 +42,4 @@ Si se requiere una mayor precisión en la hora puede realizarse este mismo proce
 
 # Enlaces
 
-[<- Anterior](CompDis_2-4.md) |
+[<- Anterior](CompDis_2-4.md) | [Siguiente ->](CompDis_3-2.md)

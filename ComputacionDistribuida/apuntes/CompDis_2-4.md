@@ -18,7 +18,7 @@ Puede ser un simple
 - **Contador**: perder el interés despues de enviar el mensaje *k* veces
 - **"Moneda"**: pierde el interés con probablididad $\displaystyle p/k$ después de cada envío
 - **"Retroalimentación"**: El nodo emisor solo pierde interés si el nodo vecino ya conocía ese rumor,
-- **Ciega**: No se verifica la correcta recepción del mensaje antes de perder interés.
+- **Ciega**: No se considera si el receptor ya sabía del rumor
 
 # Protocolos de Agregación
 
@@ -40,4 +40,4 @@ Los protocolos más famosos son:
 
 # Enlaces
 
-[<- Anterior](CompDis_2-3.md) |
+[<- Anterior](CompDis_2-3.md) | [Siguiente ->](CompDis_3-1.md)

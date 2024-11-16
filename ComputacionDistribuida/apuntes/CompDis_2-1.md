@@ -12,4 +12,6 @@ Si $p=1$, entonces tenemos la gráfica completa, que ***tampoco es una gráfica 
 
 Entonces para que se la gráfica se de **mundo pequeño**, $p$ debe tener un ***valor intermedio***.
 
-[[]]
+# Enlaces
+
+| [Siguiente ->](CompDis_2-2.md)

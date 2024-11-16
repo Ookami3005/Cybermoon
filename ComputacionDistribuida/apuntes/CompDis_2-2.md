@@ -27,4 +27,4 @@ El **protocolo de Bit alternante** es una manera simple y confiable de mantener 
 
 # Enlaces
 
-[<- Anterior](CompDis_2-1.md) |
+[<- Anterior](CompDis_2-1.md) | [Siguiente ->](CompDis_2-3.md)
