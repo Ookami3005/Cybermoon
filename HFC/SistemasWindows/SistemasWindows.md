@@ -2,7 +2,11 @@
 
 ![hogueraDS.png](../../imagenes/bonfire2.jpg)
 
-## Notas
+## *Fundamentos*
+
+
+
+## *Active Directory*
 
 - [Introducción a Active Directory](apuntes/HFC26_08_2024.md)
 - [Dominios y árboles](apuntes/HFC28_08_2024.md)
