@@ -93,7 +93,30 @@ Estar todo el tiempo en una sesión de administrador ciertamente es peligroso pa
 
 Entonces, junto con *Windows Vista*, se introdujo el concepto de **UAC**.
 Este consiste en mantener la cuenta del usuario con permisos estándar hasta que este realice una acción que requiera permisos privilegiados.
-Entonces, se preguntara en pantalla una confirmación para permitir que esta operación se realice, donde una vez confirmada se elevarán los privilegios **momentáneamente** durtante la operación.
+Entonces, se preguntara en pantalla una confirmación para permitir que esta operación se realice, donde una vez confirmada se elevarán los privilegios **momentáneamente** durante la operación.
 
 Esto por supuesto reduce el impacto de acciones malintencionadas, por ejemplo, detonadas por un *malware* u otra ejecución maliciosa.
 Además de permitir permisos más flexibles en el sistema, sin la necesidad de abrir tantas cuentas de administrador.
+
+### Ajustes y Panel de Control
+
+> Durante mucho tiempo, el ***Panel de Control*** fue la utilidad principal para realizar ajustes sobre el sistema, sin embargo, hoy en día ***Ajustes*** ha empezado a remplazarlo para la gestión de ajustes básicos y comunes.
+
+Aún así, cuando requerimos ajustes más sofisticados del dispositivo es altamente probable que nos rediriga al aún vivo ***Panel de Control***, por lo que si no tienes claro en cuál de las 2 buscar, siempre puedes introducir el ajuste buscado en la barra de busqueda y escoger la opción adecuada.
+
+### Gestor de tareas
+
+> El ***gestor de tareas*** es la utilidad que provee información sobre las aplicaciones y procesos activos en el sistema, ademas de detalles de ***desempeño*** como cuanta *CPU* y *RAM* utilizan o los usuarios propietarios de dichos procesos.
+
+---
+
+Con todo esto, estamos listos para adentrarnos más en *Windows* en las siguientes notas. Cabe recalcar que *Windows* puede llegar a ser un sistema mucho más complejo e incluso odioso que *Linux* en algunos aspectos, pues prioriza la ***retrocompatibilidad*** como una propiedad principal.
+Esto causa una gran amalgama de programas viejos y nuevos conviviendo en una extraña simbiosis con el fin de que todo funcione como debería (prueba de ello es el zombificado *cmd*).
+
+Sin embargo, esto mismo muchas veces también atribuye a formar un sistema amigable con usuarios nuevos o poco experimentados, característica que lo ha llevado a la posición en la que se encuentra, dominando el mercado de las computadoras personales.
+
+%%Que no se note que no me gusta WIndows%%
+
+# Enlaces
+
+[MSConfig ->](MSConfig.md)

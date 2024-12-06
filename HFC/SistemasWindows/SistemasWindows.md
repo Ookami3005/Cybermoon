@@ -4,7 +4,8 @@
 
 ## *Fundamentos*
 
-
+- [Introducción a Sistemas Windows](fundamentos/IntroduccionWindows.md)
+- [*MSConfig*](fundamentos/MSConfig.md)
 
 ## *Active Directory*
 

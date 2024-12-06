@@ -126,4 +126,4 @@ Es un sistema de computación diseñado para realizar funciones específicas, y 
 ![diferentesModulos.png](imagenes/diferentesModulos.png)
 
 # Enlaces
-[<- Anterior](Introduccion.md) | [Siguiente ->](CodigosSeñalesDigitalesYAnalogicas.md)
+[<- Anterior](IntroduccionIoT.md) | [Siguiente ->](CodigosSeñalesDigitalesYAnalogicas.md)

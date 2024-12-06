@@ -4,7 +4,7 @@
 
 Notas:
 
-1. [Introducción](apuntes/Introduccion.md)
+1. [Introducción](apuntes/IntroduccionIoT.md)
 2. [Dispositivos del Internet de las Cosas](apuntes/DispositivosInternetDeLasCosas.md)
 3. [Códigos de Señales Digitales y Analógicas](apuntes/CodigosSeñalesDigitalesYAnalogicas.md)
 ---
