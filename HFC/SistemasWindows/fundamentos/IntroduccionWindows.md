@@ -91,8 +91,8 @@ Solo hace falta presionar la combinación de teclas `Win+R` y en la caja de text
 
 Estar todo el tiempo en una sesión de administrador ciertamente es peligroso para el sistema, por lo que no es viable.
 
-Entonces, junto con *Windows Vista*, se introdujo el concepto de **UAC**.
-Este consiste en mantener la cuenta del usuario con permisos estándar hasta que este realice una acción que requiera permisos privilegiados.
+Entonces, junto con *Windows Vista*, se introdujo el concepto de **UAC** y de cuentas de **administrador local**.
+Este tipo de cuentas consiste en mantener la cuenta del usuario con permisos estándar hasta que este realice una acción que requiera permisos privilegiados.
 Entonces, se preguntara en pantalla una confirmación para permitir que esta operación se realice, donde una vez confirmada se elevarán los privilegios **momentáneamente** durante la operación.
 
 Esto por supuesto reduce el impacto de acciones malintencionadas, por ejemplo, detonadas por un *malware* u otra ejecución maliciosa.

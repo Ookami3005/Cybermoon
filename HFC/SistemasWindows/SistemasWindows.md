@@ -1,11 +1,13 @@
 [<- Índice de Modulos](../HackingFightClub.md)
+# Introducción a Sistemas Windows
 
 ![hogueraDS.png](../../imagenes/bonfire2.jpg)
 
 ## *Fundamentos*
 
 - [Introducción a Sistemas Windows](fundamentos/IntroduccionWindows.md)
-- [*MSConfig*](fundamentos/MSConfig.md)
+- [Configuración del Sistema](fundamentos/MSConfig.md)
+- [Seguridad en Windows](fundamentos/Seguridad.md)
 
 ## *Active Directory*
 
