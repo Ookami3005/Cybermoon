@@ -29,7 +29,9 @@ Los comandos básicos para el uso del ***CMD*** son:
 ```bat
 type user.txt
 
-# Busca flag.txt en todo el disco
+dir *.py*
+
+REM Busca flag.txt en todo el disco
 where /R C:\ flag.txt
 
 set
@@ -82,10 +84,10 @@ La bandera para desplegar información de ayuda, suele ser `/?`. De este modo po
 Sin embargo, según el comando, puede variar pues algunos reciben banderas en formato *Unix* como `netstat` o de alguna otra manera.
 
 ```bat
-# Información extra sobre la configuración de la red
+REM Información extra sobre la configuración de la red
 ipconfig /all
 
-# Listado de archivos ocultos
+REM Listado de archivos ocultos
 dir /a
 
 netstat -ab
@@ -112,7 +114,67 @@ type prueba.txt | find "FLAG"
 
 ### Variables
 
+En este tipo de terminal, podemos interactuar con variables locales o de entorno con el comando `set`. Además, las variables se representan entre simbolos de porcentaje (*%*), por ejemplo `%var%`.
+
+```bat
+set saludo="Hola mundo"
+echo %saludo%
+
+echo %windir%
+
+echo %PATH%
+```
+
 ### Scripting
+
+> En ***CMD***, podemos realizar **scripts** para automatizar una serie de comandos de este tipo de *Shell*. Se almacenan como archivos `.bat` o `.cmd`.
+
+Algunos comando utiles para crear ***Scripts*** son:
+
+- `@echo off`: Por defecto, los **Scripts** poseen cierto grado de verbosidad, anunciando los comandos realizados. Este comando deshabilita dicha funcionalidad y solo muestra los resultados.
+
+- `REM comentario`: Los comentarios se realizan con la palabra clave `REM`
+
+- `pause`: Detiene la ejecución hasta que el usuario presione una tecla
+
+- `set /p nombre=Introduce tu nombre:` : Recibe una entrada del usuario, mostrando en pantalla el texto despues del (=).
+
+#### Lógica de control
+
+> Por supuesto, no pueden faltar las estructuras de control para gestionar el flujo del **Script**.
+
+##### Saltos
+
+Podemos indicar saltos a traves del código mediante el comando `goto` y el uso de *"etiquetas"*.
+
+```bat
+@echo off
+goto :etiqueta
+echo Me van a saltar
+echo A mi también
+:etiqueta
+echo Saltamos hasta aca
+```
+
+##### Condicionales
+
+No podían faltar las condicionales `if`, son principalmente utilizadas para comparar cadenas, numeros o para verificar la existencia de archivos.
+
+Las comparaciones se realizan con las palabras clave:
+
+- `EQU` o `==`: Igual
+- `NEQ`: Distinto
+- `LSS`: Menor que
+- `LEQ`: Menor o igual que
+- `GTR`: Mayor que
+- `GEQ`: Mayor o igual que
+
+Mientras que la existencia de archivos se verifica con el palabra clave `exist`. Este solo busca el archivo en el directorio en el que nos ubiquemos.
+
+Ademas podemos negar cualquier condición de un `if` con la palabra clave `not`.
+
+```bash
+```
 
 # Enlaces
 
