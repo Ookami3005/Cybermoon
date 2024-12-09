@@ -209,7 +209,7 @@ if %cadena1% EQU %cadena2% (
 Por ejemplo, el ciclo para listar los archivos en el directorio actual serían:
 
 ```batch
-REM Cuando el for esta en un Script, se le debe poner doble porcentaje a las variables
+REM Cuando el for esta en un Script Batch, se le debe poner doble porcentaje a las variables
 for %%i in (*.py,*.java,*.hs) do (
 	echo %%i es un archivo de programacion!!
 )
@@ -220,4 +220,4 @@ for %i in (*) do echo %i
 
 # Enlaces
 
-[<- Seguridad](Seguridad.md) |
+[<- Seguridad](Seguridad.md) | [PowerShell ->](PowerShell.md)

@@ -9,6 +9,7 @@
 - [Configuración del Sistema](fundamentos/MSConfig.md)
 - [Seguridad en Windows](fundamentos/Seguridad.md)
 - [Windows Command Line](fundamentos/WindowsCMD.md)
+- [*PowerShell*](fundamentos/PowerShell.md)
 
 ## *Active Directory*
 
@@ -16,4 +17,3 @@
 - [Administración de Usuarios, Grupos y Políticas](HFC27_08_2024.md)
 - [Autenticación](apuntes/HFC28_08_2024.md)
 - [Árboles, Bosques y Relaciones de Confianza](apuntes/HFC29_08_2024.md)
-- [PowerShell](apuntes/HFC30_08_2024.md)

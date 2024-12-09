@@ -41,4 +41,4 @@ Es una manera de proteger la información del disco duro mediante la **encriptac
 
 # Enlaces
 
-[<- MSConfig](MSConfig.md) | [WindowsCMD ->](WindowsCMD.md)
+[<- MSConfig](MSConfig.md) | [Windows CMD ->](WindowsCMD.md)
