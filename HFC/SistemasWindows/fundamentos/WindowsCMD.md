@@ -26,7 +26,7 @@ Los comandos básicos para el uso del ***CMD*** son:
 - `echo`: Repite el argumento recibido
 - `cls`: Limpia la pantalla.
 
-```bat
+```batch
 type user.txt
 
 dir *.py*
@@ -53,7 +53,7 @@ El principal comando que muestra información sobre los procesos en el sistema e
 
 Si se necesita matar procesos, existe el comando `taskkill /PID [PID]`. Basta con concer el *PID* del proceso para dar el comando anterior y detener su ejecución.
 
-```bat
+```batch
 tasklist
 
 tasklist /FI "imagename eq sshd.exe"
@@ -65,7 +65,7 @@ taskkill /PID 4752
 
 Sobre todo, el comando `help` es capaz de listar la **mayoría** de los comandos disponibles, y si se le indica uno, despliega las opciones disponibles de tal comando.
 
-```bat
+```batch
 help
 
 help find
@@ -83,7 +83,7 @@ La bandera para desplegar información de ayuda, suele ser `/?`. De este modo po
 
 Sin embargo, según el comando, puede variar pues algunos reciben banderas en formato *Unix* como `netstat` o de alguna otra manera.
 
-```bat
+```batch
 REM Información extra sobre la configuración de la red
 ipconfig /all
 
@@ -99,7 +99,7 @@ netstat -ab
 
 No me entretendre mucho en esta sección pues las redirecciones son completamente iguales, sin embargo puedo mencionar que existe la palabra clave `nul` que se comporta como `/dev/null` de los sistemas *Unix*, es decir, es un vacío de información para los datos que no deseamos.
 
-```bat
+```batch
 echo "Hola Mundo" > saludo.txt
 echo "Adios" >> saludo.txt
 
@@ -116,7 +116,7 @@ type prueba.txt | find "FLAG"
 
 En este tipo de terminal, podemos interactuar con variables locales o de entorno con el comando `set`. Además, las variables se representan entre simbolos de porcentaje (*%*), por ejemplo `%var%`.
 
-```bat
+```batch
 set saludo="Hola mundo"
 echo %saludo%
 
@@ -125,7 +125,7 @@ echo %windir%
 echo %PATH%
 ```
 
-### Scripting
+### Batch Scripting
 
 > En ***CMD***, podemos realizar **scripts** para automatizar una serie de comandos de este tipo de *Shell*. Se almacenan como archivos `.bat` o `.cmd`.
 
@@ -147,7 +147,7 @@ Algunos comando utiles para crear ***Scripts*** son:
 
 Podemos indicar saltos a traves del código mediante el comando `goto` y el uso de *"etiquetas"*.
 
-```bat
+```batch
 @echo off
 goto :etiqueta
 echo Me van a saltar
@@ -169,11 +169,53 @@ Las comparaciones se realizan con las palabras clave:
 - `GTR`: Mayor que
 - `GEQ`: Mayor o igual que
 
-Mientras que la existencia de archivos se verifica con el palabra clave `exist`. Este solo busca el archivo en el directorio en el que nos ubiquemos.
+Mientras que la existencia de archivos se verifica con el palabra clave `exist`. Este solo busca el archivo en el directorio en el que nos ubiquemos a menos que indiquemos la ruta completa.
 
 Ademas podemos negar cualquier condición de un `if` con la palabra clave `not`.
 
-```bash
+```batch
+REM Informa si encuentra una bandera en el directorio actual
+if exist flag.txt echo Encontre una bandera en %CD%!
+
+set cadena1=Hola
+set cadena2=Adios
+if not %cadena1% EQU %cadena2% (
+	echo Esto es parte de un bloque de codigo
+	echo Esto tambien
+	echo Y esto
+)
+```
+
+Adicionalmente, podemos agregar, opcionalmente, un `else` para indicar que se debe hacer en caso de no cumplirse la condición pero ahora deberemos encerrar los **comandos** entre paréntesis.
+
+```batch
+if exist flag.txt echo (Encontre una bandera en %CD%!) else (echo No encontre nada)
+
+set cadena1=Hola
+set cadena2=Adios
+if %cadena1% EQU %cadena2% (
+	echo Esto es parte de un bloque de codigo
+	echo Esto tambien
+	echo Y esto
+) else (
+	echo Esto es parte de la clausula else
+)
+```
+
+##### Bucles
+
+> Tampoco podian faltar los bucles, brindando la capacidad de repetir varias acciones con una sola estructura de control.
+
+Por ejemplo, el ciclo para listar los archivos en el directorio actual serían:
+
+```batch
+REM Cuando el for esta en un Script, se le debe poner doble porcentaje a las variables
+for %%i in (*.py,*.java,*.hs) do (
+	echo %%i es un archivo de programacion!!
+)
+
+REM Sin embargo, en la línea de comandos solo se le debe de colocar un porcentaje
+for %i in (*) do echo %i
 ```
 
 # Enlaces
