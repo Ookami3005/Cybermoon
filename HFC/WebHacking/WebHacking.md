@@ -17,3 +17,7 @@
 4. [Autorización](apuntes/HFC30_09_2024.md)
 5. [XSS y SSRF](apuntes/HFC01_10_2024.md)
 6. [Carga de archivos e Inyección *SQL*](apuntes/HFC02_10_2024.md)
+
+## Herramientas
+
+1. [cURL](herramientas/cURL.md)
