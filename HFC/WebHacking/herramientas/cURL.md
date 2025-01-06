@@ -16,6 +16,8 @@ curl http://inlanefreight.com/
 #...
 ```
 
+### Salida
+
 Por supuesto, *cURL* no renderiza la respuesta obtenida como un servidor web sino que la imprime en formato **crudo**.
 
 Alternativamente, se puede indicar la bandera `-O` para que la salida se almacene en un archivo con el mismo nombre que el archivo remoto o la bandera `-o` seguido del nombre que deseamos que tenga el archivo donde se almacena la salida.
@@ -28,6 +30,35 @@ curl inlanefreight.com/index.html -o default.html
 
 curl inlanefreight.com/index.html -s -O
 # Guarda la salida en un archivo local index.html y no imprime nada
+```
+
+### Verbosidad
+
+> Por defecto, *cURL* unicamente recupera el cuerpo de la respuesta *HTTP* a la solicitud realizada. Si deseamos visualizar la solicitud realizada por completo y la respuesta completa debemos indicar la bandera de **verbosidad** `-v`.
+
+```bash
+curl inlanefreight.com -v
+
+# *   Trying SERVER_IP:80...
+# * TCP_NODELAY set
+# * Connected to inlanefreight.com (SERVER_IP) port 80 (#0)
+# > GET / HTTP/1.1
+# > Host: inlanefreight.com
+# > User-Agent: curl/7.65.3
+# > Accept: */*
+# > Connection: close
+# > 
+# * Mark bundle as not supporting multiuse
+# < HTTP/1.1 401 Unauthorized
+# < Date: Tue, 21 Jul 2020 05:20:15 GMT
+# < Server: Apache/X.Y.ZZ (Ubuntu)
+# < WWW-Authenticate: Basic realm="Restricted Content"
+# < Content-Length: 464
+# < Content-Type: text/html; charset=iso-8859-1
+# < 
+# <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+# <html><head>
+# ...
 ```
 
 ## HTTPS

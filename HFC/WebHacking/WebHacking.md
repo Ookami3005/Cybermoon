@@ -20,4 +20,5 @@
 
 ## Herramientas
 
-1. [cURL](herramientas/cURL.md)
+1. [Herramientas integradas en el navegador](herramientas/BrowserDevTools.md)
+1. [*cURL*](herramientas/cURL.md)
