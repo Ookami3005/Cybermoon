@@ -13,11 +13,12 @@
 
 1. [HTTP y HTTPS](apuntes/HFC25_09_2024.md)
 2. [Aplicaciones Web](apuntes/AplicacionWeb.md)
-3. [Google Dorks y Proxys](apuntes/HFC26_09_2024.md)
-4. [Autenticación](apuntes/HFC27_09_2024.md)
-5. [Autorización](apuntes/HFC30_09_2024.md)
-6. [XSS y SSRF](apuntes/HFC01_10_2024.md)
-7. [Carga de archivos e Inyección *SQL*](apuntes/HFC02_10_2024.md)
+3. 
+4. [Google Dorks y Proxys](apuntes/HFC26_09_2024.md)
+5. [Autenticación](apuntes/HFC27_09_2024.md)
+6. [Autorización](apuntes/HFC30_09_2024.md)
+7. [XSS y SSRF](apuntes/HFC01_10_2024.md)
+8. [Carga de archivos e Inyección *SQL*](apuntes/HFC02_10_2024.md)
 
 ## Herramientas
 
