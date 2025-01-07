@@ -10,3 +10,9 @@ Se encuentran separadas por pestañas, y algunos ejemplos importantes son:
 - **Red**: Permite analizar el **tráfico HTTP** entrante y saliente del sitio web, similar a un *proxy web* pero mucho más disminuido.
 
 Todas estas herramientas pueden invocarse con el atajo `Ctrl+Shift+I`.
+
+### Red
+
+En la sección de red, podemos encontrar los encabezados tanto de las peticiones como las respuestas de forma ordenada o cruda según se le indique.
+
+Además podemos revisar las **Cookies** de la petición em la sección correspondiente.

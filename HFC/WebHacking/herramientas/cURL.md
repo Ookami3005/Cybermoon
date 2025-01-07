@@ -61,6 +61,87 @@ curl inlanefreight.com -v
 # ...
 ```
 
+### Encabezados de respuesta
+
+Por otra parte, si únicamente estamos interesados en los encabezados de respuesta, podemos indicar la bandera `-I` para realizar una petición **HEAD** al servidor, recibiendo únicamente los encabezados de respuesta.
+
+De requerirse el cuerpo, la bandera `-i` realizara una petición convencional, pero desplegará los encabezados de respuesta ==junto con el recurso obtenido==.
+
+```bash
+curl -I https://www.inlanefreight.com
+
+# Host: www.inlanefreight.com
+# User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko)
+# Cookie: cookie1=298zf09hf012fh2; cookie2=u32t4o3tb3gg4
+# Accept: text/plain
+# Referer: https://www.inlanefreight.com/
+# Authorization: BASIC cGFzc3dvcmQK
+```
+
+```bash
+curl -i https://www.inlanefreight.com
+
+# Host: www.inlanefreight.com
+# User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko)
+# Cookie: cookie1=298zf09hf012fh2; cookie2=u32t4o3tb3gg4
+# Accept: text/plain
+# Referer: https://www.inlanefreight.com/
+# Authorization: BASIC cGFzc3dvcmQK
+#
+# <!DOCTYPE HTML PUBLIC>
+# <html><head>
+# ...
+```
+
+### Modificación de encabezados
+
+> Además, podemos modificar los encabezados de la solicitud con la bandera `-H` seguida del encabezado en la forma `Encabezado: Valor`, aunque algunos encabezados destacados poseen una bandera propia, como `User-Agent` con la bandera `-A`.
+
+```bash
+curl -A ookami http://nmap.org/ --v
+
+# *   Trying [2600:3c01:e000:3e6::6d4e:7061]:80...
+# * Connected to nmap.org (2600:3c01:e000:3e6::6d4e:7061) port 80 (#0)
+# > GET / HTTP/1.1
+# > Host: nmap.org
+# > User-Agent: ookami
+# > Accept: */*
+# > 
+# < HTTP/1.1 301 Moved Permanently
+# < Date: Mon, 06 Jan 2025 16:20:52 GMT
+# < Server: Apache/2.4.6 (CentOS)
+# < Location: https://nmap.org/
+# < Content-Length: 298
+# < Content-Type: text/html; charset=iso-8859-1
+# < 
+# <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+# <html><head>
+# ...
+```
+
+### Credenciales Basic
+
+Podemos especificar credenciales de autenticación de *Basic* con la bandera `-u`.
+
+```bash
+curl -I http://inlanefreight.com/
+
+# HTTP/1.1 401 Authorization Required
+# Date: Mon, 21 Feb 2022 13:11:46 GMT
+# Server: Apache/2.4.41 (Ubuntu)
+# Cache-Control: no-cache, must-revalidate, max-age=0
+# WWW-Authenticate: Basic realm="Access denied"
+# Content-Length: 13
+# Content-Type: text/html; charset=UTF-8
+```
+
+```bash
+curl -u admin:admin http://inlanefreight.com/
+
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+```
 ## HTTPS
 
 **cURL** gestiona automáticamente todos los pasos necesarios en una comunicación *HTTPS*. SIn embargo, cabe recalcar que, de encontrarse con un sitio web sin un certificado *TLS/SSL* válido. imposibilitará toda la comunicación con este, por temas de seguridad.
