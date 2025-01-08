@@ -1,4 +1,4 @@
-[<- Índice](../WebHacking.md)
+[WebHacking](../WebHacking.md)
 # Desofuscación de Javascript
 
 Antes de adentrarnos de lleno en este tema, primero hay que dejar claro que es la ***ofuscación de código***.
