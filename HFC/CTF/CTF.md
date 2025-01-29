@@ -5,4 +5,4 @@
 
 Espero que eventualmente ya no sea tan pequeño
 
-- [*x3CTF-2025*]()
+- [*x3CTF - 2025*](x3ctf2025/x3ctf2025.md)

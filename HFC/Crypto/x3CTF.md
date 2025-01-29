@@ -57,7 +57,7 @@
 
 # Penúltimos 4 bits $\iff$
 
-### Primera y segunda posición
+### Primera, segunda, tercera, cuarta posición
 
 | Caracter de entrada | Caracter de salida |
 | ------------------- | ------------------ |
