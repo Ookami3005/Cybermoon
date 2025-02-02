@@ -5,7 +5,7 @@
 
 > Este reto consistió de realizar **ingeniería inversa** a un binario `spn`, que recibe un cadena y de alguna manera verifica si esta es la bandera.
 
-**Binario**: https://github.com/x3ctf/challenges-2025/raw/refs/heads/main/rev/notcrypto/challenge-src/spn
+***Binario***: https://github.com/x3ctf/challenges-2025/raw/refs/heads/main/rev/notcrypto/challenge-src/spn
 
 Por ejemplo, al introducir la cadena `Hola`.
 
@@ -164,52 +164,187 @@ La correspondiente sección del desensamblado es:
 Con el correspondiente **análisis estático** y **dinámico** del binario, se deduce que el binario repite un proceso de "encriptación" que consta de recuperar de un arreglo de *bytes* el índice correspondiente al ==valor hexadecimal de un caracter de la contraseña==, realizar una operación *XOR* con él y los últimos 2 digitos del iterador, y almacenar este resultado como el siguiente índice a consultar.
 Esto repetido 1000 veces por cada caracter de un octeto de *bytes* de la cadena recibida, para posteriormente, revisar que cada caracter del octeto encriptado sea el esperado y continuar este proceso con los demás octetos hasta revisar toda la contraseña.
 
-Con esto en mente, con el arreglo de *bytes* y con todos los *bytes* que se esperan de la contraseña encriptada, podemos hacer nuestra propia versión del cifrado del binario y descubrir los caractéres que, encriptados bajo este proceso, resultan en el *byte* que el binario espera.
+Adicionalmente, en alguna parte de este cifrado se alteran las posiciones de los caracteres originales.
+
+Con esto en mente, con el arreglo de *bytes* y con todos los *bytes* que se esperan de la contraseña encriptada, podemos revertir este proceso de cifrado para obtener los caracteres originales de cada octeto, y reordenar estos a sus posiciones originales.
 
 ```python
+#!//usr/bin/env python
+
+# x3CTF 2025
+# NotCrypto: https://github.com/x3ctf/challenges-2025/tree/main/rev/notcrypto
+
+"""
+My solution
+"""
+
+# ------------------
 # Ookami
-# HFC
+# Hackers Fight Club
+# ------------------
 
 # Expected bytes
 encrypt_flag=b"\x16\x2d\x79\xca\x56\xc6\x65\xe9\xe9\x16\x66\x23\x09\x2d\x1b\x09\x1c\x09\xc6\x1c\x1f\xad\xe9\xda\xa0\xc6\x1a\x66\x09\xad\x81\x1c\x80\x39\xa0\x21\x09\x65\x2d\x30\xf6\x57\xf6\xa2\x65\x65\x21\xa2"
 
 # Byte array for encryption
-byte_array=b"c|w{\xf2ko\xc50\x01g+\xfe\xd7\xab\x76\xca\x82\xc9}\xfaYG\xf0\xad\xd4\xa2\xaf\x9c\xa4r\xc0\xb7\xfd\x93&6?\xf7\xcc4\xa5\xe5\xf1q\xd81\x15\x04\xc7#\xc3\x18\x96\x05\x9a\x07\x12\x80\xe2\xeb'\xb2u\x09\x83,\x1a\x1bnZ\xa0R;\xd6\xb3)\xe3/\x84S\xd1\x00\xed\x20\xfc\xb1\x5b\x6a\xcb\xbe\x39\x4a\x4c\x58\xcf\xd0\xef\xaa\xfb\x43\x4d\x33\x85\x45\xf9\x02\x7f\x50\x3c\x9f\xa8\x51\xa3\x40\x8f\x92\x9d\x38\xf5\xbc\xb6\xda\x21\x10\xff\xf3\xd2\xcd\x0c\x13\xec\x5f\x97\x44\x17\xc4\xa7\x7e\x3d\x64\x5d\x19\x73\x60\x81\x4f\xdc\x22\x2a\x90\x88\x46\xee\xb8\x14\xde\x5e\x0b\xdb\xe0\x32\x3a\x0a\x49\x06\x24\x5c\xc2\xd3\xac\x62\x91\x95\xe4\x79\xe7\xc8\x37\x6d\x8d\xd5\x4e\xa9\x6c\x56\xf4\xea\x65\x7a\xae\x08\xba\x78\x25\x2e\x1c\xa6\xb4\xc6\xe8\xdd\x74\x1f\x4b\xbd\x8b\x8a\x70\x3e\xb5\x66\x48\x03\xf6\x0e\x61\x35\x57\xb9\x86\xc1\x1d\x9e\xe1\xf8\x98\x11\x69\xd9\x8e\x94\x9b\x1e\x87\xe9\xce\x55\x28\xdf\x8c\xa1\x89\x0d\xbf\xe6\x42\x68\x41\x99\x2d\x0f\xb0\x54\xbb\x16"
+byte_array=b'c|w{\xf2ko\xc50\x01g+\xfe\xd7\xabv\xca\x82\xc9}\xfaYG\xf0\xad\xd4\xa2\xaf\x9c\xa4r\xc0\xb7\xfd\x93&6?\xf7\xcc4\xa5\xe5\xf1q\xd81\x15\x04\xc7#\xc3\x18\x96\x05\x9a\x07\x12\x80\xe2\xeb\'\xb2u\t\x83,\x1a\x1bnZ\xa0R;\xd6\xb3)\xe3/\x84S\xd1\x00\xed \xfc\xb1[j\xcb\xbe9JLX\xcf\xd0\xef\xaa\xfbCM3\x85E\xf9\x02\x7fP<\x9f\xa8Q\xa3@\x8f\x92\x9d8\xf5\xbc\xb6\xda!\x10\xff\xf3\xd2\xcd\x0c\x13\xec_\x97D\x17\xc4\xa7~=d]\x19s`\x81O\xdc"*\x90\x88F\xee\xb8\x14\xde^\x0b\xdb\xe02:\nI\x06$\\\xc2\xd3\xacb\x91\x95\xe4y\xe7\xc87m\x8d\xd5N\xa9lV\xf4\xeaez\xae\x08\xbax%.\x1c\xa6\xb4\xc6\xe8\xddt\x1fK\xbd\x8b\x8ap>\xb5fH\x03\xf6\x0ea5W\xb9\x86\xc1\x1d\x9e\xe1\xf8\x98\x11i\xd9\x8e\x94\x9b\x1e\x87\xe9\xceU(\xdf\x8c\xa1\x89\r\xbf\xe6BhA\x99-\x0f\xb0T\xbb\x16'
 
-# Simulated encryption function
-def transforma_caracter(c):
+# Reverse the cipher process
+def decipher_char(c):
     global byte_array
-    index = c
-    for i in range(16):
-        for j in range(256):
-            index = byte_array[index] ^ j
-    return index
+    index=ord(c)
+    for i in range(0xfff,-1,-1):
+        index = byte_array.index(index ^ (i & 0xff))
+    return chr(index)
 
-result=[]
+# Reorder the retrieved flag
+def reorder_flag(disordered_flag):
+    flag=['' for _ in disordered_flag]
+    for i in range(0,len(encrypt_flag),8):
+        flag[i]=disordered_flag[i+2]
+        flag[i+1]=disordered_flag[i+6]
+        flag[i+2]=disordered_flag[i+4]
+        flag[i+3]=disordered_flag[i+3]
+        flag[i+4]=disordered_flag[i]
+        flag[i+5]=disordered_flag[i+5]
+        flag[i+6]=disordered_flag[i+7]
+        flag[i+7]=disordered_flag[i+1]
+    return flag
 
-# Brute force on expected chars
-for elem in encrypt_flag:
-    for i in range(256):
-        encrypt_char=transforma_caracter(i)
-        if encrypt_char == elem:
-            result.append(chr(i))
-            break
-
-ordered=['' for _ in result]
-
-# Reorder flag
-for i in range(0,len(result),8):
-    ordered[i]=result[i+2]
-    ordered[i+1]=result[i+6]
-    ordered[i+2]=result[i+4]
-    ordered[i+3]=result[i+3]
-    ordered[i+4]=result[i]
-    ordered[i+5]=result[i+5]
-    ordered[i+6]=result[i+7]
-    ordered[i+7]=result[i+1]
-
-
-print('Disordered flag: '+''.join(result))
-print()
-print('Right flag: '+''.join(ordered))
+# Output the decrypted flag
+print('Flag: '+''.join([decipher_char(chr(c)) for c in reorder_flag(encrypt_flag)]))
 ```
+
+### `pickle-season`
+
+> En este reto, se nos brindaba un *Script* en *Python* que reconstruye un archivo binario comprensible por el módulo `pickle` de este mismo lenguaje.
+> Este binario, una vez ejecutado, espera una entrada y revisa de alguna manera si es la bandera de este reto.
+> Claramente, el desafío es realizar **ingeniería inversa** sobre este binario tan atípico y determinar la bandera.
+
+***Script inicial***: https://raw.githubusercontent.com/x3ctf/challenges-2025/refs/heads/main/rev/pickle-season/challenge-src/challenge.py
+
+```python
+import pickle
+
+data = "8004637379730a6d6f64756c65730a8c017494636275696c74696e730a747970650a8c00297d87529473304e9430636275696c74696e730a7072696e740a9470320a68014e7d8c0162946802738662303063740a622e5f5f73656c665f5f0a70320a68014e7d680468027386623030284b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004b004ad6ffffff6c70320a68014e7d8c0169946802738662303063740a692e657874656e640a63740a622e6d61700a63740a622e6f72640a63740a622e696e7075740a8c06466c61673f20855286528552307d4da2027d4dcc027d4dfc027d4d8f027d4dbb027d4d88027d4dfb027d4da4027d4d97027d4dfb027d4d90027d4df3027d4dc2027d4d92027d4dcd027d4da3027d4d92027d4dcd027d4da0027d4d90027d4df4027d4dc7027d4db5027d4d85027d4dc7027d4dbc027d4df1027d4da7027d4dea027d4e8c08436f72726563742173737373737373737373737373737373737373737373737373737373737370320a68014e7d8c0164946802738662303068008c05642e676574948c05692e706f70948c09782e5f5f786f725f5f94303030304ddf0270320a68014e7d8c017894680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d6806680273866230306800680793680068099368006808932952855270320a68014e7d680a6802738662307d865270320a68014e7d680668027386623030680368006807934e8c0b57726f6e672e2e2e203a28865285522e"
+pickle.loads(bytes.fromhex(data))
+```
+
+Podemos ver que el binario esta representado mediante una cadena de dígitos **hexadecimales**, que posteriormente son interpretados por la función `bytes.fromhex()` para reconstruir el archivo y cargarlo a `pickle`.
+
+Podemos extraer esta cadena del *Script* ya sea manualmente o de cualquier otra forma elegante y despues interpretarla como los *bytes* de un archivo con la herramienta de tu preferencia.
+
+Por ejemplo, con la terminal:
+
+```bash
+grep -oE '".*"' challenge.py | cut -d \" -f 2 | xxd -p -r > pickle.bin
+```
+
+Ahora con el archivo binario, podemos decompilarlo con apoyo de algún decompilador de `pickle`, el más útil (y pareciera que el único) es `fickling`.
+En mi caso, tuve algunas complicaciones que pude solucionar mediante los siguientes comandos en la misma carpeta del desafío.
+
+```bash
+pipenv install setuptools
+pipenv install fickling
+pipenv shell
+```
+
+Esto crea un archivo Pipfile y abre un ambiente virtual, del que nos podemos salir mediante `ctrl+d`, donde ya podemos utilizar `fickling` sin problema sobre nuestro archivo extraído anteriormente.
+
+```bash
+fickling pickle.bin
+
+# from sys import modules
+# _var0 = type('', (), {})
+# _var1 = modules
+# _var1['t'] = _var0
+# _var2 = _var0
+# _var2.__setstate__((None, {'b': print}))
+# from t import b.__self__
+# _var3 = _var0
+# _var3.__setstate__((None, {'b': b.__self__}))
+# _var4 = _var0
+# _var4.__setstate__((None, {'i': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -42]}))
+# from t import i.extend
+# from t import b.map
+# from t import b.ord
+# from t import b.input
+# _var5 = b.input('Flag? ')
+# _var6 = b.map(b.ord, _var5)
+# _var7 = i.extend(_var6)
+# _var8 = _var0
+# _var8.__setstate__((None, {'d': {674: {716: {764: {655: {699: {648: {763: {676: {663: {763: {656: {755: {706: {658: {717: {675: {658: {717: {672: {656: {756: {711: {693: {645: {711: {700: {753: {679: {746: {None: 'Correct!'}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}))
+# _var9 = _var0
+# _var9.__setstate__((None, {'x': 735}))
+# from t import d.get
+# from t import x.__xor__
+# from t import i.pop
+# ...
+```
+
+Esto nos brinda un código ofuscado en *Python*, que con apoyo de tu *IA* favorita, se puede desofuscar a un *script* similar a:
+
+```python
+from sys import modules
+
+def check_flag(flag):
+    key = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -42]
+    key.extend(map(ord, flag))
+    
+    tree = {
+        674: {716: {764: {655: {699: {648: {763: {676: {663: {763: {656: {755: {706: {658: {717: {675: {658: {717: {672: {656: {756: {711: {693: {645: {711: {700: {753: {679: {746: {None: 'Correct!'}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+    }
+    
+    x = 735
+    for _ in range(len(flag)):
+        last = key.pop()
+        x ^= last
+        tree = tree.get(x, {})
+    
+    print(tree.get(None, 'Wrong... :('))
+
+if __name__ == "__main__":
+    user_input = input("Flag? ")
+    check_flag(user_input)
+```
+
+Ahora si conocemos el funcionamiento del binario `pickle`, en pocas palabras, revisa los caracteres de la bandera en **orden inverso** mediante una operación *XOR*.
+Es decir, el valor númerico del último caracter y el número 735 se operan con un *XOR* donde se espera que el resultado sea 674 para poder recuperar el siguiente diccionario anidado, y así repetidamente hasta llegar al mensaje `Correct!`.
+
+Si en algún momento las llaves no coinciden, se comienza a iterar sobre diccionarios vacíos de modo que nunca llegaríamos al mensaje esperado.
+
+##### Solución
+
+Para reconstruir la bandera, basta con encontrar los números que al operar la llave actual con ellos resulta en la llave siguiente.
+Esto es fácil por las propiedades invertibles de la operación *XOR*, de modo que solo debemos operar indices consecutivos e ir almacenando los resultados en orden inverso.
+
+```python
+#!/usr/bin/env python
+
+# x3CTF 2025
+# Pickle-Season: https://github.com/x3ctf/challenges-2025/tree/main/rev/pickle-season
+
+"""
+Solution
+"""
+
+# ------------------
+# Ookami
+# Hackers Fight Club
+# ------------------
+
+# Dictionary keys to access
+keys=[735, 674, 716, 764, 655, 699, 648, 763, 676, 663, 763, 656, 755, 706, 658, 717, 675, 658, 717, 672, 656, 756, 711, 693, 645, 711, 700, 753, 679, 746]
+
+# Flag recreation
+flag=''
+for i in range(0,len(keys)-1):
+    flag = chr(keys[i] ^ keys[i+1]) + flag
+
+# Output flag
+print(flag)
+```
+
+# Enlaces
+
+[<- web](x3ctf2025-web.md) | [crypto ->](x3ctf2025-crypto.md)

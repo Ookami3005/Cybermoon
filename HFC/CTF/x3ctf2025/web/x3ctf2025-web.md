@@ -3,6 +3,8 @@
 
 ### `submission`
 
+***Código fuente del desafío***: https://github.com/x3ctf/challenges-2025/tree/main/web/submission
+
 > Este reto, consistia de una **muy** simple página web que nos permite subir archivos cuya terminación sea obligatoriamente `.txt`.
 
 Los archivos se suben mediante un formulario `multipart/form-data` a una carpeta `uploads` donde esta ubicada la bandera en un archivo `flag.txt`.
@@ -43,3 +45,7 @@ Como `nombre.txt` posee los permisos por defecto (y particularmente de lectura) 
 ![submission_sol.png](imagenes/submission_sol.png)
 
 El orden en el que subimos los archivos es de vital importancia, pues de subir primero `nombre.txt`, se le estarían retirando sus permisos, lo que causaría que al subir el archivo con el nombre de la bandera `--reference`, se copien estos permisos `000` a `flag.txt`, lo cual no sería de ninguna ayuda.
+
+# Enlaces
+
+[rev ->](x3ctf2025-rev.md)

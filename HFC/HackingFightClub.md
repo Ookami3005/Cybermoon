@@ -2,6 +2,10 @@
 
 ![hogueraDS.png](../imagenes/hogueraDS.png)
 
+## *CTF*
+
+- [Participaciones en CTF](CTF/CTF.md)
+
 ## Módulos
 
 ### Introducción
