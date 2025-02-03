@@ -13,6 +13,7 @@
 - [Redes de Computadora](RedesComputadora/RedesComputadora.md)
 - [Introducción a Sistemas Windows](SistemasWindows/SistemasWindows.md)
 - [Programación en *Python*](Python/Python.md)
+- [Criptografía](Crypto/Crypto.md)
 
 ### Ofensivo
 - [Pentesting](Pentesting/Pentesting.md)
