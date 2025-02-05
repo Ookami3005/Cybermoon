@@ -4,7 +4,7 @@
 
 ## Agrupación
 
-- [Hacking Fight Club](HFC/HackingFightClub.md)
+- [Hackers Fight Club](HFC/HackingFightClub.md)
 
 ## Materias
 
@@ -30,4 +30,4 @@
 	
 - Optativas
 	- [Introducción al Internet of Things (IoT)](IoT/InternetOfThings.md) 
-	- [Programación en Dispositivos Móviles](DispositivosMoviles/DispositivosMoviles.md)
+	- [Programación en Dispositivos Móviles](Moviles/Moviles.md)
