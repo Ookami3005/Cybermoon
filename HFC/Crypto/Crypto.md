@@ -8,5 +8,6 @@ https://www.fciencias.unam.mx/sites/default/files/temario/1828.pdf
 
 ## Notas
 
-- [Criptografía clásica 1](apuntes/Crypto_29_01_2025.md)
-- [Criptografía clásica 2](apuntes/Crypto_30_01_2025.md)
+- [Criptografía clásica](apuntes/Crypto_29_01_2025.md)
+- [Algoritmos de criptografía clásica 1](apuntes/Crypto_30_01_2025.md)
+- [Algoritmos de criptografía clásica 2](Crypto_04_02_2025.md)
