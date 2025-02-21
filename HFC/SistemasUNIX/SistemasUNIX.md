@@ -17,6 +17,6 @@
 
 ## Tareas
 
-- [Tareas 1](tareas/tarea1.md)
-- [Tarea 2](tareas/tarea2/tarea2.md)
-- [Tareas 3](tareas/tarea3.md)
+- [Tareas 1](tareas/UNIX_tarea1.md)
+- [Tarea 2](tareas/tarea2/UNIX_tarea2.md)
+- [Tareas 3](tareas/UNIX_tarea3.md)
