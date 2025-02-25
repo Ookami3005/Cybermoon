@@ -41,6 +41,18 @@ Tambien podemos comprobar que efectivamente es un virus subiendo el archivo a la
 
 #### Parte 2
 
+> Esta segunda sección si se me dificultó un poquito más. Empecé como recomienda el documento, al realizar un *XOR* entre el criptograma que deseamos recuperar con el resto.
+
+De esta manera sabemos que todos las nuevas cadenas, por la propiedad inversa del *XOR*, son en realidad el resto de **mensajes claros** operados con el mensaje en claro que buscamos.
+
+Sabiendo esto, estuve mucho tiempo intentando figurar como podría apoyarme del dato de los espacios invirtiendo *capitalización* pero sinceramente no me resulto de mucha ayuda.
+Investigando un poco, leí que uno de ==los mejores metodos para romper estas encriptaciones *OTP* era intentar descifrar varios segmentos de estas cadenas con palabras que sabemos o esperamos que estén en el mensaje en claro, esperando encontrar palabras con sentido==. Como desconocía cualquier indicio del contenido del mensaje en ese momento, simplemente intente con las palabras más comunes en el español que son adverbios y preposiciones como *"que"*, *"cuando"*, *"pero"*, *"porque"*, *"el"*, y demás palabras similares.
+
+Un problema fue que entre más corta fuera la palabra, más dificil era identificar palabras con sentido en las resultantes. Para esto intente usar las palabras más largas y otra cosa que me fue de mucha ayuda fue agregar espacios al inicio y al final de la palabra, pues regularmente deberían ir separadas todas las palabras, ganando otros 2 caracteres de longitud.
+
+
+Recordemos que las cadenas resultantes al inicio, son en realidad el **mensaje en claro** que buscamos, operado con *XOR* a cada uno del resto de mensajes en claro. Entonces si lograbamos descubir alguna palabra en el mensaje que buscamos, **teóricamente** deberiamos recibir mediante este código *11* cadenas con sentido, lo cual sería de mucha ayuda ya que si usamos una palabra en un mensaje en claro restante, solo obtendriamos 1 cadena con sentido (la del mensaje buscado).
+
 ### Cuestionario
 
 1. ¿Para qué se usa la herramienta XORsearch? https://blog.didierstevens.com/programs/xorsearch/
