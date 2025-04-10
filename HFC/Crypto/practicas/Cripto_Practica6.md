@@ -15,7 +15,7 @@ Dentro de esta misma carpeta, también almacené mis 2 imágenes como `imagen1.j
 Para crear las colisiones, puede utilizarse esta secuencia de comandos:
 
 ```bash
-(cd collisions/scripts/ ; ./jpg.py ../../imagen1.jpg ../../imagen2.jpg ; mv collision?.jpg ../../.)
+(cd collisions/scripts/ && ./jpg.py ../../imagen1.jpg ../../imagen2.jpg && mv collision?.jpg ../../.)
 ```
 
 Una vez que contamos con las colisiones, verificamos que efectivamente su *hash* **MD5** coincide, pero su *hash* **SHA256** no.
@@ -111,6 +111,12 @@ Ahora, si comparamos las firmas del nuevo archivo alojado en esta imágen, podre
 
 ![sha1sum2.png](imagenes/sha1sum2.png)
 
-Y nuevamente, las firmas de las imágenes crudas difieren en ambos casos:
+Y nuevamente, las firmas de las imágenes crudas **difieren** en ambos casos:
 
 ![partitionssha1.png](imagenes/partitionssha1.png)
+
+### Conclusiones
+
+De ésta práctica aprendí acerca del impacto que pueden tener las **colisiones** de *hash* en algoritmos inseguros como *MD5* y *SHA-1*, donde podemos generar (al menos en *MD5*) nuestros propios archivos con el mismo *hash*, de ahí que estos algoritmos se encuentren en desuso, al menos para verificaciones de integridad.
+También pude experimentar con la utilidad `dd` para la creación de imágenes crudas y la manipulación de éstas, de forma similar a procedimientos forenses sencillos.
+Particularmente, podría decir que me dió una idea más clara de las posibles aplicaciones de las **colisiones** *hash* y como podrían utilizarse para contaminar o suplantar otros archivos.
