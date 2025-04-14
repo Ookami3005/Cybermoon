@@ -3,7 +3,7 @@
   "showLineNumber": true,
   "vimMode": true,
   "alwaysUpdateLinks": true,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "showIndentGuide": true,
   "pdfExportSettings": {
     "includeName": false,

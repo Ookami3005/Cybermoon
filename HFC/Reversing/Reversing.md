@@ -7,3 +7,9 @@
 
 1. [Introducción a Ingeniería Inversa](apuntes/HFC03_10_2024.md)
 2. [Arquitectura de Computadoras](apuntes/HFC04_10_2024.md)
+
+
+## `radare2`
+
+#### Herramientas
+- [rax2](radare2/rax2.md)
