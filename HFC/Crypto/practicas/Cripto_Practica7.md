@@ -180,3 +180,62 @@ openssl pkeyutl -decrypt -inkey rsa_privkey.pem -in msj_secreto.enc -out msj_sec
 El mensaje descifrado dice: ***Thenemyknwsthesystm.***
 
 #### Generación y uso de llaves RSA
+
+Para esta sección de la práctica, generé una llave *RSA* sin *passphrase* mediante el siguiente comando:
+
+```bash
+ssh-keygen -t rsa
+
+# Generating public/private rsa key pair.
+# Enter file in which to save the key (/home/ookami/.ssh/id_rsa): prac
+# Enter passphrase for "prac" (empty for no passphrase): 
+# Enter same passphrase again: 
+# Your identification has been saved in prac
+# Your public key has been saved in prac.pub
+# The key fingerprint is:
+# SHA256:WhuruQec2E0V5SIgwH7lDz8TB2XQ4Tw1mES6G0LrjZE ookami@lordran
+# The key's randomart image is:
+# +---[RSA 3072]----+
+# | .... . .*B*+    |
+# |  .  ....==o .   |
+# | .   o. oo= .    |
+# |  . ..oooo.o     |
+# |   . +EBSo       |
+# |    ..=B**       |
+# |      +.=o       |
+# |       o.        |
+# |      +o         |
+# +----[SHA256]-----+
+```
+
+Posteriormente, agregué la llave **pública** a mi perfil de *Gitlab*:
+
+![rsagitlabkey.png](imagenes/rsagitlabkey.png)
+
+Con la llave ya configurada en *Gitlab*, modifiqué el *README* de la práctica anterior (6), confirmé los cambios y los empuje al repositorio remoto autenticandome con esta nueva llave.
+
+![authpush.png](imagenes/authpush.png)
+
+### Preguntas
+
+1. ¿Qué puede deducir sobre el mensaje secreto? Investigue el autor de esa frase.
+
+> El mensaje hace referencia a la frase *"The enemy knows the system"* mencionada por *Claude Shannon* en referencia al principio de *Kerckhoff*, que propone que cualquier criptosistema debería ser seguro, incluso si se conoce todo acerca de él, menos la llave.
+
+2. ¿Con qué opción de openssl puede cifrarse un mensaje utilizando lo que se conoce como “**Textbook RSA**”?
+
+> Para cifrar en *Textbook RSA*, el mensaje no debe recibir ningun *padding* ni alteración, de modo que la opción en `openssl` que evita la adición del padding es `-raw`.
+
+3. ¿Cuáles son las desventajas de emplear “Textbook RSA”?
+
+> El hecho de cifrar el mensaje de manera "cruda" hace vulnerable el criptosistema a varios tipos de ataques como **ataques de texto plano elegido**, **ataques de factorización**, etc.
+
+4. Investigue sobe los demás tipos de llaves (dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk) que puede generar para autenticación con OpenSSH y concluya cuál es la mejor opción.
+
+> Despues de una breve investigación de los tipos de llaves, sin duda `ed25519` destaca como una opción segura y balanceada sobre todas las demás. Brinda alta seguridad y rendimiento, además de ser llaves pequeñas lo que facilita su generación y verificación se hace de forma rápida y es compatible con todos los entornos modernos.
+
+### Conclusión
+
+Esta práctica me sirvió mucho para entender los principios fundamentales de *RSA*, como se relacionan los distintos números como `p`, `q`, `n`, `e` y `d`, y también cuales de estos valores están presentes en las llaves públicas y las privadas en formato *PEM*.
+
+También me gustó realizar un ataque de factorización sobre estos valores para obtener la llave privada de esta forma, aprovechando un vector de ataque presente en este esquema de cifrado.
