@@ -9,7 +9,7 @@
 
 > https://hackersfight.club/websec/index.html
 
-## Notas
+## Notas del curso
 
 1. [HTTP y HTTPS](apuntes/HFC25_09_2024.md)
 2. [Aplicaciones Web](apuntes/AplicacionWeb.md)
@@ -19,6 +19,11 @@
 6. [Autorización](apuntes/HFC30_09_2024.md)
 7. [XSS y SSRF](apuntes/HFC01_10_2024.md)
 8. [Carga de archivos e Inyección *SQL*](apuntes/HFC02_10_2024.md)
+
+## Reconocimiento web
+
+- [Introducción](reconocimiento/web_introRecon.md)
+- [WHOIS](reconocimiento/web_whois.md)
 
 ## Herramientas
 
