@@ -24,6 +24,7 @@
 
 - [Introducción](reconocimiento/web_introRecon.md)
 - [WHOIS](reconocimiento/web_whois.md)
+- [Enumeración de DNS y subdominios](web_dnsDominios.md)
 
 ## Herramientas
 

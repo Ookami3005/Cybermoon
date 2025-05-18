@@ -7,7 +7,7 @@
 2. [Bases, conversiones y Capa de enlace de red](apuntes/HFC16_08_2024.md)
 3. [Capa de red](apuntes/HFC19_08_2024.md)
 4. **Capa de aplicación**
-	1. 
+	1. [DNS](apuntes/Redes_dns.md)
 
 ### Temario
 
