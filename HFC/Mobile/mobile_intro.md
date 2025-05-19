@@ -163,7 +163,7 @@ magisk --install-module /sdcard/plugin.zip
 Ahora, que el certificado esta configurado correctamente, debemos configurar el *proxy HTTP* del dispositivo con apoyo de `adb` de la siguiente forma:
 
 ```bash
-`adb shell settings put global http_proxy 10.0.2.2:8080`
+adb shell settings put global http_proxy 10.0.2.2:8080
 ```
 
 Podemos verificar que el *proxy* haya sido configurado correctamente con el siguiente comando, donde deberiamos ver la IP y puerto que acabamos de indicar:
@@ -181,3 +181,136 @@ Finalmente, nuestra aplicación **Burpsuite** ya debería poder interceptar el t
 > El **SSL Pinning** es una técnica de seguridad usada en aplicaciones *Android*, relacionada con los certificados *TLS/SSL* y su verificación. Básicamente, la aplicación conoce el certificado *TLS/SSL* o llave pública del servidor al que desea comunicarse de modo que al establecer la conexión verifica que sea el mismo, de lo contrario deshecha la conexión como insegura.
 
 Por eso mismo, se considera que la aplicación tiene **fijado** el certificado del servidor, de modo que aunque el certificado sea técnicamente válido, no se establece la conexión con ningún otro servidor.
+
+#### Unpinning
+
+Como *pentesters* es vital que podamos contrarrestar esta técnica, anulando el **fijado** del certificado para que establezca conexiones con cualquier servidor y podamos analizar su tráfico *web*.
+
+### Ejercicio: Pinned
+
+La plataforma **Hack The Box** ofrece este desafío para practicar *SSL Unpinning*:
+
+> [Pinned](https://app.hackthebox.com/challenges/Pinned)
+
+El **objetivo** en este desafio es simplemente recuperar la contraseña de una aplicación Android **Pinned**.
+
+El desafio nos brinda un archivo comprimido *Pinned.zip* protegido con contraseña, la cual es *hackthebox*, y que al descomprimir obtenemos un archivo *pinned.apk* e instrucciones de cual *API Android* es compatible con esta aplicación.
+
+El **AVD** instalado en esta sesión ya es compatible con esta *App*, además para la primera parte del desafío hanriamos tenido que *rootear* el dispositivo y configurar *Burpsuite* para analizar su tráfico de red, cosa que ya hicimos en este **AVD**.
+
+Entonces podemos continuar directamente a instalar el *APK* provisto, utilizando `adb` de la siguiente forma:
+
+```bash
+adb install ./pinned.apk
+```
+
+Ahora, deberiamos poder ver la aplicación **Pinned** en el **AVD** e interactuar con ella.
+Al entrar deberíamos ver este *login*:
+
+![pinned_login.png](imagenes/pinned_login.png)
+
+Podemos notar que tiene las credenciales cargadas por defecto, pero no hay forma de visualizar libremente la contraseña, ni de copiarla.
+
+Una primera idea, bien podría ser capturar la petición *HTTP* creada al presionar **LOGIN**, pero al intentarlo, no solo no se refleja ninguna petición, además notaremos la aparición de errores en el *log* de Eventos de **Burpsuite** que indican lo siguiente:
+
+![error_pinning.png](imagenes/error_pinning.png)
+
+Podemos ver que la aplicación **Pinned** rechazó la conexión con el *Proxy*, ya que se trata de un **certificado desconocido**.
+Claramente, se trata del **SSL Pinning** haciendo su función, pues el certificado de *Burpsuite* no coincide con el que la aplicación espera.
+
+Primero tendremos que **desfijar** el certificado cargado en la aplicación y para eso utilizaremos el *Framework* de **Frida**.
+
+##### Carga de `frida-server`
+
+Lo primero es ir a la sección de *Releases* en la página del repositorio oficial de [Frida](https://github.com/frida/frida/releases), navegaremos a una versión compatible con el dispositivo, en mi caso utilicé la **16.7.18**, y descargamos el comprimido correspondiente a la herramienta **frida-server** para la arquitectura **Android x86** que deberia estar nombrado algo similar a: `frida-server-16.7.18-android-x86.xz`.
+
+Podemos descomprimir este archivo con el comando:
+
+```bash
+xz -d frida-server-16.7.18-android-x86.xz
+```
+
+Y obtendremos un binario ejecutable con el mismo nombre, que debemos introducir en el **AVD** a la ruta `/data/local/tmp`. Esto se realiza facilmente con la ayuda de `adb`, así:
+
+```bash
+adb push ./frida-server-16.7.18-android-x86 /data/local/tmp/.
+```
+
+Despues, desplegamos la *shell* en el **AVD** con `adb shell` y dentro de esta, como **root**, debemos darle permisos de ejecución al binario y ejecutarlo en segundo plano. Esto se realiza con estos comandos:
+
+```sh
+su
+chmod +x /data/local/tmp/frida-server-16.7.18-android-x86
+/data/local/tmp/.frida-server-16.7.18-android-x86 &
+
+# [1] 9581
+```
+
+En otra terminal de nuestra maquina local, podemos verificar que efectivamente se esta ejecutando con el siguiente comando, y deberiamos ver el proceso de frida-server con el *PID* que se nos brindó antes:
+
+```bash
+frida-ps -U
+
+# ...
+# 9581  frida-server-16.7.18-android-x86
+# ...
+```
+
+##### Unpinning con Script
+
+Ya configurado el servidor, debemos buscar un buen *script* para **frida**, en *Javascript*, que realice este *Unpinning* por nosotros.
+
+Para el ejercicio, utilice [este](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/) *script*. Primero, descargue el *script* como `ssl-unpin.js`.
+
+Si analizamos el código, notaremos que quiere disponer de un certificado `cert-der.crt` que este ubicado en `/data/local/tmp`, para hacer que la aplicación reconozca y confie en dicho certificado.
+
+Como pretendemos interceptar la comunicación con nuestro *proxy*, utilizaremos el certificado de **Burpsuite** que descargamos antes, y le daremos los permisos adecuados para que **frida** pueda leerlos, de modo que debemos ejecutar lo siguiente dentro de `adb shell`:
+
+```sh
+cp /sdcard/Download/burp.cert /data/local/tmp/cert-der.crt
+chmod 666 /data/local/tmp/cert-der.crt
+```
+
+Posteriormente, en nuestra maquina local, identificamos el *PID* de la aplicación con apoyo de `frida-ps`:
+
+```bash
+frida-ps -U 
+
+# ...
+# 9257  Pinned
+# ...
+```
+
+Y finalmente, activamos el *script* en la aplicación **Pinned** del **AVD** con el siguiente comando:
+
+```bash
+frida -U -p 9257 -l ssl-unpin.js
+
+#      ____
+#     / _  |   Frida 16.7.7
+#    | (_| |
+#     > _  |   Commands:
+#    /_/ |_|       help      -> Displays the help system
+#    . . . .       object?   -> Display information about 'object'
+#    . . . .       exit/quit -> Exit
+#    . . . .
+#    . . . .   More info at https://frida.re/docs/home/
+#    . . . .
+#    . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+# Attaching...                                                            
+# 
+# [.] Cert Pinning Bypass/Re-Pinning
+# [+] Loading our CA...
+# [o] Our CA Info: CN=PortSwigger CA, OU=PortSwigger CA, O=PortSwigger, L=PortSwigger, ST=PortSwigger, C=PortSwigger
+# [+] Creating a KeyStore for our CA...
+# [+] Creating a TrustManager that trusts the CA in our KeyStore...
+# [+] Our TrustManager is ready...
+# [+] Hijacking SSLContext methods now...
+# [-] Waiting for the app to invoke SSLContext.init()...
+# [Android Emulator 5554::PID::9257 ]-> [o] App invoked javax.net.ssl.SSLContext.init...
+# [+] SSLContext initialized with our custom TrustManager!
+```
+
+Hemos realizado correctamente **SSL Unpinning** sobre la aplicación, de modo que la siguiente vez que iniciemos sesión en la aplicación, si veremos reflejada la petición en nuestro *Proxy* y podremos ver claramente la contraseña, resolviendo así el reto.
+
+![ssl_unpin.png](imagenes/ssl_unpin.png)
