@@ -40,7 +40,19 @@ Es una herramienta con muchisimas opciones pero mayormente estaremos utilizando 
 
 El orden de estos parametros no es obligatorio y podemos indicarlo como con convenga.
 
+Algunas de las formas más comunes de utilizar esta herramienta son:
 
+| Comando                         | Descripción                                                                                                                                                                                      |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `dig domain.com`                | Realiza una consulta de registro *A* para el dominio especificado, recuperando la dirección IP.                                                                                                  |
+| `dig aaaa domain.com`           | Realiza una consulta del registro especificado (AAAA) del dominio indicado.                                                                                                                      |
+| `dig domain.com CNAME`          | Realiza una consulta de registro CNAME del dominio especificado.                                                                                                                                 |
+| `dig @1.1.1.1 domain.com`       | Realiza una consulta por defecto (A) especificamente al servidor `1.1.1.1` del dominio indicado.                                                                                                 |
+| `dig +trace domain.com`         | Indica el camino completo que realiza la consulta por defecto del dominio indicado.                                                                                                              |
+| `dig -x 8.8.8.8`                | Realiza una consulta inversa de la dirección IP especificada, recuperando su nombre de dominio si es que tiene.                                                                                  |
+| `dig +short domain.com`         | Realiza una consulta por defecto del dominio y brinda una respuesta más concisa y breve.                                                                                                         |
+| `dig +noall +answer domain.com` | Realiza una consulta por defecto del dominio e imprime únicamente la respuesta en pantalla.                                                                                                      |
+| `dig any domain.com`            | Devuelve todos los registros del dominio indicado. Sin embargo, actualmente la gran mayoría de servidores *DNS* ignoran este tipo de consultas para prevenir abusos y reducir el tráfico de red. |
 
 #### Salida
 

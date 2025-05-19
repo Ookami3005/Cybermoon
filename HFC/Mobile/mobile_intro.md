@@ -176,4 +176,8 @@ Finalmente, nuestra aplicación **Burpsuite** ya debería poder interceptar el t
 
 ![burpxandroid.png](imagenes/burpxandroid.png)
 
-### SSL Pinning
+## SSL Pinning
+
+> El **SSL Pinning** es una técnica de seguridad usada en aplicaciones *Android*, relacionada con los certificados *TLS/SSL* y su verificación. Básicamente, la aplicación conoce el certificado *TLS/SSL* o llave pública del servidor al que desea comunicarse de modo que al establecer la conexión verifica que sea el mismo, de lo contrario deshecha la conexión como insegura.
+
+Por eso mismo, se considera que la aplicación tiene **fijado** el certificado del servidor, de modo que aunque el certificado sea técnicamente válido, no se establece la conexión con ningún otro servidor.
