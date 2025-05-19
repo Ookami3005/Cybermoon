@@ -38,7 +38,7 @@ Es una herramienta con muchisimas opciones pero mayormente estaremos utilizando 
 
 - `dig <Registro> <IP> @<ServidorDNS>`
 
-El orden de estos parametros no es obligatorio y podemos indicarlo como con convenga.
+El orden de estos parametros no es obligatorio y podemos indicarlo como nos convenga.
 
 Algunas de las formas más comunes de utilizar esta herramienta son:
 
@@ -56,7 +56,52 @@ Algunas de las formas más comunes de utilizar esta herramienta son:
 
 #### Salida
 
+La salida de esta herramienta esta bastante completa y posee varias secciones importantes que vamos a desglosar, suponiendo que ejecutamos `dig google.com`:
+
+1. ***Encabezado*** (*HEADER*)
+	- `;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34056`
+		- Esta es la línea principal del encabezado e indica el tipo de consulta `opcode: QUERY`, el estado de la consulta `status: NOERROR` y el identificador único asignado a la consulta `34056`.
+
+	- `;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1`
+		- Esta línea indica las banderas en el encabezado de la respuesta *DNS*
+		- `qr` (*Query Response flag*): Indica que si hubo una respuesta a la solicitud.
+		- `rd` (*Recursion Desired flag*): Indica que se solicituo la recursión de la consulta.
+		- `ad` (*Authentic Data flag*): Significa que el servidor *Resolver* considera que la información es auténtica.
+		- El resto de los **números** indica el numero de entradas en cada sección de la respuesta: 1 Consulta, 1 Respuesta, 0 registros de autoridad (*SOA*) y 0 entradas adicionales.
+
+2. ***Consulta*** (*QUESTION SECTION*)
+	- Indica la información que se solicitó, para nuestro ejemplo, sería: `;google.com. IN A`
+
+3. ***Respuesta*** (*ANSWER SECTION*)
+	- Indica el resultado de nuestra consulta en el formato tradicional: `google.com. 31 IN A 142.251.218.142`
+	- El **número** indica el **TTL** (*Time to live*) de esta información, es decir cuanto tiempo podemos almacenar este resultado en caché, sin tener que realizar otra consulta recursiva.
+	- Dependiendo de la consulta, podriamos obtener más respuestas que no fueron directamente solicitas en la sección **adicional** de la salida.
+
+4. ***Pie de página***
+	- Incluye información adicional sobre la consulta realizada, por ejemplo:
+		- `;; Query time: 7 msec`: El tiempo que tomo el proceso de la consulta y la obtención de la respuesta.
+		- `;; SERVER: 192.168.100.1#53(192.168.100.1) (UDP)`: El **servidor** *DNS* que respondió nuestra consulta y el protocolo utilizado (*UDP*)
+		- `;; WHEN: Mon May 19 12:01:06 CST 2025`: Marca de tiempo cuando se originó la consulta.
+		- `;; MSG SIZE  rcvd: 55`: El tamaño de la respuesta obtenida.
+
+Toda esta información sin duda es útil para la enumeración.
+Sin embargo, para obtener **únicamente** la respuesta a nuestra consulta, sin la sintaxis tradicional, podemos indicar *+short*, por ejemplo:
+
+```bash
+dig +short hackthebox.com
+
+# 104.18.20.126
+# 104.18.21.126
+```
 # Subdominios
+
+En la sección anterior, cuando explorabamos los **registros** *DNS*, nos enfocabamos principalmente en el dominio principal de la organización y la información relacionada con este.
+
+Sin embargo, aunado al dominio principal, posiblemente existe toda una red de subdominios en la organización que pueden ser clave en la enumeración.
+
+Un **subdominio** no es mas que una **extensión** del dominio principal, usualmente creado para organizar y segmentar distintas secciones o funciones dentro de la organización o incluso dentro de un sitio web.
+
+Por ejemplo, podrían existir subdominios relevantes como `blog.example.com`, `shop.example.com` y `mail.example.com`, con claras referencias a sus funcionalidades.
 
 # Enlaces
 

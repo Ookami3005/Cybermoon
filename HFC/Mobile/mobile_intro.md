@@ -32,7 +32,7 @@ Usualmente, los dispositivos virtuales utilizan 10.0.2.1 como **Gateway** y las 
 
 #### `adb`
 
-> Es una herramienta **CLI** que permite comunicarse con dispositivos *Android*, similar a *SSH*
+> Es una herramienta **CLI** que permite comunicarse con dispositivos *Android*, similar a *SSH* pero mediante *USB*.
 
 ## Rootear android
 
@@ -44,7 +44,7 @@ Usualmente, los dispositivos virtuales utilizan 10.0.2.1 como **Gateway** y las 
 6. Utilizar **rootAVD** para listar los **AVD** presentes en el dispositivo:
 
 ```bash
-rootAVD ListAllAVDs
+./rootAVD ListAllAVDs
 
 # rootAVD A Script to root AVD by NewBit XDA
 #
