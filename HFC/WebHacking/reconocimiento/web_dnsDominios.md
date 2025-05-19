@@ -32,6 +32,16 @@ Algunas de las más conocidas son:
 
 ### Dig
 
+> La utilidad **Dig** es una herramienta poderosa y versatil para realizar consultas *DNS* y recuperar varios tipos de información en los registros. Es **flexible**, **personalizable** y permite filtrar los resultados de forma avanzada.
+
+Es una herramienta con muchisimas opciones pero mayormente estaremos utilizando una sintaxis de la siguiente manera:
+
+- `dig <Registro> <IP> @<ServidorDNS>`
+
+El orden de estos parametros no es obligatorio y podemos indicarlo como con convenga.
+
+
+
 #### Salida
 
 # Subdominios
