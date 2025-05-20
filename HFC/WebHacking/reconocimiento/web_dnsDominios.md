@@ -3,7 +3,7 @@
 
 El funcionamiento y conceptos básicos del protocolo **DNS** puede encontrarse a detalle en esta [nota](../../RedesComputadora/apuntes/Redes_dns.md) de la sección de **Redes de Computadora**, de modo que obviaré su explicación en este apartado.
 
-### ¿Por qué nos importa el DNS para reconocimiento web?
+#### ¿Por qué nos importa el DNS para reconocimiento web?
 
 Entender y enumerar el *DNS* de una organización puede brindarnos un entendimiento básico de su infraestructura e incluso revelar información sensible que nos guie a descubrir vulnerabilidades o puntos débiles, como:
 
@@ -102,6 +102,62 @@ Sin embargo, aunado al dominio principal, posiblemente existe toda una red de su
 Un **subdominio** no es mas que una **extensión** del dominio principal, usualmente creado para organizar y segmentar distintas secciones o funciones dentro de la organización o incluso dentro de un sitio web.
 
 Por ejemplo, podrían existir subdominios relevantes como `blog.example.com`, `shop.example.com` y `mail.example.com`, con claras referencias a sus funcionalidades.
+
+#### ¿Porque son importantes para el reconocimiento web?
+
+- ***Podrían descubrirse sitios web en desarrollo o bajo prueba***: Muchas veces, se utilizan subdominios de la organización para poner a prueba nuevas actualizaciones, funcionalidades o secciones antes de desplegarlas en el sitio principal. En estos podríamos encontrar vulnerabilidades o información sensible.
+
+- ***Portales de inicio de sesión escondidos***: A veces se pretende ocultar paneles administrativos o páginas de inicio de sesión en subdominios poco utilizados de la organización, lo que los vuelve objetivos atractivos.
+
+- ***Aplicaciones o sitios de legado***: Incluso podríamos llegar a descubir versiones obsoletas o hasta olvidadas de aplicaciones *web* y demás funciones de la organización, potencialmente con vulnerabilidades conocidas o funciones administrativas mal configuradas.
+
+- ***Información sensible***: En general, cualquier sitio alojado en subdominios es una fuente más de información de la organización, que podría contener cualquier tipo de **información sensible** que podríamos aprovechar en nuestra auditoría.
+
+## Enumeración de subdominios
+
+> Se refiere al proceso **sistemático** de identificar y listar estos subdominios pertinentes a la organización. Al igual que el reconocimiento, posee los mismos 2 enfoques principales:
+
+#### Enumeración de subdominios activa
+
+Consiste en la interacción directa con servidores *DNS* de la organización con la intención de descubrir estos subdominios.
+
+Uno de los métodos más conocidos es la **transferencia de zonas DNS**, si es que el servidor esta malconfigurado y las permite, pero en la actualidad es cada vez más raro que suceda gracias a la mejora general de seguridad en este tipo de servidores.
+
+Un método mucho más común y fructífero es la **enumeración por fuerza bruta**, que consiste en realizar muchas solicitudes al servidor con nombres probables de subdominios e identificar respuestas afirmativas para determinar la existencia del subdominio.
+
+Existen herramientas que automatizan este método mediante el uso de diccionarios,  como lo son `dnsenum`, `ffuf`, `gobuster`, etc.
+
+#### Enumeración de subdominios pasiva
+
+Este tipo de **enumeración** se basa en fuentes externas y públicas de información para determinar subdominios sin la necesidad de interactuar directamente con los sistemas del objetivo.
+
+Por ejemplo, uno de los recursos más valiosos son los **registros** de **Transparencia de Certificados** (*CT Logs*), que son repositorios públicos de información acerca de certificados *SSL/TLS* expedidos y reconocidos oficialmente.
+Al registrar un nuevo subdominio para la organización, es común procurar que este posea certificado *SSL/TLS* para garantizar su autenticidad y descartar posibles ataques **MITM** (*Man in the Middle*), pero al obtener un nuevo certificado para el subdominio, el nombre y la información del subdominio es almacenada en este tipo de registros, disponibles al público general.
+
+Otro buen método **pasivo** es el uso de **motores de busqueda** como *Google* o *DuckDuckGo* utilizando filtros avanzados para identificar subdominios relacionados a un dominio principal específico.
+Por ejemplo, los *Google Dorks* con la etiqueta `site:`.
+
+Y en general, existen muchas herramientas y páginas especializadas principalmente en la enumeración de subdominios gracias a muchisimas fuentes públicas de información, que facilitan bastante este tipo de enumeración.
+
+---
+
+### Enumeración de subdominios por fuerza bruta
+
+Antes, se mencionó la idea general de este tipo de enumeración pero desglosar a detalle este proceso como los siguientes pasos:
+
+1. ***Selección de un diccionario***. Este proceso inicia al seleccionar el diccionario adecuado para nuestro objetivo, que pueden ser:
+
+	- **De proposito general**: Contienen una gran cantidad de nombres **comunes** de subdominios sin ninguna tendencia en específico, por ejemplo `dev`, `staging`, `blog`, `admin`, etc.
+	
+	- **Enfocados**: Son diccionarios principalmente centrados en industrias, tecnologías o patrones específicos que se relacionen con nuestro objetivo, pero aun con cierto grado de generalidad.
+	
+	- **Personalizado**: Son diccionarios creados manualmente por nosotros totalmente basados en palabras clave, patrones o información de nuestro objetivo, siendo totalmente específicos.
+
+2. ***Iteración y construcción***: Mediante cualquier herramienta o *script* buscamos iterar a través del diccionario seleccionado y concatenar el nombre que deseamos probar con el dominio principal de la organización. Creando así los nombres de dominio que realmente vamos a consultar como `dev.example.com` o `staging.example.com`
+
+3. ***Consulta DNS***: Se realiza una consulta *DNS* **formal** con cada uno de los nombres creados anteriormente, típicamente a registros **A** o **AAAA**.
+
+4. ***Filtrado y validación***: Si el subdominio consultado es resuelto correctamente, o sea si obtuvimos una respuesta *DNS*, es considera un subdominio **valido** y se realizan posteriores pruebas de validación para confirmar su existencia y funcionalidad, por ejemplo, consultandolo desde nuestro navegador.
 
 # Enlaces
 
