@@ -99,7 +99,7 @@ En la sección anterior, cuando explorabamos los **registros** *DNS*, nos enfoca
 
 Sin embargo, aunado al dominio principal, posiblemente existe toda una red de subdominios en la organización que pueden ser clave en la enumeración.
 
-Un **subdominio** no es mas que una **extensión** del dominio principal, usualmente creado para organizar y segmentar distintas secciones o funciones dentro de la organización o incluso dentro de un sitio web.
+> Un **subdominio** no es mas que una **extensión** del dominio principal, usualmente creado para organizar y segmentar distintas secciones o funciones dentro de la organización o incluso dentro de un sitio web.
 
 Por ejemplo, podrían existir subdominios relevantes como `blog.example.com`, `shop.example.com` y `mail.example.com`, con claras referencias a sus funcionalidades.
 
@@ -158,6 +158,80 @@ Antes, se mencionó la idea general de este tipo de enumeración pero desglosar 
 3. ***Consulta DNS***: Se realiza una consulta *DNS* **formal** con cada uno de los nombres creados anteriormente, típicamente a registros **A** o **AAAA**.
 
 4. ***Filtrado y validación***: Si el subdominio consultado es resuelto correctamente, o sea si obtuvimos una respuesta *DNS*, es considera un subdominio **valido** y se realizan posteriores pruebas de validación para confirmar su existencia y funcionalidad, por ejemplo, consultandolo desde nuestro navegador.
+
+Algunas de las herramientas más famosas para este tipo de enumeración son:
+
+#### `dnsrecon`
+
+Es un *script* de **Python** bastante actualizado enfocado a las auditorias de *DNS* que, entre otras cosas, permite:
+
+- Revisar si alguno de los **servidores DNS** en registros **NS** permite las **transferencias de zona**
+- Enumerar en general varios **registros DNS** del dominio (MX, SOA, NS, A, AAAA, etc)
+- Enumeración avanzada de resitros **SRV**
+- Fuerza bruta para enumeración de subdominios
+- Consultas inversas (PTR) para un rango específico de direcciones IP
+
+Algunas de las formas más importantes de utilizar esta herramienta son las siguientes.
+
+###### Fuerza bruta
+
+Necesitamos especificar el **tipo** de enumeración `brt` con la bandera `-t`, indicar el dominio objetivo con `-d` y finalmente nuestro diccionario con `-D`.
+
+```bash
+dnsrecon -t brt -d inlanefreight.com -D /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt
+```
+
+Opcionalmente, podemos indicar un servidor *DNS* especifico al que realizar las consultas directamente con la bandera `-n`.
+
+###### Transferencias de zona
+
+En esta ocasión solo debemos especificar el **tipo** de enumeración `axfr` y el dominio objetivo.
+La herramienta por si sola consultará los servidores en el registro **NS**, solicitará una **transferencia de zona** sobre cada uno e indicara para cada caso si alguno fue exitoso o no.
+
+```bash
+dnsrecon -t axfr -d inlanefreight.com
+```
+
+###### Consulta de registros CT (Certificate Transparency)
+
+Hablando de una técnica más pasiva, esta herramienta puede consultar la página `crt.sh`, un conocido **registro** de transparencia de certificados, para determinar subdominios registrados en esta.
+
+Nuevamente, solo debemos indicar el **tipo** de enumeración `crt` y el dominio objetivo.
+
+```bash
+dnsrecon -t crt -d inlanefreight.com
+```
+
+#### `dnsenum`
+
+Es una herramienta escrita en **Perl** un poco obsoleta pero también fácil de utilizar, y su funcionalidad se mantiene vigente hasta hoy.
+Permite:
+
+- Enumeración de registros **DNS**
+- Solicitar transferencias de zona
+- Fuerza bruta sobre subdominios
+- **Google Scraping**: Realizar busquedas en *Google* avanzadas para descubir subdominios
+- **Consultas DNS inversas**: Intenta determinar el nombre de dominio relacionado a una dirección IP
+- Consultas WHOIS
+
+La forma más facil de utilizarla es con la bandera `--enum`, un modo que realiza varios tipos de enumeraciones de una sola vez:
+
+```bash
+dnsenum --enum -f /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt inlanefreight.com
+```
+
+El diccionario se especifica con la bandera `-f` y al final el dominio objetivo.
+
+---
+
+### Transferencias de Zona
+
+Llevamos un rato hablando de **Transferencias de Zona**, pero ¿qué son realmente?
+
+> Una **transferencia de zona** es esencialmente solicitar una copia completa de todos los **registros DNS** configurados en la zona solicitada. Principalmente, es un mecanismo para replicar la información entre servidores *DNS*, para disponer de respaldos de estas zonas en caso de que alguno falle.
+
+Mientras que realizar **fuerza bruta** para determinar subdominios puede brindar información rapidamente, una **transferencia de zona** es menos invasiva y tiene el potencial de ser más eficiente para descubrir subdominios, si se logra.
+
 
 # Enlaces
 
