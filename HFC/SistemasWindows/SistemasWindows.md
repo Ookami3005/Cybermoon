@@ -17,3 +17,7 @@
 - [Administración de Usuarios, Grupos y Políticas](HFC27_08_2024.md)
 - [Autenticación](apuntes/HFC28_08_2024.md)
 - [Árboles, Bosques y Relaciones de Confianza](apuntes/HFC29_08_2024.md)
+
+## Hacking de Active Directory para Principiantes 
+
+- [Vectores de ataque iniciales](HackingADPrincipiantes/HackAD_Begginers_Initial.md)

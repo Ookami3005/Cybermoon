@@ -1,6 +1,7 @@
+[<- Índice](../SistemasWindows.md)
 # Vectores de ataque iniciales contra Active Directory
 
-> En esta sección hablaremos de 2 importantes **vectores de ataque** relacionados a **Active Directory**, que podríamos aprovechar como un acercamiento **inicial** al entorno.
+> En esta sección hablaremos de 3 importantes **vectores de ataque** relacionados a **Active Directory**, que podríamos aprovechar como un acercamiento **inicial** al entorno.
 
 - ***LLMNR Poisoning***
 - ***SMB Relay***
