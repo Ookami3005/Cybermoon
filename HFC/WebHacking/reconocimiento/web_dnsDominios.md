@@ -93,6 +93,8 @@ dig +short hackthebox.com
 # 104.18.20.126
 # 104.18.21.126
 ```
+
+---
 # Subdominios
 
 En la sección anterior, cuando explorabamos los **registros** *DNS*, nos enfocabamos principalmente en el dominio principal de la organización y la información relacionada con este.
@@ -140,7 +142,6 @@ Por ejemplo, los *Google Dorks* con la etiqueta `site:`.
 Y en general, existen muchas herramientas y páginas especializadas principalmente en la enumeración de subdominios gracias a muchisimas fuentes públicas de información, que facilitan bastante este tipo de enumeración.
 
 ---
-
 ### Enumeración de subdominios por fuerza bruta
 
 Antes, se mencionó la idea general de este tipo de enumeración pero desglosar a detalle este proceso como los siguientes pasos:
@@ -223,7 +224,6 @@ dnsenum --enum -f /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000
 El diccionario se especifica con la bandera `-f` y al final el dominio objetivo.
 
 ---
-
 ### Transferencias de Zona (AXFR)
 
 Llevamos un rato hablando de **Transferencias de Zona**, pero ¿qué son realmente?
@@ -275,6 +275,36 @@ Por ejemplo, para transferir **toda** la zona del dominio `inlanefreight.htb`, d
 
 ```bash
 dig axfr inlanefreight.htb @10.129.215.170
+```
+
+---
+### Virtual Hosting
+
+> Servidores **web** modernos como **Apache**, **Nginx** o **IIS** son capaces de levantar múltiples sitios o aplicaciones web distintas en un único servidor.
+
+Es se logra con **Virtual Hosting**, que consiste en la capacidad del servidor **web** para ofrecer distintos recursos y sitios **web** según la cabecera **HTTP** *"Host"* indicada en la solicitud **HTTP** de los clientes.
+
+Se diferencian de los **subdominios** tradicionales pues estos **hosts virtuales** no están relacionados con el **DNS**, ni se encuentran en ningún registro.
+
+Estos **hosts virtuales** son únicamente identificados por el servidor **web** gracias a las configuraciones en este.
+Por ejemplo, esta sería una muestra del archivo de configuración de **Apache2**, donde se definen 3 **hosts virtuales**: `www.example1.com`, `www.example2.org`, `www.another-example.net`.
+
+```txt
+# Example of name-based virtual host configuration in Apache
+<VirtualHost *:80>
+    ServerName www.example1.com
+    DocumentRoot /var/www/example1
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.example2.org
+    DocumentRoot /var/www/example2
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.another-example.net
+    DocumentRoot /var/www/another-example
+</VirtualHost>
 ```
 
 # Enlaces
