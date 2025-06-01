@@ -4,6 +4,7 @@
 
 - ***LLMNR Poisoning***
 - ***SMB Relay***
+- ***IPv6 Attacks***
 
 Ambas técnicas pertecen más a un enfoque **interno** de la prueba de penetración pues se requiere que tengamos acceso completo a la red del **directorio activo**, que típicamente es la *intranet* de la organización.
 
