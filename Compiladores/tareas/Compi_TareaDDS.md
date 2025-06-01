@@ -1,6 +1,8 @@
 # Traducción dirigida por sintaxis
 
-### Producciones:
+> *Fernando Romero Cruz* - 319314256
+
+### Producciones originales:
 
 ```txt
 F -> id( P )                     => Guardar(P.lista)
@@ -17,24 +19,26 @@ J -> B id                       => J.id = id
 1. **Eliminacion de recursividad izquierda**. Transformar la gramática para remover cualquier recursividad por la izquierda presente en las producciones.
 
 
-La única producción con recursividad izquierda es:
+La única regla de producción con **recursividad izquierda** es:
 
 ```txt
 K -> K_1 , J | J
 ```
 
-Transformamos a:
+Por lo que la transformamos a:
 
 ```
 K  → J K'
 K' → , J K' | ε
 ```
 
+Incorporando esta nueva regla en su lugar la gramática ya no presenta recursividad izquierda.
+
 2. **Ajuste de atributos sintetizados y heredados**. Reorganizar los atributos de la gramatica para garantizar su correcto funcionamiento despues de eliminar la recursividad izquierda, manteniendo la semántica original.
 
 ### Producciones modificadas:
 
-```
+```txt
 F → id ( P )                     => Guardar(P.lista)
 P → K                          => P.lista = K.lista
 P → ε                          => P.lista = nulo
@@ -48,55 +52,71 @@ J → B id                       => J.id = id
 
 3. **Esquema de traduccion para análisis descendente**. Desarrollar el esquema de traducción correspondiente para el analisis sintáctico descendente (top-down) con la gramática modificada.
 
-Utilizando la gramática transformada:
+Utilizando la gramática transformada, desarrollamos la **estructura** de las funciones necesarias para llevar a cabo satisfactoriamente este **análisis descendente**.
 
-```markdown
+Cada símbolo **no-terminal** es representado por una función, además se definen las funciones `consumir`, `nuevaLista` y `agregar` que modelan las **reglas semánticas** y la aceptación de símbolos **terminales**.
+
+```txt
 funcion F():
-    emparejar(id)
-    emparejar('(')
+    consumir(id)
+    consumir('(')
     P()
-    emparejar(')')
+    consumir(')')
     Guardar(P.lista)
 
 funcion P():
-    si token_actual != ')':
+    if token_actual != ')':
         K()
         P.lista = K.lista
-    sino:
+    else:
         P.lista = nulo
 
 funcion K():
     J()
     lista_actual = nuevaLista()
     agregar(lista_actual, J.id, J.tipo)
-    K_prime()
+    K_prima()
     K.lista = lista_actual
 
 funcion K_prime():
-    si token_actual == ',':
-        emparejar(',')
+    if token_actual == ',':
+        consumir(',')
         J()
         agregar(lista_actual, J.id, J.tipo)
-        K_prime()
+        K_prima()
 
 funcion J():
     B()
-    emparejar(id)
+    consumir(id)
     J.id = id
     J.tipo = B.tipo
 ```
 
 4. **Esquema de traduccion para análisis ascendente**. Utilizando la definición gramatical original (antes de eliminar la recursividad), construir el esquema de traduccion apropiado para el análisis sintáctico ascendente (bottom-up).
 
-Usamos la gramática original:
+Partiendo de la gramática original, debemos considerar la administración de la **pila** que podemos representar mediante la notación **\$i** para referirnos al **i-esimo** símbolo de la producción y **\$\$** para el atributo del símbolo a la **izquierda** de la producción.
 
-Producciones + Acciones:
+Entonces, la nueva gramática se vería así:
 
-```
-F → id ( P )                     { Guardar(P.lista) }
-P → K                          { P.lista = K.lista }
-P → ε                          { P.lista = nulo }
-K → K1 , J                     { agregar(K1.lista, J.id, J.tipo); K.lista = K1.lista }
-K → J                          { K.lista = nuevaLista(); agregar(K.lista, J.id, J.tipo) }
-J → B id                       { J.id = id; J.tipo = B.tipo }
+```txt
+F → id ( P )                  { Guardar($3.lista) }
+
+P → K                        { $$ = {}; $$.lista = $1.lista }
+
+P → ε                        { $$ = {}; $$.lista = nulo }
+
+K → K1 , J                   { agregar($1.lista, $3.id, $3.tipo); $$ = {}; $$.lista = $1.lista }
+
+K → J                        {
+                                $$ = {};
+                                $$.lista = nuevaLista();
+                                agregar($$.lista, $1.id, $1.tipo)
+                            }
+
+J → B id                     {
+                                $$ = {};
+                                $$.id = $2;   // asume que $2 es el nombre del identificador
+                                $$.tipo = $1.tipo
+                            }
+
 ```

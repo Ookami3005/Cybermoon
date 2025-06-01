@@ -224,7 +224,7 @@ El diccionario se especifica con la bandera `-f` y al final el dominio objetivo.
 
 ---
 
-### Transferencias de Zona
+### Transferencias de Zona (AXFR)
 
 Llevamos un rato hablando de **Transferencias de Zona**, pero ¿qué son realmente?
 
@@ -232,6 +232,50 @@ Llevamos un rato hablando de **Transferencias de Zona**, pero ¿qué son realmen
 
 Mientras que realizar **fuerza bruta** para determinar subdominios puede brindar información rapidamente, una **transferencia de zona** es menos invasiva y tiene el potencial de ser más eficiente para descubrir subdominios, si se logra.
 
+Una **transferencia de zona** consiste principalmente en:
+
+```mermaid
+sequenceDiagram
+	participant prim as Servidor principal
+	participant sec as Servidor secundario
+	sec ->> prim: Solicitud de transferencia de zona
+	prim ->> sec: Transferencia de registro de autoridad SOA
+	loop Multiples veces
+		prim ->> sec: Transferencia de todos los registros DNS 
+	end
+	prim ->> sec: Indica que la transferencia esta completa
+	sec ->> prim: Confirma la recepción de los datos
+```
+
+#### Vulnerabilidad
+
+Mientras que las **transferencias de zona** son una forma legítima de administración de servidores *DNS*, si se configura negligentemente representa una brecha de seguridad importante, pues filtra información confidencial de la organización.
+
+Esto ocurre cuando se permite a cualquier cliente *DNS* solicitar **transferencias de zona** del servidor *DNS*, lo que les brinda una copia completa de toda la configuración *DNS*.
+
+Principalmente filtrando **subdominios**, **direcciones IP** y **Registros de servidores DNS autoritativos**.
+
+##### Remediación
+
+En servidores **DNS** modernos, se configura que las **transferencias de zona** solo se permitan a un conjunto reducido de servidores **DNS** secundarios de confianza.
+
+Sin embargo, los errores en esta configuración siempre son posibles y no es mala práctica intentar solicitar una **transferencia de zona** como una técnica de reconocimiento.
+
+#### Solicitar una transferencia de zona
+
+> Podemos solicitar de forma sencilla una transferencia de zona mediante la heramienta `dig`, indicando la palabra clave `axfr` y el servidor *DNS* adecuadamente.
+
+Además, se debe indicar el dominio cuya zona **completa** queremos transferir, típicamente el dominio principal de la organización, aunque a veces puede ser un subdominio específico.
+
+```bash
+dig axfr dominio.com @servidor.dns
+```
+
+Por ejemplo, para transferir **toda** la zona del dominio `inlanefreight.htb`, del servidor **DNS** *10.129.215.170*, ejecutariamos:
+
+```bash
+dig axfr inlanefreight.htb @10.129.215.170
+```
 
 # Enlaces
 
