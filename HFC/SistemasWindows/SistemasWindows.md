@@ -20,4 +20,10 @@
 
 ## Hacking de Active Directory para Principiantes 
 
-- [Vectores de ataque iniciales](HackingADPrincipiantes/HackAD_Begginers_Initial.md)
+- ***Vectores de ataque iniciales***
+	- [LLMNR Poisoning y SMB Relay](HackingADPrincipiantes/HackAD_Begginers_Initial.md)
+	- [IPV6 DNS Spoofing y PassBack](HackingADPrincipiantes/HackAD_Begginers_Initial2.md)
+	- [Acceso a Shell](HackingADPrincipiantes/HACKAD_Begginers_InitialShell.md)
+
+- ***Enumeración Post-Compromiso***
+	- [PowerView](HackingADPrincipiantes/HACKAD_Begginers_PowerView.md)
