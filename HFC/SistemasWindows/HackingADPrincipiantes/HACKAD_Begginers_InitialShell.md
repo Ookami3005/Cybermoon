@@ -25,7 +25,7 @@ psexec.py 'hfc.local/ookami:Pa$$w0rd!@192.168.22.129'
 
 ![HACKAD_psexec1.png](imagenes/HACKAD_psexec1.png)
 
-### Metasploit `exploit/windows/smb/psexec`
+###### Metasploit `exploit/windows/smb/psexec`
 
 Alternativamente, **Metasploit** tambien ofrece el módulo **`psexec`** como su propia implementación para esta herramienta.
 Como es usual, solo debemos proveer a **Metasploit** con todas las opciones necesarios y ejecutar la explotación.
