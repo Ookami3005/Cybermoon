@@ -63,7 +63,72 @@ sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
 Y después de reiniciar el **VPS**, ya no debería salir esta advertencia.
 
-##### Phishlets
+##### Phishlets y lures
+
+Para este laboratorio, se utilizaron **Phishlets** del repositorio [Evilginx2-Phishlets](https://github.com/An0nUD4Y/Evilginx2-Phishlets), particularmente `facebook.yaml` y `outlook.yaml`.
+Es necesario descargarlos y ubicarlos en la ubicación del directorio `evilginx2` que clonamos, en la carpeta `phishlets`.
+
+Una vez descargados, deberían reflejarse en la intefaz de `evilginx2` al iniciarlo:
+
+![redteam_phishlets_loaded.png](imagenes/redteam_phishlets_loaded.png)
+
+Antes de activarlos, primero debemos designarles un **subdominio** de nuestro dominio principal `calcifer.lat`.
+Se recomienda un nombre genérico, pues muchos `phishlets` agregan subdominios por su cuenta, pero relacionado al sitio objetivo.
+Para **Facebook** seleccioné el subdominio `meta.calcifer.lat` y se asigna con el siguiente comando dentro de la interfaz:
+
+```evilginx2
+# phishlets hostname <nombre> <subdominio>
+
+phishlets hostname facebook meta.calcifer.lat
+```
+
+Después, se activa el phishlet y **Evilginx** automáticamente generará los certificados *TLS/SSL* necesarios.
+
+![redteam_phishlets_enable.png](imagenes/redteam_phishlets_enable.png)
+
+Finalmente, se debe crear un **lure**, el enlace malicioso que entregaremos como **carga útil**, con la instrucción:
+
+```evilginx2
+# lures create <nombre_phishlet>
+
+lures create facebook
+```
+
+Y generar la **URL** correspondiente, en base al **ID** asignado al nuevo **lure**, en este caso 0, con:
+
+```evilginx2
+# lures get-url <id>
+
+lures get-url 0
+```
+
+Esto nos brinda una **URL** de un recurso malicioso dentro del subdominio indicado previamente, por ejemplo `https://www.meta.calcifer.lat/ycWnmuCs`, que detonará la funcionalidad maliciosa de **proxy inverso** sobre el *login* de *Facebook*.
+
+##### Captura de sesión
+
+Obviando por el momento los mecanismos de entrega, cuando la **victima** acceda al enlace, lo recibirá un **login** auténtico de *Facebook*:
+
+![redteam_facebook_proxyied.png](imagenes/redteam_facebook_proxyied.png)
+
+Una vez que este inicie sesión con sus credenciales, **Evilginx** capturará las credenciales y la **Cookie** de sesión devuelta por el sitio legítimo, **Facebook** en este caso.
+
+```txt
+[17:56:59] [+++] [2] Username: [rooteda8@gmail.com]
+[17:56:59] [+++] [2] Password: [<--Redacted-->]
+[17:57:01] [+++] [2] all authorization tokens intercepted!
+```
+
+Podemos visualizar todas las sesiones capturadas con el comando `sessions`, e inspeccionar detalles y el **token** capturado de una en particular especificando el **id** de la sesión, de la forma `sessions <id>`.
+
+![redteam_facebookSession_captured.png](imagenes/redteam_facebookSession_captured.png)
+
+Ahora, como **atacantes**, podemos utilizar esta **cookie** capturada para autenticarnos en el sitio legítimo `www.facebook.com`, **importandola** con alguna extensión compatible como [Cookie editor](https://cookie-editor.com/).
+
+![redteam_cookie_editor.png](imagenes/redteam_cookie_editor.png)
+
+Una vez **importada**, al recargar la página deberíamos estar *logeados* como el usuario capturado:
+
+![redteam_logged_facebook.png](imagenes/redteam_logged_facebook.png)
 
 # Enlaces
 
