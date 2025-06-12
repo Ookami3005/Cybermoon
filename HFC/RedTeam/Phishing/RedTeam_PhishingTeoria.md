@@ -16,7 +16,7 @@
 
 > El ***Phishing*** es el vector inicial de ataque más popular y utilizado por adversarios modernos.
 
-![[redteam_initialvectors.png]]
+![redteam_initialvectors.png](imagenes/redteam_initialvectors.png)
 
 #### ¿Por qué es tan exitoso?
 
@@ -191,6 +191,7 @@ Opcionalmente, se recomienta adicionar a estos **payloads** propiedades de **tra
 
 ---
 ## Evilginx
+
 <p  align="center">
   <img  width="200"  src="https://cdn.cyberpunk.rs/wp-content/uploads/2018/10/evilginx_phishing_bg.jpg"  alt="">
 </p>
@@ -213,4 +214,19 @@ Un **lure** es un **enlace malicioso** que genera **Evilginx** en base a un **ph
 Este apunta a un recurso y subdominio de nuestro **dominio** malicioso y es el que detona la funcionalidad de **proxy inverso** para simular la comunicación con el sitio legítimo.
 
 ---
-## GoPhish
+## Gophish
+
+<p  align="center">
+  <img  width="200"  src="https://d7umqicpi7263.cloudfront.net/img/product/af0a83bc-350b-441f-aa21-9a80e54ad8a8.com/ee699c30db989dfa671e081688f62f9a"  alt="">
+</p>
+
+[***Gophish***](https://github.com/gophish/gophish) es un kit de herramientas enfocado al **Phishing** en entornos empresariales y desarrollado para auditorias de seguridad.
+Permite **configurar** y **administrar** campañas completas de **Phishing** de forma altamente versatil y completa.
+
+Además posee una integración con **Evilginx** 3.3 que permite enviar enlaces compatibles con este.
+
+Cuando se ejecuta esta herramienta, levanta un servidor **web** en https://localhost:3333 con un panel administrativo accesible con las credenciales indicadas al ejecutarlo.
+
+# Enlaces
+
+| [Laboratorio de Phishing ->](RedTeam_PhishingPractica.md)
