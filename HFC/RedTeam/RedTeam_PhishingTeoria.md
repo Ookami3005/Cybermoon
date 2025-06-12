@@ -191,9 +191,26 @@ Opcionalmente, se recomienta adicionar a estos **payloads** propiedades de **tra
 
 ---
 ## Evilginx
+<p  align="center">
+  <img  width="200"  src="https://cdn.cyberpunk.rs/wp-content/uploads/2018/10/evilginx_phishing_bg.jpg"  alt="">
+</p>
 
-Permite posicionarse entre el objetivo y el servicio legítimo, a partir de *phishlets* y *lures* o cebos, integrandose con *GoPhish*.
+> [***Evilginx***](https://github.com/kgretzky/evilginx2) es un *Framework* ofensivo para ataques tipo **AiTM** (*Adversary in the middle*) comúnmente utilizado para ejercicios de **Red Team**, que permite capturar credenciales e incluso *bypassear* **autenticación multifactor**.
 
-#### Que es un phishlet
+Consiste en una versión personalizada de un servidor *HTTP* **Nginx** que permite interceptar elegantemente la comunicación bajo una funcionalidad de **proxy inverso** desde nuestro sitio malicioso hacia un sitio legítimo.
 
-Es un archivo de configuración en formato yaml que 
+Los componentes clave de **Evilginx** a tomar en cuenta son:
+- **Phishlets**
+- **Lures**
+
+#### ¿Qué es un phishlet?
+
+Los **phishlets** son archivos de **configuración** en formato **YAML** utilizados para especificar el comportamiento de **Evilginx** respecto a los sitios **objetivo**, con el propósito de definir formalmente como interactuar con el servidor web, cuales *cookies* capturas, como interceptar y redirigir la comunicación mediante el *proxy*, omitir ciertas respuestas, etc.
+
+#### ¿Qué es un lure?
+
+Un **lure** es un **enlace malicioso** que genera **Evilginx** en base a un **phishlet** específico, con el objetivo de utilizarse como **carga útil** en la campaña de *Phishing*.
+Este apunta a un recurso y subdominio de nuestro **dominio** malicioso y es el que detona la funcionalidad de **proxy inverso** para simular la comunicación con el sitio legítimo.
+
+---
+## GoPhish
