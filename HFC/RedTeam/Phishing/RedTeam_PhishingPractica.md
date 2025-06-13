@@ -11,6 +11,7 @@ Es importante configurar correctamente el registro *DNS* **A** de nuestro domini
 | **A**     | `@`  | `<IP>`         |
 | **CNAME** | `*`  | `calcifer.lat` |
 
+---
 ### Configuración de  *Evilginx*
 
 ##### Instalación
@@ -129,6 +130,24 @@ Ahora, como **atacantes**, podemos utilizar esta **cookie** capturada para auten
 Una vez **importada**, al recargar la página deberíamos estar *logeados* como el usuario capturado:
 
 ![redteam_logged_facebook.png](imagenes/redteam_logged_facebook.png)
+
+---
+## Servidor SMTP Relay
+
+> Antes de entrar de lleno a **Gophish**, debemos asegurarnos de contar con un **servidor de correos** capaz de **retransmitir** los correos que creemos.
+
+---
+## Gophish
+
+<p  align="center">
+  <img  width="200"  src="https://d7umqicpi7263.cloudfront.net/img/product/af0a83bc-350b-441f-aa21-9a80e54ad8a8.com/ee699c30db989dfa671e081688f62f9a"  alt="">
+</p>
+
+> Ahora sí, retomando la **entrega**, avanzamos a la configuración de **Gophish** en la máquina atacante, como principal *software* de **administración** del envío de correos durante la campaña.
+
+Lo primero es descargar la última versión del comprimido **pre-compilado** del *software* en la página [*Releases*](https://github.com/gophish/gophish/releases) de su repositorio oficial.
+
+Despues de descomprimirlo, se obtiene un ejecutable `gophish` que, con los permisos adecuados, despliega el **panel administrativo** en un servidor web dentro de la red *loopback*: `https://localhost:3333`.
 
 # Enlaces
 
