@@ -185,7 +185,11 @@ Además en la misma terminal, nos mostrará las credenciales para autenticarnos 
 
 ![redteam_gophish_panel.png](imagenes/redteam_gophish_panel.png)
 
-Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y remitente por utilizar:
+Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y **remitente** por utilizar:
+
+![redteam_sending_profile.png](imagenes/redteam_sending_profile.png)
+
+Puedes enviarte un correo de prueba para verificar que el **perfil** este bien configurado.
 
 # Enlaces
 
