@@ -134,7 +134,39 @@ Una vez **importada**, al recargar la página deberíamos estar *logeados* como 
 ---
 ## Servidor SMTP Relay
 
-> Antes de entrar de lleno a **Gophish**, debemos asegurarnos de contar con un **servidor de correos** capaz de **retransmitir** los correos que creemos.
+> Antes de entrar de lleno a **Gophish**, debemos asegurarnos de contar con un **servidor de correos** capaz de **retransmitir** los correos que generemos.
+
+Para este laboratorio se utilizó [**Brevo**](https://www.brevo.com/), un servicio de **Email Relay** gratuito y confiable, pero no debería ser demasiado distinto para otros servicios.
+
+<p  align="center">
+  <img  width="200"  src="https://cdn.prod.website-files.com/644d2f3aa527d53cc6072c67/65f2f21227a909133ceb5ffd_brevo%20logo%201.webp"  alt="">
+</p>
+
+Despues de registrar una cuenta gratuita, es importante configurar varios aspectos:
+
+1. ***Autenticar el dominio o subdominio a utilizar en el remitente***
+
+Siguiendo el ejemplo práctico anterior, con **Facebook**, sería ideal registrar y autenticar un **dominio** `facebook.calcifer.lat`.
+
+Para esto vamos a la sección **Remitentes, dominios y direcciones IP dedicadas**, después a **Dominios** y seleccionamos **Añadir un dominio**.
+
+Lo siguiente es escribir el nombre seleccionado, `facebook.calcifer.lat`, y seguir los pasos indicados para **autenticarlo automáticamente** en conjunto con nuestro **provedor de nombre**, en este caso **Namecheap**.
+
+![redteam_brevo_domains.png](imagenes/redteam_brevo_domains.png)
+
+2. ***Designar un nuevo remitente***
+
+Dentro de la subsección de **Remitentes**, agregaremos uno nuevo con la opción **Añadir remitente**, para el dominio recien creado. Digamos **Servicio al Cliente `<servicioclientes@facebook.calcifer.lat>`**:
+
+![redteam_brevo_remitente.png](imagenes/redteam_brevo_remitente.png)
+
+3. ***Identificar las credenciales e información del servidor SMTP***
+
+Finalmente, en la sección correspondiente de **SMTP**, deberemos identificar el servidor **SMTP** asignado a nosotros, el puerto y las credenciales necesarias para autenticarnos.
+
+Esto con el fin de indicarlo para la configuración de **Gophish** más tarde:
+
+![redteam_smtp_info.png](imagenes/redteam_smtp_info.png)
 
 ---
 ## Gophish
@@ -148,6 +180,12 @@ Una vez **importada**, al recargar la página deberíamos estar *logeados* como 
 Lo primero es descargar la última versión del comprimido **pre-compilado** del *software* en la página [*Releases*](https://github.com/gophish/gophish/releases) de su repositorio oficial.
 
 Despues de descomprimirlo, se obtiene un ejecutable `gophish` que, con los permisos adecuados, despliega el **panel administrativo** en un servidor web dentro de la red *loopback*: `https://localhost:3333`.
+
+Además en la misma terminal, nos mostrará las credenciales para autenticarnos en l panel de **Gophish**. Después de hacerlo y actualizar la contraseña, deberíamos ver desplegada la herramienta:
+
+![redteam_gophish_panel.png](imagenes/redteam_gophish_panel.png)
+
+Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y remitente por utilizar:
 
 # Enlaces
 
