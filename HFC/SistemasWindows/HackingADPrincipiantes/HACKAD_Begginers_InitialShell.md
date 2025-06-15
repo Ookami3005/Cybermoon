@@ -52,4 +52,4 @@ Exploit targets:
 
 # Enlaces
 
-[<- Vectores de ataque iniciales](HACKAD_Begginers_Initial2.md) | [PowerView ->](HACKAD_Begginers_PowerView.md)
+[<- Vectores de ataque iniciales](HACKAD_Begginers_Initial2.md) | [Bloodhound CE ->](HACKAD_Begginers_Bloodhound.md)
