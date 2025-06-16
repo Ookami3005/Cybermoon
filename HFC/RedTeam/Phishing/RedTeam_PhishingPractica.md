@@ -203,9 +203,10 @@ Se reduce el remitente especificamente a una cuenta *Gmail* desde el dominio tí
   <img  width="200"  src="https://d7umqicpi7263.cloudfront.net/img/product/af0a83bc-350b-441f-aa21-9a80e54ad8a8.com/ee699c30db989dfa671e081688f62f9a"  alt="">
 </p>
 
-> Ahora sí, retomando la **entrega**, avanzamos a la configuración de **Gophish** en la máquina atacante, como principal *software* de **administración** del envío de correos durante la campaña.
+> Ahora sí, retomando la **entrega**, avanzamos a la configuración de **Gophish** en el **VPS**, como principal *software* de **administración** del envío de correos durante la campaña.
 
-Lo primero es descargar la última versión del comprimido **pre-compilado** del *software* en la página [*Releases*](https://github.com/gophish/gophish/releases) de su repositorio oficial.
+Lo primero es descargar la última versión del comprimido **pre-compilado** del *software* en la página [*Releases*](https://github.com/kgretzky/gophish/releases) del repositorio oficial.
+Recordemos utilizar el repositorio con la versión **integrada** con **Evilginx**, publicada por el creador de esta última.
 
 Despues de descomprimirlo, se obtiene un ejecutable `gophish` que, con los permisos adecuados, despliega el **panel administrativo** en un servidor web dentro de la red *loopback*: `https://localhost:3333`.
 
@@ -222,6 +223,77 @@ Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y **rem
 Puedes enviarte un correo de prueba para verificar que el **perfil** este bien configurado, y se vería algo así:
 
 ![redteam_gophish_testmail.png](imagenes/redteam_gophish_testmail.png)
+
+#### Plantilla de correo
+
+> Lo siguiente es definir una **plantilla de correo** que estaremos enviando durante la campaña haciendo ligeras modificaciones por usuario. Para esto primero debemos seleccionar un correo legítimo adecuado a nuestros objetivos.
+
+Por ejemplo, seleccione un aviso de inicio de sesión de *Facebook*, para lo que visualicé el **codigo fuente** y copie su contenido:
+
+![redteam_source_mail.png](imagenes/redteam_source_mail.png)
+
+Este texto se importa a **Gophish** en el botón **Import Email** y generará un correo similar en las vistas previas:
+
+![redteam_import_email.png](imagenes/redteam_import_email.png)
+
+Para terminar, solo resta adecuar y personalizar el correo según el objetivo y necesidades de la **campaña**.
+Por eso **Gophish** nos ofrece una nomenclatura tipo **plantillas web** (`{{.algo}}`) para indicar donde se debe insertar un valor personalizado para cada usuario. Algunas de las más útiles son:
+
+- `{{.FirstName}}`: Será remplazado por el primer nombre del usuario objetivo.
+- `{{.LastName}}`: Será remplazado por el apellido de cada usuario objetivo.
+- `{{.Email}}`: Remplazado por el correo del usuario objetivo
+- `{{.Position}}`: Se remplaza por la posición en la empresa indicada para el objetivo.
+- `{{.From}}`: El correo que se esta impersonando
+- `{{.URL}}`: Se remplaza por el **payload principal** de la campaña en cuestión, una de las plantillas más importantes.
+
+Finalmente, la **plantilla** se vería algo similar a:
+
+![redteam_phishing_template.png](imagenes/redteam_phishing_template.png)
+
+Y la más importante, `{{.URL}}`, quedó embebida en el **botón** de "**No fui yo**" que buscamos que la víctima presione al no reconocer este inicio de sesión.
+Siempre es buena idea esconder el **enlace malicioso** de la vista mediante técnicas similares a esta, con un botón, una imágen o cualquier cosa que "recubra" el enlace sutilmente.
+
+Adicionalmente, se recomienda adjuntar una **imágen de seguimiento** (*Tracking Image* o *Tracking URL*) para que **Gophish** pueda determinar el estado del correo y las interacciones con este.
+
+#### Objetivos
+
+> Lo siguiente es definir los usuarios objetivos de esta campaña, que recibirán estos correos maliciosos y que buscamos sean engañados por esta.
+
+En la sección **Users & Groups**, para cada objetivo se define su **nombre**, **apellido**, **correo** y **posición** en la empresa. Estos son los mismos datos que serán insertados posteriormente en la **plantilla**, justo en los *placeholders* que definimos.
+
+![redteam_phishing_targets.png](imagenes/redteam_phishing_targets.png)
+
+#### Inicio de la campaña
+
+> Ahora, solo resta crear e iniciar la **campaña de Phishing** que llevamos preparando. No sin antes configurar **Evilginx** para que trabaje en conjunto con **Gophish**.
+
+Para esto, dentro de la línea de comandos de **Evilginx**, debemos indicar 3 cosas:
+
+- La **URL** al panel administrativo de **Gophish** (Como en este ejemplo se estan ejecutandose en el mismo **VPS**, la **URL** es simplemente `https://localhost:3333`).
+
+- La **llave API** correspondiente de nuestra instancia **Gophish**, extraida de nuestro perfil dentro de **Gophish**.
+
+- En caso de que el panel administrativo no utilicé un certificado *TLS* válido (como viene por defecto), se requiere indicar a **Evilginx** que permita conexiones inseguras.
+
+Para lo cual, se ejecutan las siguientes instrucciones en la línea de comandos de **Evilginx**:
+
+```evilginx
+config gophish admin_url https://localhost:3333
+
+config gophish api_key acdebca6a5678ac...
+
+config gophish insecure true
+```
+
+Finalmente, podemos crear una nueva **campaña** con el botón correspondiente, indicar la **plantilla**, **usuarios objetivo** y **perfíl de envío**, definir el comienzo y final de la campaña, etc.
+
+Notaremos el importante campo de **Evilginx Lure URL**, donde tras generar un **lure** adecuado en **Evilginx**, lo indicaremos en esta sección y con eso, la **campaña** esta completamente lista para lanzarse.
+
+Gracias a la integración, **Evilginx** compartirá información con **Gophish** para que este pueda determinar el comportamiento de los usuarios respecto al **enlace malicioso**, como cuando abren el correo, si clickean o no el **link** e incluso si envían sus datos o no en el sitio malicioso.
+
+![redteam_phishing_results.png](imagenes/redteam_phishing_results.png)
+
+Todo esto sin afectar el funcionamiento normal de **Evilginx**, que nos permitirá capturar las sesiones de todos aquellos que caigan para posiblemente impersonarlos después, concluyendo así la campaña de **Phishing**.
 
 # Enlaces
 
