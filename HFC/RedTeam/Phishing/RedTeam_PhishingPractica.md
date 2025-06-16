@@ -132,11 +132,28 @@ Una vez **importada**, al recargar la página deberíamos estar *logeados* como 
 ![redteam_logged_facebook.png](imagenes/redteam_logged_facebook.png)
 
 ---
-## Servidor SMTP Relay
 
-> Antes de entrar de lleno a **Gophish**, debemos asegurarnos de contar con un **servidor de correos** capaz de **retransmitir** los correos que generemos.
+## Servidor de correos
 
-Para este laboratorio se utilizó [**Brevo**](https://www.brevo.com/), un servicio de **Email Relay** gratuito y confiable, pero no debería ser demasiado distinto para otros servicios.
+> Antes de entrar de lleno a **Gophish**, debemos asegurarnos de contar con un **servidor de correos** capaz de **retransmitir** los correos que generemos para la campaña.
+
+Algunas opciones comunes son:
+
+1. Montar nuestro propio servidor.
+2. Utilizar un servicio ***SMTP Relay*** de nuestro dominio.
+3. Utilizar un servicio (y dominio) de **terceros** (*Gmail*, *Outlook*, etc).
+
+Claro, lo más recomendable es ==montar nuestro propio servidor==, en algun servicio de **hosting** que lo permita.
+
+Sin embargo, esto es **ligeramente** dificil para este laboratorio por las restricciones y demás medidas de seguridad que se implementan sobre los **VPS** para evitar el **spam** de correos, pero aún es bastante factible con el presupuesto adecuado.
+
+Por otra parte, actualmente los servicios de **SMTP Relay** poseen igualmente estrictas medidas de seguridad para evitar el maluso y spam de correos mediante su plataforma:
+
+#### Servidor SMTP Relay
+
+> Para este ejemplo se utilizó [**Brevo**](https://www.brevo.com/), un servicio de **Email Relay** gratuito y confiable, que no debería ser demasiado distinto de otros servicios similares.
+
+Cabe recalcar que fui bloqueado de Brevo casi instantáneamente después de configurar el **Relay**, de modo que insisto que las medidas de seguridad continuan evolucionando y la mayoría de estos servicios podrían impedirnos su uso para este propósito.
 
 <p  align="center">
   <img  width="200"  src="https://cdn.prod.website-files.com/644d2f3aa527d53cc6072c67/65f2f21227a909133ceb5ffd_brevo%20logo%201.webp"  alt="">
@@ -168,6 +185,17 @@ Esto con el fin de indicarlo para la configuración de **Gophish** más tarde:
 
 ![redteam_smtp_info.png](imagenes/redteam_smtp_info.png)
 
+#### Servicio de terceros
+
+> Finalmente, lo que se terminó utilizando para este laboratorio fue el servicio **SMTP** provisto por *Gmail* para todos sus usuarios registrados. Básicamente nos permite enviar un correo desde una cuenta de **Gmail**, que autenticamos, a cualquier correo.
+
+Es más restrictivo en el sentido de que el remitente **no** será de nuestro dominio, ni podemos personalizar su nombre como en las opciones anteriores.
+Se reduce el remitente especificamente a una cuenta *Gmail* desde el dominio típico `gmail.com`.
+
+- El servidor **SMTP** siempre será el mismo, `smtp.gmail.com` con el puerto **587**.
+- El usuario será el mismo usuario que hayamos decidido para la cuenta *Gmail*, sin especificar el dominio `@gmail.com`.
+- Para obtener la contraseña, primero debemos activar la **verificación en 2 pasos** en la cuenta, y así poder solicitar una [**Contraseña de aplicación**](https://myaccount.google.com/apppasswords) relacionada a la cuenta.
+
 ---
 ## Gophish
 
@@ -181,15 +209,19 @@ Lo primero es descargar la última versión del comprimido **pre-compilado** del
 
 Despues de descomprimirlo, se obtiene un ejecutable `gophish` que, con los permisos adecuados, despliega el **panel administrativo** en un servidor web dentro de la red *loopback*: `https://localhost:3333`.
 
-Además en la misma terminal, nos mostrará las credenciales para autenticarnos en l panel de **Gophish**. Después de hacerlo y actualizar la contraseña, deberíamos ver desplegada la herramienta:
+Además en la misma terminal, nos mostrará las credenciales para autenticarnos en el panel de **Gophish**. Después de hacerlo y actualizar la contraseña, deberíamos ver desplegada la herramienta:
 
 ![redteam_gophish_panel.png](imagenes/redteam_gophish_panel.png)
 
-Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y **remitente** por utilizar:
+#### Perfil de envío
+
+Lo primero es configurar en *Sending Profiles* nuestro servidor **SMTP** y **remitente** por utilizar (el servidor **SMTP** de *Gmail* y la cuenta recién creada):
 
 ![redteam_sending_profile.png](imagenes/redteam_sending_profile.png)
 
-Puedes enviarte un correo de prueba para verificar que el **perfil** este bien configurado.
+Puedes enviarte un correo de prueba para verificar que el **perfil** este bien configurado, y se vería algo así:
+
+![redteam_gophish_testmail.png](imagenes/redteam_gophish_testmail.png)
 
 # Enlaces
 
