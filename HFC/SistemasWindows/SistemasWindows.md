@@ -26,4 +26,4 @@
 	- [Acceso a Shell](HackingADPrincipiantes/HACKAD_Begginers_InitialShell.md)
 
 - ***Enumeración Post-Compromiso***
-	- [PowerView](HackingADPrincipiantes/HACKAD_Begginers_PowerView.md)
+	- [Bloodhound CE](HackingADPrincipiantes/HACKAD_Begginers_Bloodhound.md)
