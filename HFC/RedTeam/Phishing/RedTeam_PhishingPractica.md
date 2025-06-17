@@ -287,6 +287,8 @@ config gophish insecure true
 
 Finalmente, podemos crear una nueva **campaña** con el botón correspondiente, indicar la **plantilla**, **usuarios objetivo** y **perfíl de envío**, definir el comienzo y final de la campaña, etc.
 
+![redteam_phishcampaign_creation.png](imagenes/redteam_phishcampaign_creation.png)
+
 Notaremos el importante campo de **Evilginx Lure URL**, donde tras generar un **lure** adecuado en **Evilginx**, lo indicaremos en esta sección y con eso, la **campaña** esta completamente lista para lanzarse.
 
 Gracias a la integración, **Evilginx** compartirá información con **Gophish** para que este pueda determinar el comportamiento de los usuarios respecto al **enlace malicioso**, como cuando abren el correo, si clickean o no el **link** e incluso si envían sus datos o no en el sitio malicioso.
